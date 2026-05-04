@@ -1,0 +1,89 @@
+---
+import "../../styles/global.css";
+import "../../styles/project.css";
+import project from "../../content/work/season-of-the-mulberry/project.json";
+
+const totalSlides = 1 + project.photos.length;
+
+function pad(n) {
+  return n < 10 ? `0${n}` : `${n}`;
+}
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{project.title} — Habib Saleh</title>
+  </head>
+  <body>
+    <div class="project-page">
+
+      <header class="project-header">
+        <a href="/">← back</a>
+        <span class="signature">Habib Saleh</span>
+      </header>
+
+      <div class="project-stage" id="stage">
+
+        <div class="slide active" data-slide="1">
+          <div class="slide-text">
+            <div class="slide-meta">{project.type} · {project.year}</div>
+            <h1 class="slide-title">{project.title}</h1>
+            <div class="slide-prose">
+              {project.opening.map((paragraph) => <p>{paragraph}</p>)}
+            </div>
+          </div>
+        </div>
+
+        {project.photos.map((photo, index) => (
+          <div class="slide" data-slide={index + 2}>
+            <div class="slide-photo">
+              <img src={`/photos/season-of-the-mulberry/${photo}`} alt={`${project.title}, ${pad(index + 1)}`} />
+            </div>
+            <div class="slide-numeral">{pad(index + 1)} / {pad(project.photos.length)}</div>
+          </div>
+        ))}
+
+      </div>
+
+      <nav class="project-nav">
+        <button class="nav-button" id="prev" disabled>← previous</button>
+        <span class="nav-counter"><span id="current">1</span> / <span id="total">{totalSlides}</span></span>
+        <button class="nav-button" id="next">next →</button>
+      </nav>
+
+    </div>
+
+    <script>
+      const slides = document.querySelectorAll('.slide');
+      const total = slides.length;
+      const prevBtn = document.getElementById('prev');
+      const nextBtn = document.getElementById('next');
+      const counter = document.getElementById('current');
+      let current = 1;
+
+      function show(n) {
+        slides.forEach((s, i) => {
+          s.classList.toggle('active', i + 1 === n);
+        });
+        counter.textContent = n;
+        prevBtn.disabled = n === 1;
+        nextBtn.disabled = n === total;
+      }
+
+      prevBtn.addEventListener('click', () => {
+        if (current > 1) { current--; show(current); }
+      });
+      nextBtn.addEventListener('click', () => {
+        if (current < total) { current++; show(current); }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' && current < total) { current++; show(current); }
+        if (e.key === 'ArrowLeft' && current > 1) { current--; show(current); }
+      });
+    </script>
+
+  </body>
+</html>
