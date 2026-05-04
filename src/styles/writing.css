@@ -1,0 +1,165 @@
+.writing-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #2a2724;
+}
+
+.writing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 32px 56px 28px;
+  border-bottom: 0.5px solid #d4cfc3;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  max-width: 920px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.writing-header a {
+  color: #8a8478;
+}
+
+.writing-header a:hover {
+  color: #2a2724;
+}
+
+.writing-header .signature {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #5a554c;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+/* Index page — list of pieces */
+.writing-index {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 56px;
+}
+
+.writing-index-title {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 1.55;
+  color: #5a554c;
+  margin: 0 0 64px 0;
+}
+
+.writing-list-page {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.writing-list-page li a {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-bottom: 32px;
+  border-bottom: 0.5px solid #ece8df;
+}
+
+.writing-list-page li:last-child a {
+  border-bottom: none;
+}
+
+.writing-list-page .piece-date {
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a8478;
+}
+
+.writing-list-page .piece-title {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #2a2724;
+}
+
+.writing-list-page li a:hover .piece-title {
+  color: #5a554c;
+}
+
+/* Individual piece — the reading experience */
+.piece {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 80px 32px 120px;
+}
+
+.piece-header {
+  margin-bottom: 56px;
+}
+
+.piece-header .piece-meta {
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a8478;
+  margin-bottom: 18px;
+}
+
+.piece-header h1 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  font-weight: normal;
+  color: #2a2724;
+  margin: 0;
+}
+
+.piece-body p {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.85;
+  color: #2a2724;
+  margin: 0 0 24px 0;
+}
+
+.piece-body p:last-child {
+  margin-bottom: 0;
+}
+
+.piece-footer {
+  margin-top: 80px;
+  padding-top: 24px;
+  border-top: 0.5px solid #d4cfc3;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.piece-footer a {
+  color: #8a8478;
+}
+
+.piece-footer a:hover {
+  color: #2a2724;
+}
+
+@media (max-width: 640px) {
+  .writing-header { padding: 20px 24px 20px; }
+  .writing-index { padding: 56px 24px; }
+  .writing-list-page .piece-title { font-size: 21px; }
+  .piece { padding: 56px 24px 80px; }
+  .piece-header h1 { font-size: 28px; }
+  .piece-body p { font-size: 17px; line-height: 1.8; }
+}

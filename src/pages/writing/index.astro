@@ -1,0 +1,46 @@
+---
+import "../../styles/global.css";
+import "../../styles/writing.css";
+
+// Import all writing pieces dynamically. Astro handles the glob at build time.
+const pieceModules = import.meta.glob("../../content/writing/*.json", { eager: true });
+const pieces = Object.values(pieceModules)
+  .map((m) => m.default || m)
+  .sort((a, b) => (a.dateSort < b.dateSort ? 1 : -1)); // newest first
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Writing — Habib Saleh</title>
+  </head>
+  <body>
+    <div class="writing-page">
+
+      <header class="writing-header">
+        <a href="/">← back</a>
+        <span class="signature">Habib Saleh</span>
+      </header>
+
+      <main class="writing-index">
+        <p class="writing-index-title">
+          Essays, fragments, and observations.
+        </p>
+
+        <ul class="writing-list-page">
+          {pieces.map((piece) => (
+            <li>
+              <a href={`/writing/${piece.slug}`}>
+                <span class="piece-date">{piece.date}</span>
+                <span class="piece-title">{piece.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </main>
+
+    </div>
+  </body>
+</html>
