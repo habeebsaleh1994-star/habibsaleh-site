@@ -1,0 +1,210 @@
+.project-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #2a2724;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 32px 56px 28px;
+  border-bottom: 0.5px solid #d4cfc3;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.project-header a {
+  color: #8a8478;
+}
+
+.project-header a:hover {
+  color: #2a2724;
+}
+
+.project-header .signature {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #5a554c;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.project-stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 56px;
+  min-height: 600px;
+}
+
+.slide {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide-text {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+.slide-meta {
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #8a8478;
+  margin-bottom: 18px;
+}
+
+.slide-title {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin: 0 0 36px 0;
+}
+
+.slide-quote {
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+  font-style: italic;
+  color: #3a352e;
+  margin: 0 0 12px 0;
+}
+
+.slide-quote-attr {
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #a89e8a;
+  margin-bottom: 28px;
+}
+
+.slide-quote-note {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #6a6358;
+  margin-bottom: 36px;
+}
+
+.slide-prose p {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #3a352e;
+  margin: 0 0 20px 0;
+}
+
+.slide-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.slide-photo {
+  text-align: center;
+}
+
+.slide-photo img {
+  max-width: 100%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+
+.slide-numeral {
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a8478;
+  margin-top: 18px;
+  text-align: left;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide-credit {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #8a8478;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 0.5px solid #d4cfc3;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 56px 28px;
+  border-top: 0.5px solid #d4cfc3;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.nav-button {
+  cursor: pointer;
+  color: #5a554c;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  padding: 8px 0;
+}
+
+.nav-button:hover {
+  color: #2a2724;
+}
+
+.nav-button:disabled {
+  color: #d4cfc3;
+  cursor: default;
+}
+
+.nav-counter {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 12px;
+  color: #8a8478;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+@media (max-width: 640px) {
+  .project-header { padding: 20px 24px 20px; }
+  .project-stage { padding: 32px 24px; min-height: 500px; }
+  .project-nav { padding: 16px 24px 24px; }
+  .slide-title { font-size: 28px; }
+  .slide-quote { font-size: 17px; }
+  .slide-prose p { font-size: 16px; }
+  .slide-photo img { max-height: 70vh; }
+}

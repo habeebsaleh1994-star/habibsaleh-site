@@ -1,0 +1,104 @@
+---
+import "../styles/global.css";
+
+const featuredProjects = [
+  {
+    title: "Colored Air",
+    type: "Documentary",
+    year: "2023 — Ongoing",
+    slug: "colored-air",
+    cover: "/photos/colored-air/HS-ColoredAir-2025-01.JPG",
+  },
+  {
+    title: "Before It Disappears",
+    type: "Documentary",
+    year: "2025",
+    slug: "before-it-disappears",
+    color: "linear-gradient(160deg, #c4a680 0%, #8a7156 50%, #4a3d2d 100%)",
+  },
+  {
+    title: "The Season of the Mulberry",
+    type: "Documentary",
+    year: "",
+    slug: "season-of-the-mulberry",
+    color: "linear-gradient(145deg, #6b5d4a 0%, #4a3f30 60%, #2d251a 100%)",
+  },
+  {
+    title: "When Roses Bloom",
+    type: "Documentary",
+    year: "",
+    slug: "when-roses-bloom",
+    color: "linear-gradient(140deg, #a89684 0%, #7a6852 50%, #4d3f2f 100%)",
+  },
+];
+
+const recentWriting = [
+  { title: "More Sweet Than Bitter", date: "Oct 2025", slug: "more-sweet-than-bitter" },
+  { title: "The Unfinished God", date: "Sep 2025", slug: "the-unfinished-god" },
+];
+---
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Habib Saleh</title>
+    <meta name="description" content="A photographer's record of light, slow disappearance, and the irreplaceable ordinary." />
+  </head>
+  <body>
+    <main class="page">
+      <header class="masthead">
+        <div class="name">Habib Saleh</div>
+        <nav class="nav">
+          <a href="/work">work</a>
+          <a href="/writing">writing</a>
+          <a href="/films">films</a>
+          <a href="/about">about</a>
+        </nav>
+      </header>
+
+      <section class="intro">
+        <p class="lede">A photographer's record of light, slow disappearance, and the irreplaceable ordinary.</p>
+      </section>
+
+      <section class="grid">
+        {featuredProjects.map((project) => (
+          <a class="tile" href={`/work/${project.slug}`}>
+            {project.cover ? (
+              <div class="thumb thumb-image">
+                <img src={project.cover} alt={project.title} />
+              </div>
+            ) : (
+              <div class="thumb" style={`background: ${project.color};`}></div>
+            )}
+            <div class="meta">
+              <span class="meta-type">{project.type}{project.year ? ` · ${project.year}` : ""}</span>
+              <span class="meta-title">{project.title}</span>
+            </div>
+          </a>
+        ))}
+      </section>
+
+      <section class="writing">
+        <header class="writing-head">
+          <span class="writing-title">Recent writing</span>
+          <a class="writing-all" href="/writing">all writing →</a>
+        </header>
+        <ul class="writing-list">
+          {recentWriting.map((piece) => (
+            <li>
+              <a href={`/writing/${piece.slug}`}>
+                <span class="piece-date">{piece.date}</span>
+                <span class="piece-title">{piece.title}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <span>© Habib Saleh</span>
+      </footer>
+    </main>
+  </body>
+</html>
