@@ -67,10 +67,10 @@
   margin-top: 8px;
   font-family: -apple-system, "Helvetica Neue", sans-serif;
   font-size: 8px;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #b0a896;
-  width: 240px;
+  white-space: nowrap;
 }
 
 .about-portrait-credit a {
@@ -159,5 +159,4 @@
   .about-body { padding: 56px 24px 80px; }
   .about-name { font-size: 26px; }
   .about-portrait img { width: 200px; }
-  .about-portrait-credit { width: 200px; }
 }
