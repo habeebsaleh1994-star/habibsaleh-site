@@ -118,8 +118,43 @@
   color: #a89e8a;
 }
 
+.about-portrait {
+  margin-top: 80px;
+  padding-top: 40px;
+  border-top: 0.5px solid #ece8df;
+}
+
+.about-portrait img {
+  width: 240px;
+  height: auto;
+  display: block;
+  margin: 0;
+  border-radius: 1px;
+}
+
+.about-portrait-credit {
+  margin-top: 14px;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a89e8a;
+}
+
+.about-portrait-credit a {
+  color: #8a8478;
+  border-bottom: 0.5px solid #ece8df;
+  padding-bottom: 1px;
+  transition: border-color 200ms ease;
+}
+
+.about-portrait-credit a:hover {
+  border-bottom-color: #8a8478;
+}
+
 @media (max-width: 640px) {
   .about-header { padding: 20px 24px 20px; }
   .about-body { padding: 56px 24px 80px; }
   .about-name { font-size: 26px; }
+  .about-portrait img { width: 200px; }
 }
