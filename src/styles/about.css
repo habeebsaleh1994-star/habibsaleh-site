@@ -154,6 +154,23 @@
   color: #a89e8a;
 }
 
+.about-bio {
+  margin-bottom: 56px;
+  padding-bottom: 8px;
+}
+
+.about-bio p {
+  font-family: Georgia, serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: #3a352e;
+  margin: 0 0 20px 0;
+}
+
+.about-bio p:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 640px) {
   .about-header { padding: 20px 24px 20px; }
   .about-body { padding: 56px 24px 80px; }
