@@ -2,6 +2,7 @@
 import { Picture } from "astro:assets";
 import "../styles/global.css";
 import "../styles/about.css";
+import Meta from "../components/Meta.astro";
 import { photo } from "../lib/images.js";
 ---
 
@@ -10,7 +11,12 @@ import { photo } from "../lib/images.js";
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About — Habib Saleh</title>
+    <Meta
+      title="About — Habib Saleh"
+      description="Habib Saleh is a visual artist from Lebanon working across photography, short film, and writing — documentary image-making, fashion and portrait commissions."
+      path="/about/"
+      image={photo("portrait/habib.jpeg")}
+    />
   </head>
   <body>
     <div class="about-page">

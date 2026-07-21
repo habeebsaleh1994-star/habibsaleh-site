@@ -1,4 +1,5 @@
 ---
+import Meta from "../../components/Meta.astro";
 import "../../styles/global.css";
 import "../../styles/writing.css";
 
@@ -21,7 +22,11 @@ const { piece } = Astro.props;
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{piece.title} — Habib Saleh</title>
+    <Meta
+      title={`${piece.title} — Habib Saleh`}
+      description={piece.paragraphs[0].slice(0, 180)}
+      path={`/writing/${piece.slug}/`}
+    />
   </head>
   <body>
     <div class="writing-page">

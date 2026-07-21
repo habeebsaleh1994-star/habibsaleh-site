@@ -1,6 +1,7 @@
 ---
 import { Picture } from "astro:assets";
 import "../styles/global.css";
+import Meta from "../components/Meta.astro";
 import { photo } from "../lib/images.js";
 
 const featuredProjects = [
@@ -14,9 +15,9 @@ const featuredProjects = [
   {
     title: "Before It Disappears",
     type: "Documentary",
-    year: "2025",
+    year: "2023 — 2025",
     slug: "before-it-disappears",
-    color: "linear-gradient(160deg, #c4a680 0%, #8a7156 50%, #4a3d2d 100%)",
+    cover: "before-it-disappears/before-it-disappears-01.jpg",
   },
   {
     title: "The Season of the Mulberry",
@@ -52,8 +53,12 @@ const publishedSlugs = new Set(
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Habib Saleh</title>
-    <meta name="description" content="A photographer's record of light, slow disappearance, and the irreplaceable ordinary." />
+    <Meta
+      title="Habib Saleh"
+      description="A photographer's record of light, slow disappearance, and the irreplaceable ordinary. Documentary, editorial and portrait work from Lebanon."
+      path="/"
+      image={photo("colored-air/HS-ColoredAir-2025-01.JPG")}
+    />
   </head>
   <body>
     <main class="page">
@@ -61,10 +66,7 @@ const publishedSlugs = new Set(
         <div class="name">Habib Saleh</div>
         <nav class="nav">
           <a href="/work">work</a>
-          {/* Editorial is built and live at /editorial, but stays out of the nav
-              until there is at least one story — an empty section advertised to a
-              client reads worse than no section. Uncomment to publish it. */}
-          {/* <a href="/editorial">editorial</a> */}
+          <a href="/editorial">editorial</a>
           <a href="/writing">writing</a>
           <a href="/about">about</a>
         </nav>
@@ -84,6 +86,8 @@ const publishedSlugs = new Set(
                 <div class="thumb thumb-image">
                   <Picture
                     src={photo(project.cover)}
+                    {/* Astro strips alt="" from the output, leaving no alt attribute at
+                        all — worse than the title being announced twice. */}
                     alt={project.title}
                     formats={["avif", "webp"]}
                     fallbackFormat="jpeg"

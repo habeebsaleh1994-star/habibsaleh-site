@@ -1,0 +1,50 @@
+---
+// Every <head> tag that was previously hand-rolled per page — which is exactly
+// why og:/twitter:/canonical never got added to any of them.
+//
+// Usage:
+//   <Meta title="…" description="…" path="/work/colored-air/" image={photo("…")} />
+import { getImage } from "astro:assets";
+import { photo } from "../lib/images.js";
+
+const { title, description, path, image } = Astro.props;
+
+const canonical = new URL(path, Astro.site).href;
+
+// Pages with no image of their own (the essays) still deserve a preview rather
+// than a bare text stub when shared.
+const source = image ?? photo("colored-air/HS-ColoredAir-2025-01.JPG");
+
+// Social scrapers do not decode avif or webp, so the preview is always a JPEG.
+// Crop to 1200x630 — the aspect every platform expects. Left at native height a
+// portrait frame becomes a 1200x1800, 640KB file that WhatsApp and iMessage drop
+// outright and that Twitter/LinkedIn centre-crop unpredictably.
+const generated = await getImage({
+  src: source,
+  format: "jpeg",
+  width: 1200,
+  height: 630,
+  fit: "cover",
+  position: "center",
+  quality: 78,
+});
+const ogImage = new URL(generated.src, Astro.site).href;
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Habib Saleh" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={ogImage} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={ogImage} />

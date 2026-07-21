@@ -1,5 +1,6 @@
 ---
 import { Picture } from "astro:assets";
+import Meta from "../../components/Meta.astro";
 import "../../styles/global.css";
 import "../../styles/project.css";
 import { photo } from "../../lib/images.js";
@@ -24,6 +25,7 @@ const { project, slug } = Astro.props;
 // Not every project carries every section — The Season of the Mulberry has no
 // epigraph, closing, or credit, so each is rendered only when present.
 const hasEpigraph = Boolean(project.epigraph);
+const hasOpening = Array.isArray(project.opening) && project.opening.length > 0;
 const hasClosing = Array.isArray(project.closing) && project.closing.length > 0;
 const hasCredit = Boolean(project.credit);
 
@@ -45,7 +47,16 @@ function pad(n) {
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{project.title} — Habib Saleh</title>
+    <Meta
+      title={`${project.title} — Habib Saleh`}
+      description={
+        hasOpening
+          ? project.opening[0].slice(0, 180)
+          : `${project.title} — ${project.type.toLowerCase()} photography by Habib Saleh.`
+      }
+      path={`/work/${slug}/`}
+      image={photo(`${slug}/${project.cover || photos[0].file}`)}
+    />
   </head>
   <body>
     <div class="project-page">
@@ -68,9 +79,11 @@ function pad(n) {
                 <p class="slide-quote-note">{project.epigraph.note}</p>
               </>
             )}
-            <div class="slide-prose">
-              {project.opening.map((paragraph) => <p>{paragraph}</p>)}
-            </div>
+            {hasOpening && (
+              <div class="slide-prose">
+                {project.opening.map((paragraph) => <p>{paragraph}</p>)}
+              </div>
+            )}
           </div>
         </div>
 
@@ -155,6 +168,26 @@ function pad(n) {
         if (e.key === 'ArrowRight' && current < total) { current++; show(current); }
         if (e.key === 'ArrowLeft' && current > 1) { current--; show(current); }
       });
+
+      // On a phone the only way forward was a small "next" label — 22 taps to
+      // reach the end of a project. Swipe horizontally instead.
+      const stage = document.getElementById('stage');
+      let startX = 0;
+      let startY = 0;
+
+      stage.addEventListener('touchstart', (e) => {
+        startX = e.changedTouches[0].clientX;
+        startY = e.changedTouches[0].clientY;
+      }, { passive: true });
+
+      stage.addEventListener('touchend', (e) => {
+        const dx = e.changedTouches[0].clientX - startX;
+        const dy = e.changedTouches[0].clientY - startY;
+        // Ignore mostly-vertical movement so scrolling a text slide still works.
+        if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy)) return;
+        if (dx < 0 && current < total) { current++; show(current); }
+        if (dx > 0 && current > 1) { current--; show(current); }
+      }, { passive: true });
     </script>
 
   </body>

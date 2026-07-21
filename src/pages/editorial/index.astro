@@ -2,6 +2,7 @@
 import { Picture } from "astro:assets";
 import "../../styles/global.css";
 import "../../styles/editorial.css";
+import Meta from "../../components/Meta.astro";
 import { photo } from "../../lib/images.js";
 
 // Same glob pattern as the writing index. Files prefixed with "_" are templates,
@@ -18,8 +19,12 @@ const stories = Object.entries(storyModules)
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Editorial — Habib Saleh</title>
-    <meta name="description" content="Commissioned fashion, editorial, and portrait photography by Habib Saleh." />
+    <Meta
+      title="Editorial — Habib Saleh"
+      description="Commissioned fashion, editorial, and portrait photography by Habib Saleh."
+      path="/editorial/"
+      image={stories.length ? photo("editorial/" + stories[0].slug + "/" + stories[0].cover) : undefined}
+    />
   </head>
   <body>
     <div class="editorial-page">
@@ -54,7 +59,7 @@ const stories = Object.entries(storyModules)
                 </div>
                 <div class="editorial-tile-meta">
                   <span class="editorial-tile-client">
-                    {story.client}{story.year ? ` · ${story.year}` : ""}
+                    {[story.client, story.year].filter(Boolean).join(" · ")}
                   </span>
                   <span class="editorial-tile-title">{story.title}</span>
                 </div>

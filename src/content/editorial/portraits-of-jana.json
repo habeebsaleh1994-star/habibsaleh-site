@@ -1,0 +1,52 @@
+{
+  "title": "Portraits of Jana",
+  "slug": "portraits-of-jana",
+  "client": "",
+  "year": "2024",
+  "dateSort": "2024-07",
+  "cover": "dscf4796.jpg",
+  "photos": [
+    {
+      "file": "dscf4735.jpg",
+      "alt": "A model in a striped satin top and long black skirt stands arms folded against a red graffitied wall, a bearded man seated nearby."
+    },
+    [
+      {
+        "file": "dscf4796.jpg",
+        "alt": "The model sits smiling on a white plastic chair in the striped top and black skirt, a red hibiscus pinned in her hair."
+      },
+      {
+        "file": "dscf4832.jpg",
+        "alt": "The model sits with legs crossed on a white plastic chair, small in a wide frame of whitewashed walls, shutters and overhanging branches."
+      }
+    ],
+    {
+      "file": "dscf4837.jpg",
+      "alt": "Hands on hips, the model stands before an open metal gate in a long black satin skirt, stacked plastic chairs at right."
+    },
+    {
+      "file": "dscf4847.jpg",
+      "alt": "The model crouches on her heels beside a pale concrete wall, a small silver beaded purse hanging from one hand."
+    },
+    [
+      {
+        "file": "dscf4857.jpg",
+        "alt": "Close profile of the model, a red hibiscus at her ear, hammered gold hoop swinging, the striped satin top slipping off one shoulder."
+      },
+      {
+        "file": "dscf4872.jpg",
+        "alt": "Reclining in the plastic chair, the model laughs off to one side, one leg kicked out, a beaded purse dangling from her raised silver flat."
+      }
+    ],
+    {
+      "file": "dscf4874.jpg",
+      "alt": "The model sits back in the chair on the tarmac, one leg stretched out, chin propped on her hand, looking straight at the camera."
+    }
+  ],
+  "credits": [
+    {
+      "role": "Photography",
+      "name": "Habib Saleh"
+    }
+  ]
+}

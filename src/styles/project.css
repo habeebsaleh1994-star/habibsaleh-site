@@ -163,7 +163,14 @@
   margin-right: auto;
 }
 
+/* Between the header, the stage padding, the 85vh image cap and this bar, the
+   controls fell below the fold on every desktop photo slide — a viewer saw a
+   photograph with nothing telling them more existed. Pin them to the viewport. */
 .project-nav {
+  position: sticky;
+  bottom: 0;
+  background: #fbfaf6;
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -185,7 +192,10 @@
   font-size: inherit;
   letter-spacing: inherit;
   text-transform: inherit;
-  padding: 8px 0;
+  /* Negative margin keeps the visual position while giving the control a
+     touch-sized hit area — the label alone was 27x65px, well under 44px. */
+  padding: 16px 10px;
+  margin: -16px -10px;
 }
 
 .nav-button:hover {

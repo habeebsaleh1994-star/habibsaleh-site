@@ -2,6 +2,7 @@
 import { Picture } from "astro:assets";
 import "../../styles/global.css";
 import "../../styles/work.css";
+import Meta from "../../components/Meta.astro";
 import { photo } from "../../lib/images.js";
 
 // Same glob as [slug].astro, so this index can only ever list a project that
@@ -24,8 +25,12 @@ const projects = Object.entries(projectModules).map(([path, mod]) => {
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Work — Habib Saleh</title>
-    <meta name="description" content="Documentary photography projects by Habib Saleh, made in Lebanon." />
+    <Meta
+      title="Work — Habib Saleh"
+      description="Long-form documentary photography projects by Habib Saleh, made in Lebanon."
+      path="/work/"
+      image={photo(projects[0].slug + "/" + projects[0].cover)}
+    />
   </head>
   <body>
     <div class="work-page">

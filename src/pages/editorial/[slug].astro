@@ -1,5 +1,6 @@
 ---
 import { Picture } from "astro:assets";
+import Meta from "../../components/Meta.astro";
 import "../../styles/global.css";
 import "../../styles/editorial.css";
 import { photo } from "../../lib/images.js";
@@ -40,6 +41,11 @@ const FULL = {
   widths: [600, 900, 1400, 1800],
   sizes: "(max-width: 640px) 100vw, 888px",
 };
+// A single portrait frame is capped to a narrower measure (see below).
+const PORTRAIT = {
+  widths: [420, 620, 900, 1240],
+  sizes: "(max-width: 640px) 100vw, 620px",
+};
 ---
 
 <html lang="en">
@@ -47,8 +53,12 @@ const FULL = {
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{story.title} — Habib Saleh</title>
-    <meta name="description" content={`${story.title}${story.client ? ` for ${story.client}` : ""} — photography by Habib Saleh.`} />
+    <Meta
+      title={`${story.title} — Habib Saleh`}
+      description={story.note || `${story.title}${story.client ? ` for ${story.client}` : ""} — photography by Habib Saleh.`}
+      path={`/editorial/${story.slug}/`}
+      image={photo(`editorial/${story.slug}/${story.cover}`)}
+    />
   </head>
   <body>
     <div class="editorial-page">
@@ -62,7 +72,7 @@ const FULL = {
 
         <div class="editorial-story-head">
           <div class="editorial-story-client">
-            {story.client}{story.year ? ` · ${story.year}` : ""}
+            {[story.client, story.year].filter(Boolean).join(" · ")}
           </div>
           <h1 class="editorial-story-title">{story.title}</h1>
           {story.note && <p class="editorial-story-note">{story.note}</p>}
@@ -70,12 +80,29 @@ const FULL = {
 
         {plates.map((plate) => {
           const isPair = plate.length === 2;
-          const spec = isPair ? PAIR : FULL;
+          const images = plate.map((item) => ({
+            ...item,
+            src: photo(`editorial/${story.slug}/${item.file}`),
+          }));
+          // A lone portrait at the full 888px measure renders ~1330px tall —
+          // taller than most viewports, and it swamps the plates around it. Cap
+          // it to a portrait measure instead. Astro's ImageMetadata carries the
+          // real dimensions, so orientation is known at build time.
+          const isLonePortrait =
+            !isPair && images[0].src.height > images[0].src.width;
+          const spec = isPair ? PAIR : isLonePortrait ? PORTRAIT : FULL;
+          const cls = [
+            "editorial-plate",
+            isPair ? "editorial-plate-pair" : "",
+            isLonePortrait ? "editorial-plate-portrait" : "",
+          ]
+            .filter(Boolean)
+            .join(" ");
           return (
-            <div class={isPair ? "editorial-plate editorial-plate-pair" : "editorial-plate"}>
-              {plate.map((item) => (
+            <div class={cls}>
+              {images.map((item) => (
                 <Picture
-                  src={photo(`editorial/${story.slug}/${item.file}`)}
+                  src={item.src}
                   alt={item.alt || story.title}
                   formats={["avif", "webp"]}
                   fallbackFormat="jpeg"
