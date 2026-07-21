@@ -110,9 +110,9 @@ function pad(n) {
                   <Picture
                     src={src}
                     alt={entry.alt || `${project.title}, ${pad(index + 1)}`}
-                    formats={["avif", "webp"]}
+                    formats={["avif"]}
                     fallbackFormat="jpeg"
-                    widths={[700, 1100, 1600, 2200]}
+                    widths={[800, 1400, 2200]}
                     sizes="(max-width: 640px) 100vw, 1100px"
                     loading="lazy"
                     decoding="async"

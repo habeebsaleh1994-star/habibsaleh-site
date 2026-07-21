@@ -46,9 +46,9 @@ const stories = Object.entries(storyModules)
                   <Picture
                     src={photo(`editorial/${story.slug}/${story.cover}`)}
                     alt={story.title}
-                    formats={["avif", "webp"]}
+                    formats={["avif"]}
                     fallbackFormat="jpeg"
-                    widths={[340, 400, 680, 800]}
+                    widths={[340, 680, 800]}
                     sizes="(max-width: 640px) 100vw, (max-width: 900px) 45vw, 330px"
                     loading="lazy"
                     decoding="async"

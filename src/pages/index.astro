@@ -88,9 +88,9 @@ const publishedSlugs = new Set(
                     {/* Astro strips alt="" from the output, leaving no alt attribute at
                         all — worse than the title being announced twice. */}
                     alt={project.title}
-                    formats={["avif", "webp"]}
+                    formats={["avif"]}
                     fallbackFormat="jpeg"
-                    widths={[450, 700, 900, 1200]}
+                    widths={[450, 900, 1200]}
                     sizes="(max-width: 640px) 100vw, 446px"
                     loading="lazy"
                     decoding="async"

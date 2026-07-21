@@ -39,16 +39,16 @@ const plates = story.photos.map((entry) =>
 // A diptych half renders at 434px, a full plate at 888px — so they get
 // different candidate widths rather than one compromise set.
 const PAIR = {
-  widths: [340, 440, 700, 880],
+  widths: [340, 700, 880],
   sizes: "(max-width: 640px) 100vw, 434px",
 };
 const FULL = {
-  widths: [600, 900, 1400, 1800],
+  widths: [600, 1200, 1800],
   sizes: "(max-width: 640px) 100vw, 888px",
 };
 // A single portrait frame is capped to a narrower measure (see below).
 const PORTRAIT = {
-  widths: [420, 620, 900, 1240],
+  widths: [420, 840, 1240],
   sizes: "(max-width: 640px) 100vw, 620px",
 };
 ---
@@ -105,7 +105,7 @@ const PORTRAIT = {
                 <Picture
                   src={item.src}
                   alt={item.alt || story.title}
-                  formats={["avif", "webp"]}
+                  formats={["avif"]}
                   fallbackFormat="jpeg"
                   widths={spec.widths}
                   sizes={spec.sizes}
