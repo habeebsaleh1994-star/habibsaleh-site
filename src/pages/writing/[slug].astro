@@ -24,7 +24,7 @@ const { piece } = Astro.props;
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <Meta
       title={`${piece.title} — Habib Saleh`}
-      description={piece.paragraphs[0].slice(0, 180)}
+      description={piece.paragraphs[0]}
       path={`/writing/${piece.slug}/`}
     />
   </head>
@@ -32,7 +32,7 @@ const { piece } = Astro.props;
     <div class="writing-page">
 
       <header class="writing-header">
-        <a href="/writing">← writing</a>
+        <a href="/writing/">← writing</a>
         <span class="signature">Habib Saleh</span>
       </header>
 
@@ -47,7 +47,7 @@ const { piece } = Astro.props;
         </div>
 
         <footer class="piece-footer">
-          <a href="/writing">← all writing</a>
+          <a href="/writing/">← all writing</a>
         </footer>
       </article>
 

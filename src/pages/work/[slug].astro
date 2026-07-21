@@ -51,7 +51,7 @@ function pad(n) {
       title={`${project.title} — Habib Saleh`}
       description={
         hasOpening
-          ? project.opening[0].slice(0, 180)
+          ? project.opening[0]
           : `${project.title} — ${project.type.toLowerCase()} photography by Habib Saleh.`
       }
       path={`/work/${slug}/`}

@@ -37,7 +37,7 @@ const pieces = Object.values(pieceModules)
         <ul class="writing-list-page">
           {pieces.map((piece) => (
             <li>
-              <a href={`/writing/${piece.slug}`}>
+              <a href={`/writing/${piece.slug}/`}>
                 <span class="piece-date">{piece.date}</span>
                 <span class="piece-title">{piece.title}</span>
               </a>

@@ -20,6 +20,10 @@ export async function getStaticPaths() {
 
 const { story } = Astro.props;
 
+// Where the commissioning brand *is* the story name, naming both would print the
+// same words twice — on the page and in the share preview alike.
+const clientLabel = story.client === story.title ? "" : story.client;
+
 // A photos entry is a full-width plate or a two-item array (a diptych), and each
 // item is either "file.jpg" or { file, alt }. Normalise to a flat {file, alt}
 // shape *after* the Array.isArray test — an object entry is not an array, so
@@ -55,7 +59,7 @@ const PORTRAIT = {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <Meta
       title={`${story.title} — Habib Saleh`}
-      description={story.note || `${story.title}${story.client ? ` for ${story.client}` : ""} — photography by Habib Saleh.`}
+      description={story.note || `${story.title}${clientLabel ? ` for ${clientLabel}` : ""} — photography by Habib Saleh.`}
       path={`/editorial/${story.slug}/`}
       image={photo(`editorial/${story.slug}/${story.cover}`)}
     />
@@ -64,7 +68,7 @@ const PORTRAIT = {
     <div class="editorial-page">
 
       <header class="editorial-header">
-        <a href="/editorial">← editorial</a>
+        <a href="/editorial/">← editorial</a>
         <span class="signature">Habib Saleh</span>
       </header>
 
@@ -72,7 +76,7 @@ const PORTRAIT = {
 
         <div class="editorial-story-head">
           <div class="editorial-story-client">
-            {[story.client, story.year].filter(Boolean).join(" · ")}
+            {[clientLabel, story.year].filter(Boolean).join(" · ")}
           </div>
           <h1 class="editorial-story-title">{story.title}</h1>
           {story.note && <p class="editorial-story-note">{story.note}</p>}
@@ -132,7 +136,7 @@ const PORTRAIT = {
         )}
 
         <div class="editorial-story-foot">
-          <a href="/editorial">← all editorial</a>
+          <a href="/editorial/">← all editorial</a>
         </div>
 
       </main>

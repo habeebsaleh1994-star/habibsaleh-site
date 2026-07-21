@@ -9,6 +9,21 @@ import { photo } from "../lib/images.js";
 
 const { title, description, path, image } = Astro.props;
 
+// Clip on a word boundary. Callers pass whole opening paragraphs, and a hard
+// character cut severed "Beirut" mid-word on the Colored Air card — the one
+// project that is *about* Beirut. 155 also sits inside the width Google renders.
+function clip(text, max = 155) {
+  const s = String(text).trim();
+  if (s.length <= max) return s;
+  const cut = s.slice(0, max);
+  const lastSpace = cut.lastIndexOf(" ");
+  return (
+    (lastSpace > 0 ? cut.slice(0, lastSpace) : cut).replace(/[\s,;:.—–-]+$/, "") + "…"
+  );
+}
+
+const summary = clip(description);
+
 const canonical = new URL(path, Astro.site).href;
 
 // Pages with no image of their own (the essays) still deserve a preview rather
@@ -32,13 +47,13 @@ const ogImage = new URL(generated.src, Astro.site).href;
 ---
 
 <title>{title}</title>
-<meta name="description" content={description} />
+<meta name="description" content={summary} />
 <link rel="canonical" href={canonical} />
 
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Habib Saleh" />
 <meta property="og:title" content={title} />
-<meta property="og:description" content={description} />
+<meta property="og:description" content={summary} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={ogImage} />
 <meta property="og:image:width" content="1200" />
@@ -46,5 +61,5 @@ const ogImage = new URL(generated.src, Astro.site).href;
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
-<meta name="twitter:description" content={description} />
+<meta name="twitter:description" content={summary} />
 <meta name="twitter:image" content={ogImage} />

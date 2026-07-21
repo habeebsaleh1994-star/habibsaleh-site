@@ -47,7 +47,7 @@ const projects = Object.entries(projectModules).map(([path, mod]) => {
 
         <div class="grid">
           {projects.map(({ project, slug, cover }) => (
-            <a class="tile" href={`/work/${slug}`}>
+            <a class="tile" href={`/work/${slug}/`}>
               <div class="thumb thumb-image">
                 <Picture
                   src={photo(`${slug}/${cover}`)}

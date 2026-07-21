@@ -65,10 +65,10 @@ const publishedSlugs = new Set(
       <header class="masthead">
         <div class="name">Habib Saleh</div>
         <nav class="nav">
-          <a href="/work">work</a>
-          <a href="/editorial">editorial</a>
-          <a href="/writing">writing</a>
-          <a href="/about">about</a>
+          <a href="/work/">work</a>
+          <a href="/editorial/">editorial</a>
+          <a href="/writing/">writing</a>
+          <a href="/about/">about</a>
         </nav>
       </header>
 
@@ -81,7 +81,7 @@ const publishedSlugs = new Set(
           const published = publishedSlugs.has(project.slug);
           const Tile = published ? "a" : "div";
           return (
-            <Tile class="tile" href={published ? `/work/${project.slug}` : undefined}>
+            <Tile class="tile" href={published ? `/work/${project.slug}/` : undefined}>
               {project.cover ? (
                 <div class="thumb thumb-image">
                   <Picture
@@ -115,12 +115,12 @@ const publishedSlugs = new Set(
       <section class="writing">
         <header class="writing-head">
           <span class="writing-title">Recent writing</span>
-          <a class="writing-all" href="/writing">all writing →</a>
+          <a class="writing-all" href="/writing/">all writing →</a>
         </header>
         <ul class="writing-list">
           {recentWriting.map((piece) => (
             <li>
-              <a href={`/writing/${piece.slug}`}>
+              <a href={`/writing/${piece.slug}/`}>
                 <span class="piece-date">{piece.date}</span>
                 <span class="piece-title">{piece.title}</span>
               </a>

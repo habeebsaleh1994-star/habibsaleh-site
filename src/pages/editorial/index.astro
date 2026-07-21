@@ -44,7 +44,7 @@ const stories = Object.entries(storyModules)
         ) : (
           <div class="editorial-grid">
             {stories.map((story) => (
-              <a class="editorial-tile" href={`/editorial/${story.slug}`}>
+              <a class="editorial-tile" href={`/editorial/${story.slug}/`}>
                 <div class="editorial-thumb">
                   <Picture
                     src={photo(`editorial/${story.slug}/${story.cover}`)}
@@ -59,7 +59,11 @@ const stories = Object.entries(storyModules)
                 </div>
                 <div class="editorial-tile-meta">
                   <span class="editorial-tile-client">
-                    {[story.client, story.year].filter(Boolean).join(" · ")}
+                    {/* Where the brand *is* the story name, showing both would
+                        print the same words twice, one line apart. */}
+                    {[story.client === story.title ? "" : story.client, story.year]
+                      .filter(Boolean)
+                      .join(" · ")}
                   </span>
                   <span class="editorial-tile-title">{story.title}</span>
                 </div>
