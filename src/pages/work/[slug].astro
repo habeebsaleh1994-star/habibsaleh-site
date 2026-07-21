@@ -87,23 +87,36 @@ function pad(n) {
           </div>
         </div>
 
-        {photos.map((entry, index) => (
-          <div class="slide" data-slide={index + 2}>
-            <div class="slide-photo">
-              <Picture
-                src={photo(`${slug}/${entry.file}`)}
-                alt={entry.alt || `${project.title}, ${pad(index + 1)}`}
-                formats={["avif", "webp"]}
-                fallbackFormat="jpeg"
-                widths={[700, 1100, 1600, 2200]}
-                sizes="(max-width: 640px) 100vw, 1100px"
-                loading="lazy"
-                decoding="async"
-              />
+        {photos.map((entry, index) => {
+          const src = photo(`${slug}/${entry.file}`);
+          // The image is height-capped, so its rendered width depends on its
+          // aspect. Passing the ratio lets the figure shrink to exactly the
+          // image's width, so the caption aligns to the photograph's left edge
+          // instead of to the stage — a 189px discrepancy on a landscape frame.
+          const ratio = (src.width / src.height).toFixed(4);
+          return (
+            <div class="slide" data-slide={index + 2}>
+              <figure class="slide-figure" style={`--ratio: ${ratio}`}>
+                <div class="slide-photo">
+                  <Picture
+                    src={src}
+                    alt={entry.alt || `${project.title}, ${pad(index + 1)}`}
+                    formats={["avif", "webp"]}
+                    fallbackFormat="jpeg"
+                    widths={[700, 1100, 1600, 2200]}
+                    sizes="(max-width: 640px) 100vw, 1100px"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <figcaption class="slide-caption-block">
+                  <div class="slide-numeral">{pad(index + 1)} / {pad(photos.length)}</div>
+                  {entry.alt && <p class="slide-caption">{entry.alt}</p>}
+                </figcaption>
+              </figure>
             </div>
-            <div class="slide-numeral">{pad(index + 1)} / {pad(photos.length)}</div>
-          </div>
-        ))}
+          );
+        })}
 
         {hasClosing && (
           <div class="slide" data-slide={photos.length + 2}>

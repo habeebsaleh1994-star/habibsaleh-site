@@ -4,6 +4,12 @@
   flex-direction: column;
   font-family: Georgia, "Times New Roman", serif;
   color: #2a2724;
+
+  /* How tall a photograph may stand. Derived rather than a flat 85vh, because
+     the header, the stage padding, the caption and the control bar all have to
+     fit alongside it — at 85vh the caption ran underneath the sticky nav. The
+     floor keeps it sane on very short windows. */
+  --img-max-h: max(300px, calc(100vh - 340px));
 }
 
 .project-header {
@@ -130,10 +136,23 @@
 
 .slide-photo img {
   max-width: 100%;
-  max-height: 85vh;
+  max-height: var(--img-max-h);
   width: auto;
   height: auto;
   display: inline-block;
+}
+
+/* The figure shrinks to the photograph's own width — min(stage, height-cap x
+   aspect) — so the caption beneath it starts exactly at the image's left edge
+   whatever the frame's orientation. --ratio is set per image at build time. */
+.slide-figure {
+  margin: 0 auto;
+  max-width: min(1100px, calc(var(--img-max-h) * var(--ratio)));
+}
+
+.slide-caption-block {
+  margin-top: 18px;
+  text-align: left;
 }
 
 .slide-numeral {
@@ -142,11 +161,18 @@
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #8a8478;
-  margin-top: 18px;
-  text-align: left;
-  max-width: 1100px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+/* Habib's own caption, written into each file's IPTC metadata in Lightroom.
+   Set narrower than the image: a caption that runs the full 1100px reads as
+   body copy rather than as a plate. */
+.slide-caption {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5a554c;
+  margin: 7px 0 0 0;
+  max-width: 620px;
 }
 
 .slide-credit {
@@ -223,5 +249,5 @@
   .slide-title { font-size: 28px; }
   .slide-quote { font-size: 17px; }
   .slide-prose p { font-size: 16px; }
-  .slide-photo img { max-height: 70vh; }
+  .slide-photo img { max-height: var(--img-max-h); }
 }
