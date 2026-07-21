@@ -1,6 +1,7 @@
 ---
 import { Picture } from "astro:assets";
 import Meta from "../../components/Meta.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
 import "../../styles/global.css";
 import "../../styles/project.css";
 import { photo } from "../../lib/images.js";
@@ -10,17 +11,26 @@ import { photo } from "../../lib/images.js";
 export async function getStaticPaths() {
   const projectModules = import.meta.glob("../../content/work/*/project.json", { eager: true });
 
-  return Object.entries(projectModules).map(([path, mod]) => {
+  const entries = Object.entries(projectModules).map(([path, mod]) => {
     const segments = path.split("/");
-    const slug = segments[segments.length - 2];
+    return { slug: segments[segments.length - 2], project: mod.default || mod };
+  });
+
+  return entries.map(({ slug, project }, i) => {
+    // Wrap to the first project so the last one is not a dead end either.
+    const sibling = entries.length > 1 ? entries[(i + 1) % entries.length] : null;
     return {
       params: { slug },
-      props: { project: mod.default || mod, slug },
+      props: {
+        project,
+        slug,
+        next: sibling ? { slug: sibling.slug, title: sibling.project.title } : null,
+      },
     };
   });
 }
 
-const { project, slug } = Astro.props;
+const { project, slug, next } = Astro.props;
 
 // Not every project carries every section — The Season of the Mulberry has no
 // epigraph, closing, or credit, so each is rendered only when present.
@@ -35,7 +45,9 @@ const photos = project.photos.map((entry) =>
   typeof entry === "string" ? { file: entry, alt: null } : entry,
 );
 
-const totalSlides = 1 + photos.length + (hasClosing ? 1 : 0) + (hasCredit ? 1 : 0);
+// The +1 is the endpaper. This feeds the server-rendered #total only; the
+// client script derives everything else from slides.length.
+const totalSlides = 1 + photos.length + (hasClosing ? 1 : 0) + (hasCredit ? 1 : 0) + 1;
 
 function pad(n) {
   return n < 10 ? `0${n}` : `${n}`;
@@ -61,10 +73,7 @@ function pad(n) {
   <body>
     <div class="project-page">
 
-      <header class="project-header">
-        <a href="/">← back</a>
-        <span class="signature">Habib Saleh</span>
-      </header>
+      <SiteHeader />
 
       <div class="project-stage" id="stage">
 
@@ -136,9 +145,32 @@ function pad(n) {
           </div>
         )}
 
+        {/* The endpaper. display:none like every other slide until someone
+            presses next past the end, so it cannot interrupt anyone and cannot
+            be reached by accident. Three things: what ended, what is next, and
+            how to reach him — at the one moment a curator is most willing to
+            take the address. Before this, the terminal state of the page was a
+            greyed-out "next" and exactly one internal link on the document. */}
+        <div class="slide slide-end" data-slide={totalSlides}>
+          <div class="slide-text">
+            <div class="slide-meta">{project.title} · {project.year}</div>
+
+            {next && (
+              <a class="meta slide-end-next" href={`/work/${next.slug}/`}>
+                <span class="meta-type">Next project</span>
+                <span class="meta-title">{next.title} →</span>
+              </a>
+            )}
+
+            <div class="slide-end-contact">
+              <a href="mailto:contact@habibsaleh.com">contact@habibsaleh.com</a>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-      <nav class="project-nav">
+      <nav class="project-nav" aria-label="Slides">
         <button class="nav-button" id="prev" disabled>← previous</button>
         <span class="nav-counter"><span id="current">1</span> / <span id="total">{totalSlides}</span></span>
         <button class="nav-button" id="next">next →</button>

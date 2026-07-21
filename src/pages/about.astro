@@ -3,6 +3,7 @@ import { Picture } from "astro:assets";
 import "../styles/global.css";
 import "../styles/about.css";
 import Meta from "../components/Meta.astro";
+import SiteHeader from "../components/SiteHeader.astro";
 import { photo } from "../lib/images.js";
 ---
 
@@ -21,10 +22,7 @@ import { photo } from "../lib/images.js";
   <body>
     <div class="about-page">
 
-      <header class="about-header">
-        <a href="/">← back</a>
-        <span class="signature">Habib Saleh</span>
-      </header>
+      <SiteHeader here="about" />
 
       <main class="about-body">
 

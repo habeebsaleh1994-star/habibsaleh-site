@@ -6,39 +6,6 @@
   color: #2a2724;
 }
 
-.writing-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 32px 56px 28px;
-  border-bottom: 0.5px solid #d4cfc3;
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  max-width: 920px;
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.writing-header a {
-  color: #8a8478;
-}
-
-.writing-header a:hover {
-  color: #2a2724;
-}
-
-.writing-header .signature {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-size: 14px;
-  color: #5a554c;
-  letter-spacing: normal;
-  text-transform: none;
-}
-
 /* Index page — list of pieces */
 .writing-index {
   max-width: 720px;
@@ -137,26 +104,7 @@
   margin-bottom: 0;
 }
 
-.piece-footer {
-  margin-top: 80px;
-  padding-top: 24px;
-  border-top: 0.5px solid #d4cfc3;
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-}
-
-.piece-footer a {
-  color: #8a8478;
-}
-
-.piece-footer a:hover {
-  color: #2a2724;
-}
-
 @media (max-width: 640px) {
-  .writing-header { padding: 20px 24px 20px; }
   .writing-index { padding: 56px 24px; }
   .writing-list-page .piece-title { font-size: 21px; }
   .piece { padding: 56px 24px 80px; }

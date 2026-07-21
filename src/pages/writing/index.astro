@@ -1,5 +1,6 @@
 ---
 import Meta from "../../components/Meta.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
 import "../../styles/global.css";
 import "../../styles/writing.css";
 
@@ -24,10 +25,7 @@ const pieces = Object.values(pieceModules)
   <body>
     <div class="writing-page">
 
-      <header class="writing-header">
-        <a href="/">← back</a>
-        <span class="signature">Habib Saleh</span>
-      </header>
+      <SiteHeader here="writing" />
 
       <main class="writing-index">
         <p class="writing-index-title">
@@ -44,6 +42,11 @@ const pieces = Object.values(pieceModules)
             </li>
           ))}
         </ul>
+      
+        <footer class="footer">
+          <span>© Habib Saleh</span>
+          <a class="footer-mail" href="mailto:contact@habibsaleh.com">contact@habibsaleh.com</a>
+        </footer>
       </main>
 
     </div>

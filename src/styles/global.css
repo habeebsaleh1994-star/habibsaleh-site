@@ -66,6 +66,72 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 .nav a:hover { color: #2a2724; }
 
+/* ── The running head ───────────────────────────────────────────────────
+   Every page below the home page now carries the same two cells as the
+   masthead — the name, then the four sections — one step down in scale. This
+   replaces .about-header, .work-header, .editorial-header, .writing-header and
+   .project-header: five copies of the same twelve declarations, differing only
+   in max-width and in which single link sat on the left. A substitution, not an
+   addition — the row already existed, at this exact type, with four characters
+   in one cell. */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 32px;
+  max-width: 920px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 32px 56px 28px;
+  border-bottom: 0.5px solid #d4cfc3;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Each family keeps the measure its own header already had. 920px is the
+   default because it is the majority, and because a page type that forgets to
+   declare one lands on a sane column rather than silently full-bleed. */
+.work-page .site-header      { max-width: 1032px; }
+.editorial-page .site-header { max-width: 1160px; }
+.project-page .site-header   { max-width: none;   }
+
+/* The name, in the italic serif the five headers already set it in — but a link
+   now. It was inert text on every interior page of the site. */
+.site-header .signature {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #5a554c;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+}
+
+.site-header .signature:hover { color: #2a2724; }
+
+/* No font declarations: the four words inherit the header's own 11px/0.18em, so
+   the nav introduces no type this row was not already set in. The colour is
+   .nav above, verbatim. That is also a contrast repair — the single link these
+   headers used to carry was #8a8478 at 3.56:1, under the 4.5:1 floor; #5a554c
+   is 7.08:1. */
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;      /* safety valve below ~340px; never fires above it */
+  gap: 10px 24px;
+  color: #5a554c;
+}
+
+.site-nav a:hover { color: #2a2724; }
+
+/* On a section's own page the word is not a link — it would point at the page
+   you are reading — so it steps back into the tone this site sets every inert
+   label in (.meta-type, .about-label, .slide-numeral). A leaf page marks nothing
+   at all. */
+.site-nav [aria-current] { color: #8a8478; }
+
 .intro {
   padding: 64px 0 56px;
   max-width: 480px;
@@ -212,7 +278,16 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 .notfound-note a:hover { border-bottom-color: #2a2724; }
 
+/* Two cells, never three: on the home page and the section indexes the
+   copyright, on an essay or a story the way back to its index — and, on all of
+   them, the address. This is the block .piece-footer and .editorial-story-foot
+   already were, so both absorb into it. Three footers become one. */
 .footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px 24px;
   margin-top: 96px;
   padding-top: 24px;
   border-top: 0.5px solid #d4cfc3;
@@ -223,9 +298,56 @@ ul { list-style: none; padding: 0; margin: 0; }
   color: #8a8478;
 }
 
+/* The same negative-margin trick .nav-button uses: a 44px hit area without
+   moving the type a pixel or growing the row. */
+.footer a {
+  display: inline-block;
+  padding: 14px 0;
+  margin: -14px 0;
+}
+
+.footer a:hover { color: #2a2724; }
+
+/* An address is not a label. CONTACT@HABIBSALEH.COM at 0.12em shouts, and this
+   site never shouts — so it takes the other quiet voice, the italic Georgia the
+   header signs with, and the page ends in the hand it began in. #5a554c is
+   7.08:1: this is the one link that has to be legible. */
+.footer-mail {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #5a554c;
+  white-space: nowrap;
+  border-bottom: 0.5px solid #d4cfc3;
+  padding-bottom: 2px;
+  transition: border-color 200ms ease, color 200ms ease;
+}
+
+.footer-mail:hover {
+  color: #2a2724;
+  border-bottom-color: #2a2724;
+}
+
 @media (max-width: 640px) {
   .page { padding: 32px 24px; }
   .masthead { flex-direction: column; gap: 14px; align-items: flex-start; }
+
+  /* The same move .masthead makes here, for the same reason. Measured at
+     11px/0.18em the four words are 222px of glyph; with the signature and a gap
+     they need 389px, and a 375px phone offers 327px. Stacked, the nav has the
+     row to itself — 282px at a 20px gap. */
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 20px 24px 16px;
+  }
+
+  .site-header .signature { font-size: 13px; }
+
+  .site-nav { gap: 10px 20px; }
   .grid { grid-template-columns: 1fr; gap: 32px; }
   .intro { padding: 48px 0 40px; }
   .lede { font-size: 19px; }

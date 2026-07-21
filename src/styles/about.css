@@ -6,39 +6,6 @@
   color: #2a2724;
 }
 
-.about-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 32px 56px 28px;
-  border-bottom: 0.5px solid #d4cfc3;
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  max-width: 920px;
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.about-header a {
-  color: #8a8478;
-}
-
-.about-header a:hover {
-  color: #2a2724;
-}
-
-.about-header .signature {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-size: 14px;
-  color: #5a554c;
-  letter-spacing: normal;
-  text-transform: none;
-}
-
 .about-body {
   max-width: 540px;
   margin: 0 auto;
@@ -174,7 +141,6 @@
 }
 
 @media (max-width: 640px) {
-  .about-header { padding: 20px 24px 20px; }
   .about-body { padding: 56px 24px 80px; }
   .about-name { font-size: 26px; }
   .about-portrait img { width: 200px; }

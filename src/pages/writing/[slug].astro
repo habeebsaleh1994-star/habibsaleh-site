@@ -1,5 +1,6 @@
 ---
 import Meta from "../../components/Meta.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
 import "../../styles/global.css";
 import "../../styles/writing.css";
 
@@ -31,10 +32,7 @@ const { piece } = Astro.props;
   <body>
     <div class="writing-page">
 
-      <header class="writing-header">
-        <a href="/writing/">← writing</a>
-        <span class="signature">Habib Saleh</span>
-      </header>
+      <SiteHeader />
 
       <article class="piece">
         <header class="piece-header">
@@ -46,9 +44,10 @@ const { piece } = Astro.props;
           {piece.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
         </div>
 
-        <footer class="piece-footer">
-          <a href="/writing/">← all writing</a>
-        </footer>
+        <footer class="footer">
+        <a href="/writing/">← all writing</a>
+        <a class="footer-mail" href="mailto:contact@habibsaleh.com">contact@habibsaleh.com</a>
+      </footer>
       </article>
 
     </div>

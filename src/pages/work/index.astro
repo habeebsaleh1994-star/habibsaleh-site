@@ -3,6 +3,7 @@ import { Picture } from "astro:assets";
 import "../../styles/global.css";
 import "../../styles/work.css";
 import Meta from "../../components/Meta.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
 import { photo } from "../../lib/images.js";
 
 // Same glob as [slug].astro, so this index can only ever list a project that
@@ -35,10 +36,7 @@ const projects = Object.entries(projectModules).map(([path, mod]) => {
   <body>
     <div class="work-page">
 
-      <header class="work-header">
-        <a href="/">← back</a>
-        <span class="signature">Habib Saleh</span>
-      </header>
+      <SiteHeader here="work" />
 
       <main class="work-index">
         <p class="work-index-title">
@@ -69,6 +67,11 @@ const projects = Object.entries(projectModules).map(([path, mod]) => {
             </a>
           ))}
         </div>
+      
+        <footer class="footer">
+          <span>© Habib Saleh</span>
+          <a class="footer-mail" href="mailto:contact@habibsaleh.com">contact@habibsaleh.com</a>
+        </footer>
       </main>
 
     </div>

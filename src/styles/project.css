@@ -12,35 +12,6 @@
   --img-max-h: max(300px, calc(100vh - 340px));
 }
 
-.project-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding: 32px 56px 28px;
-  border-bottom: 0.5px solid #d4cfc3;
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.project-header a {
-  color: #8a8478;
-}
-
-.project-header a:hover {
-  color: #2a2724;
-}
-
-.project-header .signature {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-size: 14px;
-  color: #5a554c;
-  letter-spacing: normal;
-  text-transform: none;
-}
-
 .project-stage {
   flex: 1;
   display: flex;
@@ -242,8 +213,43 @@
   text-transform: none;
 }
 
+/* ── The endpaper ───────────────────────────────────────────────────────
+   This page has no bottom to scroll to — a flex column with a stage in the
+   middle and a sticky bar under it — so the closing block is sequenced rather
+   than positioned: it is the last slide, display:none like every other slide
+   until the viewer presses next past the credit. Until it is reached it has no
+   layout box and costs nothing. The sequence opened with the project's name and
+   year and it closes with them. Almost all of it is borrowed: .slide-meta is the
+   line slide 1 opens with, and the next-project link is .meta / .meta-type /
+   .meta-title from the home grid — a project tile with no thumbnail. */
+
+.slide-end .slide-meta { margin-bottom: 44px; }
+
+.slide-end-next { margin-bottom: 48px; }
+
+.slide-end-next:hover .meta-title { color: #5a554c; }
+
+/* The hairline is the one .slide-credit already draws, at the same 24px. */
+.slide-end-contact {
+  padding-top: 24px;
+  border-top: 0.5px solid #d4cfc3;
+  font-family: Georgia, serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #2a2724;
+}
+
+.slide-end-contact a {
+  border-bottom: 0.5px solid #d4cfc3;
+  padding-bottom: 1px;
+  transition: border-color 200ms ease;
+}
+
+.slide-end-contact a:hover { border-bottom-color: #2a2724; }
+
 @media (max-width: 640px) {
-  .project-header { padding: 20px 24px 20px; }
+  .slide-end .slide-meta { margin-bottom: 36px; }
+  .slide-end-next { margin-bottom: 40px; }
   .project-stage { padding: 32px 24px; min-height: 500px; }
   .project-nav { padding: 16px 24px 24px; }
   .slide-title { font-size: 28px; }

@@ -3,6 +3,7 @@ import { Picture } from "astro:assets";
 import "../../styles/global.css";
 import "../../styles/editorial.css";
 import Meta from "../../components/Meta.astro";
+import SiteHeader from "../../components/SiteHeader.astro";
 import { photo } from "../../lib/images.js";
 
 // Same glob pattern as the writing index. Files prefixed with "_" are templates,
@@ -29,10 +30,7 @@ const stories = Object.entries(storyModules)
   <body>
     <div class="editorial-page">
 
-      <header class="editorial-header">
-        <a href="/">← back</a>
-        <span class="signature">Habib Saleh</span>
-      </header>
+      <SiteHeader here="editorial" />
 
       <main class="editorial-index">
         <p class="editorial-index-title">
@@ -71,6 +69,11 @@ const stories = Object.entries(storyModules)
             ))}
           </div>
         )}
+
+        <footer class="footer">
+          <span>© Habib Saleh</span>
+          <a class="footer-mail" href="mailto:contact@habibsaleh.com">contact@habibsaleh.com</a>
+        </footer>
       </main>
 
     </div>
