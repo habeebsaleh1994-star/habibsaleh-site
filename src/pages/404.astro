@@ -5,10 +5,14 @@ import "../styles/global.css";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Page not found — Habib Saleh</title>
     <meta name="robots" content="noindex" />
+    {/* This page deliberately does not use Meta.astro — it should emit no
+        canonical and no share preview — so it carries the icons itself. */}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
   </head>
   <body>
     <main class="page">

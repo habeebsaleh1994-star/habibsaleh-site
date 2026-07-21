@@ -48,6 +48,14 @@ const ogImage = new URL(generated.src, Astro.site).href;
 
 <title>{title}</title>
 <meta name="description" content={summary} />
+
+{/* Icons live here rather than in nine hand-copied <head> blocks — the same
+    duplication that kept og: tags off the site for so long. The .ico is only
+    for browsers that ask for it unprompted; the SVG is what everything modern
+    uses, and it inverts itself in a dark tab bar. */}
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="32x32" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 <link rel="canonical" href={canonical} />
 
 <meta property="og:type" content="website" />
