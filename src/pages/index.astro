@@ -1,5 +1,7 @@
 ---
+import { Picture } from "astro:assets";
 import "../styles/global.css";
+import { photo } from "../lib/images.js";
 
 const featuredProjects = [
   {
@@ -7,7 +9,7 @@ const featuredProjects = [
     type: "Documentary",
     year: "2023 — Ongoing",
     slug: "colored-air",
-    cover: "/photos/colored-air/HS-ColoredAir-2025-01.JPG",
+    cover: "colored-air/HS-ColoredAir-2025-01.JPG",
   },
   {
     title: "Before It Disappears",
@@ -21,7 +23,7 @@ const featuredProjects = [
     type: "Documentary",
     year: "2025",
     slug: "season-of-the-mulberry",
-    cover: "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-01.JPG",
+    cover: "season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-01.JPG",
   },
   {
     title: "When Roses Bloom",
@@ -36,6 +38,14 @@ const recentWriting = [
   { title: "More Sweet Than Bitter", date: "Oct 2025", slug: "more-sweet-than-bitter" },
   { title: "The Unfinished God", date: "Sep 2025", slug: "the-unfinished-god" },
 ];
+
+// Which projects actually have a page? work/[slug].astro builds its routes from
+// this same glob, so a tile can never link to a route that was not generated —
+// and a forthcoming project becomes a link the moment its content dir appears.
+const workModules = import.meta.glob("../content/work/*/project.json", { eager: true });
+const publishedSlugs = new Set(
+  Object.keys(workModules).map((path) => path.split("/").slice(-2, -1)[0]),
+);
 ---
 <html lang="en">
   <head>
@@ -51,8 +61,11 @@ const recentWriting = [
         <div class="name">Habib Saleh</div>
         <nav class="nav">
           <a href="/work">work</a>
+          {/* Editorial is built and live at /editorial, but stays out of the nav
+              until there is at least one story — an empty section advertised to a
+              client reads worse than no section. Uncomment to publish it. */}
+          {/* <a href="/editorial">editorial</a> */}
           <a href="/writing">writing</a>
-          <a href="/films">films</a>
           <a href="/about">about</a>
         </nav>
       </header>
@@ -62,21 +75,37 @@ const recentWriting = [
       </section>
 
       <section class="grid">
-        {featuredProjects.map((project) => (
-          <a class="tile" href={`/work/${project.slug}`}>
-            {project.cover ? (
-              <div class="thumb thumb-image">
-                <img src={project.cover} alt={project.title} />
+        {featuredProjects.map((project) => {
+          const published = publishedSlugs.has(project.slug);
+          const Tile = published ? "a" : "div";
+          return (
+            <Tile class="tile" href={published ? `/work/${project.slug}` : undefined}>
+              {project.cover ? (
+                <div class="thumb thumb-image">
+                  <Picture
+                    src={photo(project.cover)}
+                    alt={project.title}
+                    formats={["avif", "webp"]}
+                    fallbackFormat="jpeg"
+                    widths={[450, 700, 900, 1200]}
+                    sizes="(max-width: 640px) 100vw, 446px"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              ) : (
+                <div class="thumb" style={`background: ${project.color};`}></div>
+              )}
+              <div class="meta">
+                <span class="meta-type">
+                  {project.type}
+                  {published ? (project.year ? ` · ${project.year}` : "") : " · Forthcoming"}
+                </span>
+                <span class="meta-title">{project.title}</span>
               </div>
-            ) : (
-              <div class="thumb" style={`background: ${project.color};`}></div>
-            )}
-            <div class="meta">
-              <span class="meta-type">{project.type}{project.year ? ` · ${project.year}` : ""}</span>
-              <span class="meta-title">{project.title}</span>
-            </div>
-          </a>
-        ))}
+            </Tile>
+          );
+        })}
       </section>
 
       <section class="writing">
