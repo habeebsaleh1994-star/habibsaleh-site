@@ -121,6 +121,13 @@
   text-align: center;
 }
 
+/* <Picture> wraps the img in a <picture>. display:contents removes that wrapper
+   from layout entirely, so every rule below still applies to the img exactly as
+   it did when the markup was a bare <img>. */
+.slide-photo picture {
+  display: contents;
+}
+
 .slide-photo img {
   max-width: 100%;
   max-height: 85vh;

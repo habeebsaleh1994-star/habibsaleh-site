@@ -88,6 +88,12 @@ ul { list-style: none; padding: 0; margin: 0; }
   background: #ece9e1;
 }
 
+/* <Picture> wraps the img in a <picture>; display:contents takes the wrapper out
+   of layout so the img still sizes against .thumb-image. */
+.thumb-image picture {
+  display: contents;
+}
+
 .thumb-image img {
   width: 100%;
   height: 100%;
@@ -166,6 +172,23 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-size: 16px;
   color: #2a2724;
 }
+
+.notfound-note {
+  margin: 20px 0 0 0;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #8a8478;
+}
+
+.notfound-note a {
+  border-bottom: 0.5px solid #d4cfc3;
+  padding-bottom: 2px;
+  transition: border-color 200ms ease;
+}
+
+.notfound-note a:hover { border-bottom-color: #2a2724; }
 
 .footer {
   margin-top: 96px;

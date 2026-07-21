@@ -22,3 +22,9 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# original camera files, kept out of the build (photos live in src/assets/photos)
+originals/
+
+# local editor / agent config
+.claude/

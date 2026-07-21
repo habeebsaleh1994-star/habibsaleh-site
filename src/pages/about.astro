@@ -1,6 +1,8 @@
 ---
+import { Picture } from "astro:assets";
 import "../styles/global.css";
 import "../styles/about.css";
+import { photo } from "../lib/images.js";
 ---
 
 <html lang="en">
@@ -25,7 +27,16 @@ import "../styles/about.css";
           <div class="about-role">Visual artist and writer · Joun, Lebanon</div>
 
           <div class="about-portrait">
-            <img src="/photos/portrait/habib.jpeg" alt="Habib Saleh" />
+            <Picture
+              src={photo("portrait/habib.jpeg")}
+              alt="Habib Saleh"
+              formats={["avif", "webp"]}
+              fallbackFormat="jpeg"
+              widths={[240, 480]}
+              sizes="240px"
+              loading="lazy"
+              decoding="async"
+            />
             <div class="about-portrait-credit">
               Photographed by <a href="https://instagram.com/madsubject" target="_blank" rel="noopener">Maddalena Pesaresi</a>
             </div>

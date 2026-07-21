@@ -55,6 +55,8 @@
   margin-top: 32px;
 }
 
+.about-portrait picture { display: contents; }
+
 .about-portrait img {
   width: 240px;
   height: auto;
