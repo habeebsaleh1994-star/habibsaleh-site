@@ -1,17 +1,17 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- A serif H, drawn as paths rather than <text> so it renders identically
-       whether or not Georgia is installed on the reader's machine. Ink on paper,
-       inverted in a dark tab bar so it reads either way. -->
-  <!-- Scaled about the centre so the letter fills the tile: at 16px a mark that
-       only covers half the canvas reads as a speck. -->
-  <g class="mark" transform="translate(64 64) scale(1.5) translate(-64 -64)">
-    <rect x="39" y="32" width="13" height="64" />
-    <rect x="76" y="32" width="13" height="64" />
-    <rect x="52" y="58" width="24" height="12" />
-    <rect x="31" y="32" width="29" height="7" />
-    <rect x="68" y="32" width="29" height="7" />
-    <rect x="31" y="89" width="29" height="7" />
-    <rect x="68" y="89" width="29" height="7" />
+  <!-- A frame in 3:2 — a photograph reduced to its edge, and the one mark that
+       says what the site is rather than only that it is spare.
+
+       Drawn as four bars rather than a stroked rect: a stroke is centred on the
+       path, so at 16px it half-rounds inward and half outward and the corners
+       thicken. Explicit bars land on whole pixels and keep the corners square.
+
+       Inverted in a dark tab bar so it reads either way. -->
+  <g class="mark">
+    <rect x="10" y="26" width="108" height="12" />
+    <rect x="10" y="90" width="108" height="12" />
+    <rect x="10" y="26" width="12" height="76" />
+    <rect x="106" y="26" width="12" height="76" />
   </g>
   <style>
     .mark rect { fill: #2a2724; }
