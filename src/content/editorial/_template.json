@@ -1,0 +1,30 @@
+{
+  "_readme": [
+    "Copy this file to <slug>.json to publish a story. Files starting with _ are ignored.",
+    "Put the images in src/assets/photos/editorial/<slug>/ — the slug must match.",
+    "(src/assets, not public/ — that's what lets Astro resize them and emit avif/webp.)",
+    "photos: a string is a full-width plate; an array of two is a side-by-side diptych.",
+    "Any photo may be written as { \"file\": \"x.jpg\", \"alt\": \"what is in the frame\" } instead",
+    "of a bare filename. Always describe the image — alt text is what a blind visitor gets.",
+    "dateSort: any sortable string (YYYY-MM). Controls order on the index, newest first.",
+    "credits: role/name pairs. Add an optional url to link a collaborator."
+  ],
+  "title": "Story Title",
+  "slug": "story-title",
+  "client": "Publication or Brand",
+  "year": "2025",
+  "dateSort": "2025-06",
+  "note": "One optional line of context. Delete this key if the images speak for themselves.",
+  "cover": "01.jpg",
+  "photos": [
+    { "file": "01.jpg", "alt": "Describe what is in the frame." },
+    ["02.jpg", "03.jpg"],
+    "04.jpg"
+  ],
+  "credits": [
+    { "role": "Photography", "name": "Habib Saleh" },
+    { "role": "Styling", "name": "" },
+    { "role": "Hair & Makeup", "name": "" },
+    { "role": "Model", "name": "", "url": "" }
+  ]
+}

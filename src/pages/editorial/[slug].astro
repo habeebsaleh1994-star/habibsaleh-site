@@ -1,0 +1,115 @@
+---
+import { Picture } from "astro:assets";
+import "../../styles/global.css";
+import "../../styles/editorial.css";
+import { photo } from "../../lib/images.js";
+
+// One page per story at build time.
+export async function getStaticPaths() {
+  const storyModules = import.meta.glob("../../content/editorial/*.json", { eager: true });
+  const stories = Object.entries(storyModules)
+    .filter(([path]) => !path.split("/").pop().startsWith("_"))
+    .map(([, m]) => m.default || m);
+
+  return stories.map((story) => ({
+    params: { slug: story.slug },
+    props: { story },
+  }));
+}
+
+const { story } = Astro.props;
+
+// A photos entry is a full-width plate or a two-item array (a diptych), and each
+// item is either "file.jpg" or { file, alt }. Normalise to a flat {file, alt}
+// shape *after* the Array.isArray test — an object entry is not an array, so
+// testing it first would be correct, but normalising first would wrap a diptych's
+// two items into one plate. Order matters here.
+const plates = story.photos.map((entry) =>
+  (Array.isArray(entry) ? entry : [entry]).map((item) =>
+    typeof item === "string" ? { file: item, alt: null } : item,
+  ),
+);
+
+// A diptych half renders at 434px, a full plate at 888px — so they get
+// different candidate widths rather than one compromise set.
+const PAIR = {
+  widths: [340, 440, 700, 880],
+  sizes: "(max-width: 640px) 100vw, 434px",
+};
+const FULL = {
+  widths: [600, 900, 1400, 1800],
+  sizes: "(max-width: 640px) 100vw, 888px",
+};
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{story.title} — Habib Saleh</title>
+    <meta name="description" content={`${story.title}${story.client ? ` for ${story.client}` : ""} — photography by Habib Saleh.`} />
+  </head>
+  <body>
+    <div class="editorial-page">
+
+      <header class="editorial-header">
+        <a href="/editorial">← editorial</a>
+        <span class="signature">Habib Saleh</span>
+      </header>
+
+      <main class="editorial-story">
+
+        <div class="editorial-story-head">
+          <div class="editorial-story-client">
+            {story.client}{story.year ? ` · ${story.year}` : ""}
+          </div>
+          <h1 class="editorial-story-title">{story.title}</h1>
+          {story.note && <p class="editorial-story-note">{story.note}</p>}
+        </div>
+
+        {plates.map((plate) => {
+          const isPair = plate.length === 2;
+          const spec = isPair ? PAIR : FULL;
+          return (
+            <div class={isPair ? "editorial-plate editorial-plate-pair" : "editorial-plate"}>
+              {plate.map((item) => (
+                <Picture
+                  src={photo(`editorial/${story.slug}/${item.file}`)}
+                  alt={item.alt || story.title}
+                  formats={["avif", "webp"]}
+                  fallbackFormat="jpeg"
+                  widths={spec.widths}
+                  sizes={spec.sizes}
+                  loading="lazy"
+                  decoding="async"
+                />
+              ))}
+            </div>
+          );
+        })}
+
+        {story.credits && story.credits.length > 0 && (
+          <div class="editorial-credits">
+            {story.credits.map((credit) => (
+              <div class="editorial-credit-row">
+                <span class="editorial-credit-role">{credit.role}</span>
+                <span class="editorial-credit-name">
+                  {credit.url
+                    ? <a href={credit.url} target="_blank" rel="noopener">{credit.name}</a>
+                    : credit.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
+
+        <div class="editorial-story-foot">
+          <a href="/editorial">← all editorial</a>
+        </div>
+
+      </main>
+
+    </div>
+  </body>
+</html>
