@@ -1,0 +1,69 @@
+/* Work index — the documentary projects.
+   Deliberately reuses .grid / .tile / .thumb from global.css so this page and the
+   home page's featured grid stay one thing, not two that drift. */
+
+.work-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Georgia, "Times New Roman", serif;
+  color: #2a2724;
+}
+
+.work-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 32px 56px 28px;
+  border-bottom: 0.5px solid #d4cfc3;
+  font-family: -apple-system, "Helvetica Neue", sans-serif;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  max-width: 1032px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.work-header a { color: #8a8478; }
+.work-header a:hover { color: #2a2724; }
+
+.work-header .signature {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 14px;
+  color: #5a554c;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.work-index {
+  max-width: 1032px;
+  margin: 0 auto;
+  padding: 72px 56px 120px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.work-index-title {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.55;
+  color: #3a352e;
+  margin: 0 0 56px 0;
+  max-width: 460px;
+}
+
+/* The home page's .grid has a 24px top margin meant for sitting under the lede;
+   here the intro line already provides that space. */
+.work-index .grid {
+  margin-top: 0;
+}
+
+@media (max-width: 640px) {
+  .work-header { padding: 20px 24px; }
+  .work-index { padding: 48px 24px 80px; }
+  .work-index-title { font-size: 18px; margin-bottom: 40px; }
+}

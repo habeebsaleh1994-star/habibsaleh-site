@@ -1,0 +1,161 @@
+---
+import { Picture } from "astro:assets";
+import "../../styles/global.css";
+import "../../styles/project.css";
+import { photo } from "../../lib/images.js";
+
+// One page per project. Slug comes from the content directory name, so
+// src/content/work/colored-air/project.json becomes /work/colored-air.
+export async function getStaticPaths() {
+  const projectModules = import.meta.glob("../../content/work/*/project.json", { eager: true });
+
+  return Object.entries(projectModules).map(([path, mod]) => {
+    const segments = path.split("/");
+    const slug = segments[segments.length - 2];
+    return {
+      params: { slug },
+      props: { project: mod.default || mod, slug },
+    };
+  });
+}
+
+const { project, slug } = Astro.props;
+
+// Not every project carries every section — The Season of the Mulberry has no
+// epigraph, closing, or credit, so each is rendered only when present.
+const hasEpigraph = Boolean(project.epigraph);
+const hasClosing = Array.isArray(project.closing) && project.closing.length > 0;
+const hasCredit = Boolean(project.credit);
+
+// A photos entry is either "file.JPG" or { file, alt }. The alt text is the
+// caption Habib wrote in Lightroom, carried in each file's IPTC metadata.
+const photos = project.photos.map((entry) =>
+  typeof entry === "string" ? { file: entry, alt: null } : entry,
+);
+
+const totalSlides = 1 + photos.length + (hasClosing ? 1 : 0) + (hasCredit ? 1 : 0);
+
+function pad(n) {
+  return n < 10 ? `0${n}` : `${n}`;
+}
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{project.title} — Habib Saleh</title>
+  </head>
+  <body>
+    <div class="project-page">
+
+      <header class="project-header">
+        <a href="/">← back</a>
+        <span class="signature">Habib Saleh</span>
+      </header>
+
+      <div class="project-stage" id="stage">
+
+        <div class="slide active" data-slide="1">
+          <div class="slide-text">
+            <div class="slide-meta">{project.type} · {project.year}</div>
+            <h1 class="slide-title">{project.title}</h1>
+            {hasEpigraph && (
+              <>
+                <p class="slide-quote">{project.epigraph.text}</p>
+                <div class="slide-quote-attr">— {project.epigraph.attribution}</div>
+                <p class="slide-quote-note">{project.epigraph.note}</p>
+              </>
+            )}
+            <div class="slide-prose">
+              {project.opening.map((paragraph) => <p>{paragraph}</p>)}
+            </div>
+          </div>
+        </div>
+
+        {photos.map((entry, index) => (
+          <div class="slide" data-slide={index + 2}>
+            <div class="slide-photo">
+              <Picture
+                src={photo(`${slug}/${entry.file}`)}
+                alt={entry.alt || `${project.title}, ${pad(index + 1)}`}
+                formats={["avif", "webp"]}
+                fallbackFormat="jpeg"
+                widths={[700, 1100, 1600, 2200]}
+                sizes="(max-width: 640px) 100vw, 1100px"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="slide-numeral">{pad(index + 1)} / {pad(photos.length)}</div>
+          </div>
+        ))}
+
+        {hasClosing && (
+          <div class="slide" data-slide={photos.length + 2}>
+            <div class="slide-text">
+              <div class="slide-prose">
+                {project.closing.map((paragraph) => <p>{paragraph}</p>)}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {hasCredit && (
+          <div class="slide" data-slide={photos.length + (hasClosing ? 3 : 2)}>
+            <div class="slide-text">
+              <p class="slide-credit">{project.credit}</p>
+            </div>
+          </div>
+        )}
+
+      </div>
+
+      <nav class="project-nav">
+        <button class="nav-button" id="prev" disabled>← previous</button>
+        <span class="nav-counter"><span id="current">1</span> / <span id="total">{totalSlides}</span></span>
+        <button class="nav-button" id="next">next →</button>
+      </nav>
+
+    </div>
+
+    <script>
+      const slides = document.querySelectorAll('.slide');
+      const total = slides.length;
+      const prevBtn = document.getElementById('prev');
+      const nextBtn = document.getElementById('next');
+      const counter = document.getElementById('current');
+      let current = 1;
+
+      // Slides are display:none until active, so their lazy images have no
+      // layout box and never download — that's what keeps the page light.
+      //
+      // Deliberately no preloading of the neighbouring slides: forcing a hidden
+      // image to load (loading="eager") makes the browser resolve srcset with a
+      // zero-width box, so it picks the *smallest* candidate and that choice is
+      // sticky. Letting each image load at the moment its slide becomes visible
+      // costs a short beat but guarantees the full-resolution candidate.
+      function show(n) {
+        slides.forEach((s, i) => {
+          s.classList.toggle('active', i + 1 === n);
+        });
+        counter.textContent = n;
+        prevBtn.disabled = n === 1;
+        nextBtn.disabled = n === total;
+      }
+
+      prevBtn.addEventListener('click', () => {
+        if (current > 1) { current--; show(current); }
+      });
+      nextBtn.addEventListener('click', () => {
+        if (current < total) { current++; show(current); }
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' && current < total) { current++; show(current); }
+        if (e.key === 'ArrowLeft' && current > 1) { current--; show(current); }
+      });
+    </script>
+
+  </body>
+</html>
