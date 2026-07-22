@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   font-family: Georgia, "Times New Roman", serif;
-  color: #2a2724;
+  color: var(--ink);
 
   /* How tall a photograph may stand. Derived rather than a flat 85vh, because
      the header, the stage padding, the caption and the control bar all have to
@@ -43,7 +43,7 @@
   font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #8a8478;
+  color: var(--muted);
   margin-bottom: 18px;
 }
 
@@ -60,7 +60,7 @@
   font-size: 18px;
   line-height: 1.7;
   font-style: italic;
-  color: #3a352e;
+  color: var(--prose);
   margin: 0 0 12px 0;
 }
 
@@ -69,7 +69,7 @@
   font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #a89e8a;
+  color: var(--faint);
   margin-bottom: 28px;
 }
 
@@ -78,7 +78,7 @@
   font-style: italic;
   font-size: 14px;
   line-height: 1.6;
-  color: #6a6358;
+  color: var(--note);
   margin-bottom: 36px;
 }
 
@@ -86,7 +86,7 @@
   font-family: Georgia, serif;
   font-size: 17px;
   line-height: 1.8;
-  color: #3a352e;
+  color: var(--prose);
   margin: 0 0 20px 0;
 }
 
@@ -131,7 +131,7 @@
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #8a8478;
+  color: var(--muted);
 }
 
 /* Habib's own caption, written into each file's IPTC metadata in Lightroom.
@@ -141,7 +141,7 @@
   font-family: Georgia, serif;
   font-size: 14px;
   line-height: 1.6;
-  color: #5a554c;
+  color: var(--secondary);
   margin: 7px 0 0 0;
   max-width: 620px;
 }
@@ -153,7 +153,7 @@
   font-style: italic;
   font-size: 14px;
   line-height: 1.6;
-  color: #6a6358;
+  color: var(--note);
   margin: 28px 0 0 0;
 }
 
@@ -162,10 +162,10 @@
   font-style: italic;
   font-size: 13px;
   line-height: 1.6;
-  color: #8a8478;
+  color: var(--muted);
   margin-top: 36px;
   padding-top: 24px;
-  border-top: 0.5px solid #d4cfc3;
+  border-top: 0.5px solid var(--hairline);
   max-width: 540px;
   margin-left: auto;
   margin-right: auto;
@@ -177,13 +177,13 @@
 .project-nav {
   position: sticky;
   bottom: 0;
-  background: #fbfaf6;
+  background: var(--paper);
   z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 56px 28px;
-  border-top: 0.5px solid #d4cfc3;
+  border-top: 0.5px solid var(--hairline);
   font-family: -apple-system, "Helvetica Neue", sans-serif;
   font-size: 11px;
   letter-spacing: 0.18em;
@@ -193,7 +193,7 @@
 
 .nav-button {
   cursor: pointer;
-  color: #5a554c;
+  color: var(--secondary);
   background: none;
   border: none;
   font-family: inherit;
@@ -207,11 +207,11 @@
 }
 
 .nav-button:hover {
-  color: #2a2724;
+  color: var(--ink);
 }
 
 .nav-button:disabled {
-  color: #d4cfc3;
+  color: var(--hairline);
   cursor: default;
 }
 
@@ -219,7 +219,7 @@
   font-family: Georgia, serif;
   font-style: italic;
   font-size: 12px;
-  color: #8a8478;
+  color: var(--muted);
   letter-spacing: normal;
   text-transform: none;
 }
@@ -238,25 +238,25 @@
 
 .slide-end-next { margin-bottom: 48px; }
 
-.slide-end-next:hover .meta-title { color: #5a554c; }
+.slide-end-next:hover .meta-title { color: var(--secondary); }
 
 /* The hairline is the one .slide-credit already draws, at the same 24px. */
 .slide-end-contact {
   padding-top: 24px;
-  border-top: 0.5px solid #d4cfc3;
+  border-top: 0.5px solid var(--hairline);
   font-family: Georgia, serif;
   font-size: 15px;
   line-height: 1.6;
-  color: #2a2724;
+  color: var(--ink);
 }
 
 .slide-end-contact a {
-  border-bottom: 0.5px solid #d4cfc3;
+  border-bottom: 0.5px solid var(--hairline);
   padding-bottom: 1px;
   transition: border-color 200ms ease;
 }
 
-.slide-end-contact a:hover { border-bottom-color: #2a2724; }
+.slide-end-contact a:hover { border-bottom-color: var(--ink); }
 
 @media (max-width: 640px) {
   .slide-end .slide-meta { margin-bottom: 36px; }

@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   font-family: Georgia, "Times New Roman", serif;
-  color: #2a2724;
+  color: var(--ink);
 }
 
 /* Index page — list of pieces */
@@ -18,7 +18,7 @@
   font-style: italic;
   font-size: 22px;
   line-height: 1.55;
-  color: #5a554c;
+  color: var(--secondary);
   margin: 0 0 64px 0;
 }
 
@@ -36,7 +36,7 @@
   flex-direction: column;
   gap: 6px;
   padding-bottom: 32px;
-  border-bottom: 0.5px solid #ece8df;
+  border-bottom: 0.5px solid var(--hairline-soft);
 }
 
 .writing-list-page li:last-child a {
@@ -48,18 +48,18 @@
   font-size: 10px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #8a8478;
+  color: var(--muted);
 }
 
 .writing-list-page .piece-title {
   font-family: Georgia, serif;
   font-size: 24px;
   line-height: 1.3;
-  color: #2a2724;
+  color: var(--ink);
 }
 
 .writing-list-page li a:hover .piece-title {
-  color: #5a554c;
+  color: var(--secondary);
 }
 
 /* Individual piece — the reading experience */
@@ -78,7 +78,7 @@
   font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #8a8478;
+  color: var(--muted);
   margin-bottom: 18px;
 }
 
@@ -88,7 +88,7 @@
   line-height: 1.2;
   letter-spacing: -0.01em;
   font-weight: normal;
-  color: #2a2724;
+  color: var(--ink);
   margin: 0;
 }
 
@@ -96,7 +96,7 @@
   font-family: Georgia, serif;
   font-size: 18px;
   line-height: 1.85;
-  color: #2a2724;
+  color: var(--ink);
   margin: 0 0 24px 0;
 }
 

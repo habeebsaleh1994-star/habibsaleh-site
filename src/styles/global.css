@@ -1,8 +1,75 @@
+/* ── The palette ────────────────────────────────────────────────────────
+   Eleven tones, one per literal the site already used, so the roles are
+   unchanged and the migration is 1:1. The dark values are not an inversion.
+
+   The ground #312d25 is solved, not chosen: it is the tone at which a
+   photograph sits against the page exactly as it does on paper. Measured over
+   the 174 photographs the site actually renders, the median frame steps
+   3.61:1 against #fbfaf6 and 3.63:1 against #312d25 — same distance, opposite
+   sign. It sits on HSL hue 40.0°, the axis of --muted and --faint.
+
+   The ramp is the light ramp at half span. Two anchors fix it, both measured:
+   --ink sits at the luminance of the median frame's 99th-percentile pixel, so
+   no letterform ever out-shines a print (10.05:1, a deliberate retreat from
+   white — Georgia halates on a dark ground); --faintest sits exactly on the
+   4.5:1 AA floor. Every interval between is its light interval × 0.5028, so
+   the hierarchy keeps its shape.
+
+   Preserving the full light span AND a 4.5:1 floor is impossible on any dark
+   ground — it would need an ink above L* 100. Compression is forced; it is
+   spent at the top, where dark UI wants it.
+
+   Note the dark palette repairs three tones that fail WCAG on paper:
+   --muted 3.56 -> 5.59, --faint 2.54 -> 4.80, --faintest 2.26 -> 4.50. */
+:root {
+  color-scheme: light dark;   /* not cosmetic — without it the scrollbar and
+                                 the overscroll gutter stay white and frame
+                                 the whole page in a bright band */
+
+  --paper:         #fbfaf6;   /* page ground                              */
+  --ink:           #2a2724;   /* headings, body, every hover target       */
+  --prose:         #3a352e;   /* project and bio paragraphs               */
+  --secondary:     #5a554c;   /* nav, captions, buttons, the focus ring   */
+  --note:          #6a6358;   /* italic asides                            */
+  --muted:         #8a8478;   /* small caps labels, dates, footer         */
+  --faint:         #a89e8a;   /* credit roles, quote attribution          */
+  --faintest:      #b0a896;   /* the 8px portrait credit on /about        */
+  --hairline:      #d4cfc3;   /* every 0.5px rule; .nav-button:disabled   */
+  --hairline-soft: #ece8df;   /* the two quieter rules                    */
+  --placeholder:   #ece9e1;   /* an image frame before its photograph     */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper:         #312d25;  /* L* 18.6  — solved from the photographs   */
+    --ink:           #e0dcd8;  /* 10.05:1  — median frame's p99 pixel      */
+    --prose:         #d9d2c9;  /*  9.14:1                                  */
+    --secondary:     #c5bfb5;  /*  7.50:1  — the focus ring; floor is 3:1  */
+    --note:          #bfb7ab;  /*  6.90:1                                  */
+    --muted:         #aba599;  /*  5.59:1                                  */
+    --faint:         #a29884;  /*  4.80:1                                  */
+    --faintest:      #9c9380;  /*  4.50:1  — exactly the AA body floor     */
+    --hairline:      #4b473d;  /*  1.48:1  — light is 1.49:1               */
+    --hairline-soft: #3b3831;  /*  1.17:1  — light is 1.17:1               */
+    --placeholder:   #3a3832;  /*  1.17:1  — light is 1.16:1               */
+  }
+}
+
+/* Printers force light in Chrome but not always in Safari; without this a
+   visitor with a dark system could print an essay as near-black pages. */
+@media print {
+  :root {
+    --paper: #fbfaf6; --ink: #2a2724; --prose: #3a352e; --secondary: #5a554c;
+    --note: #6a6358; --muted: #8a8478; --faint: #a89e8a; --faintest: #b0a896;
+    --hairline: #d4cfc3; --hairline-soft: #ece8df; --placeholder: #ece9e1;
+  }
+}
+
 html, body {
   margin: 0;
   padding: 0;
-  background: #fbfaf6;
-  color: #2a2724;
+  background: var(--paper);
+  color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,7 +83,7 @@ ul { list-style: none; padding: 0; margin: 0; }
    appears on a mouse click. #5a554c on the paper is ~7:1 — well past the 3:1
    WCAG asks of a focus indicator — while staying inside the palette. */
 :focus-visible {
-  outline: 1.5px solid #5a554c;
+  outline: 1.5px solid var(--secondary);
   outline-offset: 3px;
   border-radius: 1px;
 }
@@ -44,7 +111,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   justify-content: space-between;
   align-items: baseline;
   padding-bottom: 28px;
-  border-bottom: 0.5px solid #d4cfc3;
+  border-bottom: 0.5px solid var(--hairline);
 }
 
 .name {
@@ -61,10 +128,10 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-size: 12px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #5a554c;
+  color: var(--secondary);
 }
 
-.nav a:hover { color: #2a2724; }
+.nav a:hover { color: var(--ink); }
 
 /* ── The running head ───────────────────────────────────────────────────
    Every page below the home page now carries the same two cells as the
@@ -84,7 +151,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   width: 100%;
   box-sizing: border-box;
   padding: 32px 56px 28px;
-  border-bottom: 0.5px solid #d4cfc3;
+  border-bottom: 0.5px solid var(--hairline);
   font-family: -apple-system, "Helvetica Neue", sans-serif;
   font-size: 11px;
   letter-spacing: 0.18em;
@@ -104,13 +171,13 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-family: Georgia, serif;
   font-style: italic;
   font-size: 14px;
-  color: #5a554c;
+  color: var(--secondary);
   letter-spacing: normal;
   text-transform: none;
   white-space: nowrap;
 }
 
-.site-header .signature:hover { color: #2a2724; }
+.site-header .signature:hover { color: var(--ink); }
 
 /* No font declarations: the four words inherit the header's own 11px/0.18em, so
    the nav introduces no type this row was not already set in. The colour is
@@ -121,16 +188,16 @@ ul { list-style: none; padding: 0; margin: 0; }
   display: flex;
   flex-wrap: wrap;      /* safety valve below ~340px; never fires above it */
   gap: 10px 24px;
-  color: #5a554c;
+  color: var(--secondary);
 }
 
-.site-nav a:hover { color: #2a2724; }
+.site-nav a:hover { color: var(--ink); }
 
 /* On a section's own page the word is not a link — it would point at the page
    you are reading — so it steps back into the tone this site sets every inert
    label in (.meta-type, .about-label, .slide-numeral). A leaf page marks nothing
    at all. */
-.site-nav [aria-current] { color: #8a8478; }
+.site-nav [aria-current] { color: var(--muted); }
 
 .intro {
   padding: 64px 0 56px;
@@ -142,7 +209,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-size: 11px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #8a8478;
+  color: var(--muted);
   margin-bottom: 18px;
 }
 
@@ -151,7 +218,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-size: 22px;
   line-height: 1.55;
   font-style: italic;
-  color: #2a2724;
+  color: var(--ink);
   margin: 0;
 }
 
@@ -173,7 +240,7 @@ ul { list-style: none; padding: 0; margin: 0; }
 
 .thumb-image {
   overflow: hidden;
-  background: #ece9e1;
+  background: var(--placeholder);
 }
 
 /* <Picture> wraps the img in a <picture>; display:contents takes the wrapper out
@@ -198,19 +265,19 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-size: 10px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #8a8478;
+  color: var(--muted);
 }
 
 .meta-title {
   font-family: Georgia, serif;
   font-size: 19px;
-  color: #2a2724;
+  color: var(--ink);
 }
 
 .writing {
   margin-top: 80px;
   padding-top: 28px;
-  border-top: 0.5px solid #d4cfc3;
+  border-top: 0.5px solid var(--hairline);
 }
 
 .writing-head {
@@ -223,7 +290,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-family: Georgia, serif;
   font-style: italic;
   font-size: 14px;
-  color: #5a554c;
+  color: var(--secondary);
 }
 
 .writing-all {
@@ -231,7 +298,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #8a8478;
+  color: var(--muted);
 }
 
 .writing-list {
@@ -250,7 +317,7 @@ ul { list-style: none; padding: 0; margin: 0; }
 .piece-date {
   font-family: -apple-system, "Helvetica Neue", sans-serif;
   font-size: 11px;
-  color: #8a8478;
+  color: var(--muted);
   min-width: 90px;
   letter-spacing: 0.05em;
 }
@@ -258,7 +325,7 @@ ul { list-style: none; padding: 0; margin: 0; }
 .piece-title {
   font-family: Georgia, serif;
   font-size: 16px;
-  color: #2a2724;
+  color: var(--ink);
 }
 
 .notfound-note {
@@ -267,16 +334,16 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-size: 11px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #8a8478;
+  color: var(--muted);
 }
 
 .notfound-note a {
-  border-bottom: 0.5px solid #d4cfc3;
+  border-bottom: 0.5px solid var(--hairline);
   padding-bottom: 2px;
   transition: border-color 200ms ease;
 }
 
-.notfound-note a:hover { border-bottom-color: #2a2724; }
+.notfound-note a:hover { border-bottom-color: var(--ink); }
 
 /* Two cells, never three: on the home page and the section indexes the
    copyright, on an essay or a story the way back to its index — and, on all of
@@ -290,12 +357,12 @@ ul { list-style: none; padding: 0; margin: 0; }
   gap: 12px 24px;
   margin-top: 96px;
   padding-top: 24px;
-  border-top: 0.5px solid #d4cfc3;
+  border-top: 0.5px solid var(--hairline);
   font-family: -apple-system, "Helvetica Neue", sans-serif;
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #8a8478;
+  color: var(--muted);
 }
 
 /* The same negative-margin trick .nav-button uses: a 44px hit area without
@@ -306,7 +373,7 @@ ul { list-style: none; padding: 0; margin: 0; }
   margin: -14px 0;
 }
 
-.footer a:hover { color: #2a2724; }
+.footer a:hover { color: var(--ink); }
 
 /* An address is not a label. CONTACT@HABIBSALEH.COM at 0.12em shouts, and this
    site never shouts — so it takes the other quiet voice, the italic Georgia the
@@ -318,16 +385,16 @@ ul { list-style: none; padding: 0; margin: 0; }
   font-size: 13px;
   letter-spacing: normal;
   text-transform: none;
-  color: #5a554c;
+  color: var(--secondary);
   white-space: nowrap;
-  border-bottom: 0.5px solid #d4cfc3;
+  border-bottom: 0.5px solid var(--hairline);
   padding-bottom: 2px;
   transition: border-color 200ms ease, color 200ms ease;
 }
 
 .footer-mail:hover {
-  color: #2a2724;
-  border-bottom-color: #2a2724;
+  color: var(--ink);
+  border-bottom-color: var(--ink);
 }
 
 @media (max-width: 640px) {

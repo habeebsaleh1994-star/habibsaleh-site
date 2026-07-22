@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   font-family: Georgia, "Times New Roman", serif;
-  color: #2a2724;
+  color: var(--ink);
 }
 
 .about-body {
@@ -38,19 +38,19 @@
   font-size: 8px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #b0a896;
+  color: var(--faintest);
   white-space: nowrap;
 }
 
 .about-portrait-credit a {
-  color: #8a8478;
-  border-bottom: 0.5px solid #ece8df;
+  color: var(--muted);
+  border-bottom: 0.5px solid var(--hairline-soft);
   padding-bottom: 1px;
   transition: border-color 200ms ease;
 }
 
 .about-portrait-credit a:hover {
-  border-bottom-color: #8a8478;
+  border-bottom-color: var(--muted);
 }
 
 .about-name {
@@ -66,7 +66,7 @@
   font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #8a8478;
+  color: var(--muted);
 }
 
 .about-section {
@@ -82,7 +82,7 @@
   font-size: 10px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #8a8478;
+  color: var(--muted);
   margin-bottom: 12px;
 }
 
@@ -90,18 +90,18 @@
   font-family: Georgia, serif;
   font-size: 17px;
   line-height: 1.6;
-  color: #2a2724;
+  color: var(--ink);
 }
 
 .about-value a {
-  color: #2a2724;
-  border-bottom: 0.5px solid #d4cfc3;
+  color: var(--ink);
+  border-bottom: 0.5px solid var(--hairline);
   padding-bottom: 1px;
   transition: border-color 200ms ease;
 }
 
 .about-value a:hover {
-  border-bottom-color: #2a2724;
+  border-bottom-color: var(--ink);
 }
 
 .about-handle-row {
@@ -120,7 +120,7 @@
   font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: #a89e8a;
+  color: var(--faint);
 }
 
 .about-bio {
@@ -132,7 +132,7 @@
   font-family: Georgia, serif;
   font-size: 17px;
   line-height: 1.75;
-  color: #3a352e;
+  color: var(--prose);
   margin: 0 0 20px 0;
 }
 
