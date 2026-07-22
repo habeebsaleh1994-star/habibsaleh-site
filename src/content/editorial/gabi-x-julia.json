@@ -1,0 +1,82 @@
+{
+  "title": "Gabi × Julia",
+  "slug": "gabi-x-julia",
+  "client": "Tanks Management",
+  "year": "2020",
+  "dateSort": "2020-02",
+  "note": "Istanbul.",
+  "cover": "6c6a3986.jpg",
+  "photos": [
+    [
+      {
+        "file": "6c6a3933.jpg",
+        "alt": "Two models, one in a white and silver puffer coat, one in a hot pink vinyl trench, stand before a graffitied storefront pasted with concert posters."
+      },
+      {
+        "file": "6c6a3998.jpg",
+        "alt": "One model in a hot pink vinyl coat and holographic trousers holds a small white handbag beside another in an oversized silver and white puffer."
+      }
+    ],
+    {
+      "file": "6c6a3986.jpg",
+      "alt": "The hot pink vinyl trench, collar raised, beside the silver-panelled white puffer, both models turned to camera in hard sun against a peeling wall."
+    },
+    {
+      "file": "6c6a4084.jpg",
+      "alt": "The white puffer's oversized collar and silver quilting fill the frame; the second model, in the pink vinyl trench, stands blurred by a shuttered cafe."
+    },
+    [
+      {
+        "file": "6c6a4172.jpg",
+        "alt": "A white shaggy fur coat with its wide collar pulled up over the model's head, framing her face against hanging red patterned carpets."
+      },
+      {
+        "file": "6c6a4185.jpg",
+        "alt": "Close portrait, the model's chin tucked into the white shaggy fur collar, one hand drawn up beside her face."
+      }
+    ],
+    {
+      "file": "6c6a4292.jpg",
+      "alt": "Black and white: a model in a long white shaggy fur coat stands arms folded outside a shuttered shopfront with spectacles painted on the glass."
+    },
+    [
+      {
+        "file": "6c6a4365.jpg",
+        "alt": "Black and white with the film edge showing: a model in the white shaggy fur coat smokes, seated against a wall beside a bright window."
+      },
+      {
+        "file": "6c6a4688.jpg",
+        "alt": "A belted black vinyl trench, red top and white lace-up boots, the model standing mid-street between graffitied shutters under a vertical Lastik sign."
+      }
+    ],
+    [
+      {
+        "file": "6c6a4690.jpg",
+        "alt": "Closer: the black patent trench belted over a red polka-dot top, oversized collar upturned, hands in the pockets, narrow oval sunglasses, on a sunlit street."
+      },
+      {
+        "file": "6c6a4676.jpg",
+        "alt": "A black denim jacket with tiered silver tinsel fringe and white trousers, the model turning by a pink doorway under a yellow Happy Hour sign."
+      }
+    ],
+    {
+      "file": "6c6a4415.jpg",
+      "alt": "A sheer black mesh top and ripped blue jeans, the model curled on a tan leather sofa, a Kodak Portra 400 rebate down the edge."
+    }
+  ],
+  "credits": [
+    {
+      "role": "Photography",
+      "name": "Habib Saleh"
+    },
+    {
+      "role": "Models",
+      "name": "Gabi and Julia"
+    },
+    {
+      "role": "Management",
+      "name": "Tanks Management",
+      "url": "https://www.tanksmanagement.com"
+    }
+  ]
+}
