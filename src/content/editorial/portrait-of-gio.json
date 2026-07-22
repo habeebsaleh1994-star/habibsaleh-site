@@ -1,0 +1,34 @@
+{
+  "title": "Portrait of Gio",
+  "slug": "portrait-of-gio",
+  "client": "",
+  "year": "2025",
+  "dateSort": "2025-01",
+  "cover": "6c6a2403.jpg",
+  "photos": [
+    {
+      "file": "6c6a2339.jpg",
+      "alt": "Gio sits cross-legged on rocks above the sea, a blue paisley scarf flying out from her neck over a grey knit vest and wide cream trousers."
+    },
+    {
+      "file": "6c6a2387.jpg",
+      "alt": "Turned in profile with one arm raised behind her head, the long paisley scarf running down the front of a pale linen shirt."
+    },
+    {
+      "file": "6c6a2403.jpg",
+      "alt": "Close in, both arms lifted behind her head, the scarf knotted at her throat and the light washing almost white behind her."
+    },
+    {
+      "file": "6c6a2378.jpg",
+      "alt": "Toned monochrome on creased paper: Gio lies back with one arm over her head, the paisley scarf spread across her."
+    },
+    {
+      "file": "6c6a2411.jpg",
+      "alt": "Sepia, printed on folded and foxed paper — a hand shading her brow, the scarf falling from one shoulder, looking straight out."
+    }
+  ],
+  "credits": [
+    { "role": "Photography", "name": "Habib Saleh" },
+    { "role": "Model", "name": "Gio Dardi" }
+  ]
+}
