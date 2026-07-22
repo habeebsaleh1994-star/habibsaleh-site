@@ -10,6 +10,8 @@ import { photo } from "../../lib/images.js";
 // actually has a page. Glob order is by directory name.
 const projectModules = import.meta.glob("../../content/work/*/project.json", { eager: true });
 
+// Glob order is alphabetical by folder name, which is not the order the work
+// should be read in. Every surface sorts by the `order` field in project.json.
 const projects = Object.entries(projectModules).map(([path, mod]) => {
   const project = mod.default || mod;
   const slug = path.split("/").slice(-2, -1)[0];
@@ -18,7 +20,7 @@ const projects = Object.entries(projectModules).map(([path, mod]) => {
   const first = project.photos[0];
   const cover = project.cover || (typeof first === "string" ? first : first.file);
   return { project, slug, cover };
-});
+}).sort((a, b) => (a.project.order ?? 99) - (b.project.order ?? 99));
 ---
 
 <html lang="en">

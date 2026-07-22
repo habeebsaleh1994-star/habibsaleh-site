@@ -11,10 +11,14 @@ import { photo } from "../../lib/images.js";
 export async function getStaticPaths() {
   const projectModules = import.meta.glob("../../content/work/*/project.json", { eager: true });
 
-  const entries = Object.entries(projectModules).map(([path, mod]) => {
-    const segments = path.split("/");
-    return { slug: segments[segments.length - 2], project: mod.default || mod };
-  });
+  // Sorted by `order`, not by folder name — this array is what the endpaper
+  // walks to offer the next project, so it must be the reading order.
+  const entries = Object.entries(projectModules)
+    .map(([path, mod]) => {
+      const segments = path.split("/");
+      return { slug: segments[segments.length - 2], project: mod.default || mod };
+    })
+    .sort((a, b) => (a.project.order ?? 99) - (b.project.order ?? 99));
 
   return entries.map(({ slug, project }, i) => {
     // Wrap to the first project so the last one is not a dead end either.

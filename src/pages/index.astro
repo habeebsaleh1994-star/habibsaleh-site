@@ -47,6 +47,16 @@ const workModules = import.meta.glob("../content/work/*/project.json", { eager: 
 const publishedSlugs = new Set(
   Object.keys(workModules).map((path) => path.split("/").slice(-2, -1)[0]),
 );
+
+// The reading order lives in project.json, so the home grid cannot drift out of
+// step with /work and the endpaper. Unpublished tiles keep their written order.
+const workOrder = Object.fromEntries(
+  Object.entries(workModules).map(([path, mod]) => [
+    path.split("/").slice(-2, -1)[0],
+    (mod.default || mod).order ?? 99,
+  ]),
+);
+featuredProjects.sort((a, b) => (workOrder[a.slug] ?? 99) - (workOrder[b.slug] ?? 99));
 ---
 <html lang="en">
   <head>
