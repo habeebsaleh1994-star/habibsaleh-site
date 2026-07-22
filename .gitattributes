@@ -1,0 +1,14 @@
+# Photographs are binary. Git normally detects this on its own, but a single
+# line-ending "fix" applied to a JPEG corrupts it silently — the file keeps the
+# right name and roughly the right size, and you only find out when a
+# photograph fails to decode in someone's browser. Declaring it costs nothing
+# and removes the possibility.
+*.jpg   binary
+*.JPG   binary
+*.jpeg  binary
+*.JPEG  binary
+*.png   binary
+*.PNG   binary
+*.avif  binary
+*.webp  binary
+*.ico   binary
