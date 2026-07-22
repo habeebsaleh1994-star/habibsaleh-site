@@ -72,9 +72,13 @@ const PORTRAIT = {
       <main class="editorial-story">
 
         <div class="editorial-story-head">
-          <div class="editorial-story-client">
-            {[clientLabel, story.year].filter(Boolean).join(" · ")}
-          </div>
+          {/* Nothing to say when the brand is the title and there is no year —
+              render no element rather than an empty one holding its margin. */}
+          {[clientLabel, story.year].filter(Boolean).length > 0 && (
+            <div class="editorial-story-client">
+              {[clientLabel, story.year].filter(Boolean).join(" · ")}
+            </div>
+          )}
           <h1 class="editorial-story-title">{story.title}</h1>
           {story.note && <p class="editorial-story-note">{story.note}</p>}
         </div>

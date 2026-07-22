@@ -55,13 +55,16 @@ const stories = Object.entries(storyModules)
                   />
                 </div>
                 <div class="editorial-tile-meta">
-                  <span class="editorial-tile-client">
-                    {/* Where the brand *is* the story name, showing both would
-                        print the same words twice, one line apart. */}
-                    {[story.client === story.title ? "" : story.client, story.year]
-                      .filter(Boolean)
-                      .join(" · ")}
-                  </span>
+                  {/* Where the brand *is* the story name, showing both would
+                      print the same words twice, one line apart — and with no
+                      year there is nothing left, so emit no element. */}
+                  {[story.client === story.title ? "" : story.client, story.year].filter(Boolean).length > 0 && (
+                    <span class="editorial-tile-client">
+                      {[story.client === story.title ? "" : story.client, story.year]
+                        .filter(Boolean)
+                        .join(" · ")}
+                    </span>
+                  )}
                   <span class="editorial-tile-title">{story.title}</span>
                 </div>
               </a>
