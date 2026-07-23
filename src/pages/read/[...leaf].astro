@@ -37,6 +37,10 @@ const meta = {
     title: `${mv?.title} — Habib Saleh`,
     description: leaf.photo?.cap || book.subtitle,
   },
+  film: {
+    title: `${leaf.film?.title} — a film by Habib Saleh`,
+    description: leaf.film?.cap || book.subtitle,
+  },
   story: {
     title: `${leaf.story?.story} — Habib Saleh`,
     description:
@@ -56,8 +60,10 @@ const meta = {
 // The plate's own frame, so the caption aligns to the photograph's left edge
 // rather than to the stage.
 const src = leaf.type === "photo" ? photo(leaf.photo.photo) : null;
+const poster = leaf.type === "film" ? photo(leaf.film.poster) : null;
 const ogImage =
   src ??
+  poster ??
   photo(
     mv?.sequence?.find((i) => i.photo)?.photo ??
       "colored-air/HS-ColoredAir-2025-01.JPG",
@@ -134,6 +140,40 @@ const ogImage =
       </figure>
     )}
 
+    {leaf.type === "film" && (
+      <figure class="plate film">
+        {/* Habib's own frame, served from this site. Nothing is requested from
+            YouTube until the reader presses play — so turning past a film
+            costs no round trip to Google and sets no cookie. */}
+        <button class="film-frame" data-film={leaf.film.film} aria-label={`Play ${leaf.film.title}`}>
+          <Picture
+            src={poster}
+            alt={leaf.film.cap || leaf.film.title}
+            formats={["avif"]}
+            fallbackFormat="jpeg"
+            widths={[800, 1400]}
+            sizes="(max-width: 640px) 100vw, 1000px"
+            loading="eager"
+            decoding="async"
+          />
+          <span class="film-play" aria-hidden="true">
+            <svg viewBox="0 0 44 44" width="44" height="44">
+              <circle cx="22" cy="22" r="21" fill="none" stroke="currentColor" stroke-width="1" />
+              <path d="M18 14.5 L31 22 L18 29.5 Z" fill="currentColor" />
+            </svg>
+          </span>
+        </button>
+        <figcaption class="plate-caption film-caption">
+          <p>{leaf.film.cap}</p>
+          <p class="film-elsewhere">
+            <a href={`https://www.youtube.com/watch?v=${leaf.film.film}`} target="_blank" rel="noopener">
+              Watch on YouTube ↗
+            </a>
+          </p>
+        </figcaption>
+      </figure>
+    )}
+
     {leaf.type === "story" && (
       <div class="story-leaf">
         <div class="story-label">A story within {mv.title}</div>
@@ -199,6 +239,29 @@ const ogImage =
     window.localStorage.setItem("tp:leaf", window.location.pathname);
   } catch (e) {
     /* private mode — the book simply does not remember */
+  }
+
+  // Pressing play is what loads YouTube — not turning to the leaf. Until then
+  // the page has made no third-party request at all.
+  const frame = document.querySelector("[data-film]");
+  if (frame) {
+    frame.addEventListener("click", () => {
+      const id = frame.getAttribute("data-film");
+      const player = document.createElement("iframe");
+      // nocookie, and rel=0 keeps the end screen to Habib's own channel.
+      player.src =
+        "https://www.youtube-nocookie.com/embed/" +
+        id +
+        "?autoplay=1&rel=0&modestbranding=1&playsinline=1";
+      player.title = frame.getAttribute("aria-label") || "Film";
+      player.allow =
+        "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share";
+      player.allowFullscreen = true;
+      player.setAttribute("frameborder", "0");
+      player.className = "film-player";
+      frame.replaceWith(player);
+      player.focus();
+    });
   }
 
   // A photograph is one swipe away on a phone, as it is in a real book.

@@ -340,6 +340,20 @@ a.movement-link:hover .movement-title { color: var(--note); }
   line-height: 1.5;
   color: var(--prose);
 }
+
+/* A film sits among the stories, so it says which one it is. Without this the
+   only difference between five minutes of watching and a page of looking is
+   the title itself. */
+.kind {
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-left: 10px;
+  vertical-align: 1px;
+}
 a.story-row:hover .story-title { color: var(--ink); }
 
 /* Forthcoming entries are dimmed and inert — rendered as spans, never links,
@@ -497,6 +511,72 @@ a.story-row:hover .story-title { color: var(--ink); }
   line-height: 1.6;
   color: var(--secondary);
   margin: 0;
+}
+
+/* film — a leaf that holds a film rather than a photograph. It is a facade:
+   Habib's own frame with a play mark, and the player replaces it on click. */
+.film { width: 100%; }
+
+.film-frame {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  border: 0;
+  background: var(--placeholder);
+  cursor: pointer;
+  line-height: 0;
+}
+.film-frame picture { display: contents; }
+.film-frame img {
+  width: 100%;
+  height: auto;
+  max-height: calc(100vh - 300px);
+  object-fit: cover;
+  display: block;
+  border-radius: 1px;
+}
+
+/* The mark sits on the photograph, so it carries its own contrast rather than
+   borrowing the palette — a paper-coloured ring on a bright frame vanishes. */
+.film-play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fbfaf6;
+  filter: drop-shadow(0 1px 6px rgba(0, 0, 0, 0.45));
+  transition: transform 0.4s cubic-bezier(0.2, 0.7, 0.2, 1), opacity 0.4s;
+  opacity: 0.92;
+}
+.film-frame:hover .film-play { opacity: 1; transform: scale(1.06); }
+
+.film-player {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  background: #000;
+}
+
+.film-caption { margin-inline: auto; }
+.film-elsewhere { margin-top: 8px !important; }
+.film-elsewhere a {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--label);
+}
+.film-elsewhere a:hover { color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  .film-frame:hover .film-play { transform: none; }
 }
 
 /* story — an intertitle announcing a story inside a movement */

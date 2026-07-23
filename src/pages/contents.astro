@@ -49,7 +49,10 @@ const { contents } = manuscript();
                     class:list={["story-row", story.forthcoming && "forthcoming"]}
                     href={story.path ?? undefined}
                   >
-                    <span class="story-title">{story.title}</span>
+                    <span class="story-title">
+                      {story.title}
+                      {story.kind === "film" && <span class="kind">film</span>}
+                    </span>
                     <span class="story-years">{story.years}</span>
                   </Row>
                 );

@@ -69,6 +69,16 @@ export function manuscript() {
 
     const stories = [];
     for (const item of movement.sequence || []) {
+      // A film reads as a leaf like any other and is listed in the contents
+      // beside the stories — a five-minute piece buried mid-run with nothing
+      // pointing at it would be found by almost nobody.
+      if (item.film) {
+        const path = `${base}/film-${slugify(item.title || item.film)}/`;
+        leaves.push({ type: "film", movement: mv, film: item, path });
+        stories.push({ title: item.title, years: item.years, kind: "film", path });
+        continue;
+      }
+
       if (item.story) {
         if (item.forthcoming) {
           stories.push({ title: item.story, years: item.years, forthcoming: true, path: null });
