@@ -60,6 +60,13 @@
       "cap": "Salam, one of the oldest residents of the village, pauses during a walk as the neighbor’s dog sits nearby. The town of Joun, Lebanon, 2025."
     },
     {
+      "id": "the-returning",
+      "fragment": [
+        "Places survive within us after they have changed. People remain after they have gone.",
+        "There are moments when time slips and what was once returns to you so vividly, with such detail, that it unsettles you. Was it ever real, or only a dream? The question is not the point. The point is the returning, the fact that something in you still receives it, still trembles at it, still opens when every logic says to close."
+      ]
+    },
+    {
       "photo": "before-it-disappears/before-it-disappears-12.jpg",
       "cap": "A stray cat sits inside an abandoned house in Joun, near a staircase that leads to an orange tree with fallen fruit scattered on the ground. The town of Joun, Lebanon, 2025."
     },
@@ -74,6 +81,12 @@
     {
       "photo": "before-it-disappears/before-it-disappears-15.jpg",
       "cap": "A cat sits on the edge of a wall at the entrance of an abandoned house in Joun. The town of Joun, Lebanon, 2025."
+    },
+    {
+      "id": "same-frame",
+      "fragment": [
+        "Beauty and difficulty do not resolve one another. Innocence and violence, tenderness and destruction, play and seriousness can appear within the same frame."
+      ]
     },
     {
       "photo": "before-it-disappears/before-it-disappears-16.jpg",
@@ -124,12 +137,25 @@
       "cap": "A bougainvillea tree grows in full bloom at the entrance of an abandoned house in Joun. The town of Joun, Lebanon, 2025."
     },
     {
+      "id": "forcing",
+      "fragment": [
+        "There is a method for growing rhubarb called forcing. The plant is raised in total darkness, tended only in brief intervals of candlelight. It thrives by reaching toward an absent sun, stretching so fast its growth can be heard. Forcing can weaken the crop, but when done carefully, it yields something sweeter.",
+        "I am not making an allegory. I am just saying that some things grow toward what they cannot see, and the growing is not separate from the sweetness."
+      ]
+    },
+    {
       "photo": "before-it-disappears/before-it-disappears-28.jpg",
       "cap": "A covered, rusted car sits in a weathered garage in Joun, surrounded by old walls and overgrown plants. The town of Joun, Lebanon, 2025."
     },
     {
       "photo": "before-it-disappears/before-it-disappears-29.jpg",
       "cap": "A long road winds past olive trees and white wildflowers at the edge of Joun’s pine forest. Once crowded with people and traffic, the road now lies quiet. The town of Joun, Lebanon, 2025."
+    },
+    {
+      "id": "remaining",
+      "fragment": [
+        "Perhaps love slips through our hands not because it is absent, but because we are not there. To love another person, a place, or life itself may mean remaining before it without retreat, allowing it to exist beyond our need to name it."
+      ]
     },
     {
       "photo": "before-it-disappears/before-it-disappears-30.jpg",
