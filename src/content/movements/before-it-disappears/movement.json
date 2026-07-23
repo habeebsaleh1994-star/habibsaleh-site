@@ -10,12 +10,6 @@
   ],
   "sequence": [
     {
-      "film": "rNw7cMnKSII",
-      "title": "Before It Disappears",
-      "poster": "before-it-disappears/film-before-it-disappears.jpg",
-      "cap": "Before It Disappears — a film. Joun, Lebanon."
-    },
-    {
       "photo": "before-it-disappears/before-it-disappears-01.jpg",
       "cap": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2025."
     },
@@ -150,6 +144,12 @@
     {
       "photo": "before-it-disappears/before-it-disappears-29.jpg",
       "cap": "A long road winds past olive trees and white wildflowers at the edge of Joun’s pine forest. Once crowded with people and traffic, the road now lies quiet. The town of Joun, Lebanon, 2025."
+    },
+    {
+      "film": "rNw7cMnKSII",
+      "title": "Before It Disappears",
+      "poster": "before-it-disappears/film-before-it-disappears.jpg",
+      "cap": "Before It Disappears — a film. Joun, Lebanon."
     },
     {
       "id": "remaining",
