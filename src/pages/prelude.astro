@@ -21,6 +21,7 @@ import book from "../content/book/book.json";
   <main class="prelude-body">
     <p class="prelude-opening">{book.prelude.opening}</p>
     {book.prelude.body.map((para) => <p class="prelude-para">{para}</p>)}
+    {book.prelude.welcome && <p class="prelude-welcome">{book.prelude.welcome}</p>}
   </main>
 
   <footer class="prelude-foot">

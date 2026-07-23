@@ -191,16 +191,23 @@ a.wordmark:hover { color: var(--secondary); }
   justify-content: center;
 }
 
+/* The handoff set this at 26px for a one-line aphorism. The prelude is now a
+   full opening paragraph, and at 26px it filled the screen on its own and
+   pushed the rest of the text below the fold. 21px keeps it a distinct
+   register — larger, italic, ink rather than prose — without it becoming the
+   only thing on the page. */
 .prelude-opening {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 26px;
-  line-height: 1.5;
+  font-size: 21px;
+  line-height: 1.62;
   color: var(--ink);
-  margin: 0 0 60px 0;
+  margin: 0 0 40px 0;
 }
 
-.prelude-body p + p,
+/* Every paragraph here carries its own class, so this must not also match on
+   `p + p` — at specificity (0,1,2) that beat .prelude-welcome (0,1,0) and
+   silently reset the closing line to body size. */
 .prelude-para {
   font-family: var(--serif);
   font-size: 18px;
@@ -208,7 +215,18 @@ a.wordmark:hover { color: var(--secondary); }
   color: var(--prose);
   margin: 0 0 26px 0;
 }
-.prelude-body .prelude-para:last-child { margin-bottom: 0; }
+.prelude-para:last-child { margin-bottom: 0; }
+
+/* A single word, held apart. It is the last thing said before the work begins,
+   so it gets the space a paragraph break cannot give it. */
+.prelude-welcome {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--note);
+  margin: 22px 0 0 0;
+}
 
 .prelude-foot {
   max-width: var(--m-prelude);
