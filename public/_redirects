@@ -1,0 +1,44 @@
+# The site was live under the old shape, so every address it published still
+# has to land somewhere sensible. 301 rather than 302: these moves are final.
+#
+# Cloudflare matches the requested path LITERALLY, so /about and /about/ are
+# two different sources and both have to be written. The old site canonicalised
+# to the trailing slash — habibsaleh.com/about 308s to /about/ — so the slashed
+# rule is the one that carries every real inbound link. Listing only the
+# slashless form, as this file first did, would have 404'd /about/ outright and
+# dropped all four project deep links onto the contents page.
+#
+# The specific rules must come before the splats, or /work/colored-air/ would
+# be swallowed by /work/*.
+
+# The two movements kept their own openings.
+/work/colored-air             /read/colored-air/                                 301
+/work/colored-air/            /read/colored-air/                                 301
+/work/before-it-disappears    /read/before-it-disappears/                        301
+/work/before-it-disappears/   /read/before-it-disappears/                        301
+
+# The two garden projects are now stories read inside Colored Air, so their
+# old addresses land on the leaf that announces them.
+/work/season-of-the-mulberry  /read/colored-air/story-the-season-of-the-mulberry/ 301
+/work/season-of-the-mulberry/ /read/colored-air/story-the-season-of-the-mulberry/ 301
+/work/when-roses-bloom        /read/colored-air/story-when-roses-bloom/           301
+/work/when-roses-bloom/       /read/colored-air/story-when-roses-bloom/           301
+
+# The index of projects is now the contents of the book.
+/work                         /contents/                                         301
+/work/                        /contents/                                         301
+/work/*                       /contents/                                         301
+
+# The commercial wing was renamed but kept its slugs.
+/editorial                    /commissions/                                      301
+/editorial/                   /commissions/                                      301
+/editorial/*                  /commissions/:splat                                301
+
+# The essays became the notebook, slugs unchanged.
+/writing                      /notebook/                                         301
+/writing/                     /notebook/                                         301
+/writing/*                    /notebook/:splat                                   301
+
+# The about page became the colophon.
+/about                        /colophon/                                         301
+/about/                       /colophon/                                         301

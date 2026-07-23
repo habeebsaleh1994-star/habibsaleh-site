@@ -4,9 +4,9 @@
 
    The ground #312d25 is solved, not chosen: it is the tone at which a
    photograph sits against the page exactly as it does on paper. Measured over
-   the 174 photographs the site actually renders, the median frame steps
-   3.61:1 against #fbfaf6 and 3.63:1 against #312d25 — same distance, opposite
-   sign. It sits on HSL hue 40.0°, the axis of --muted and --faint.
+   the photographs the site actually renders, the median frame steps 3.61:1
+   against #fbfaf6 and 3.63:1 against #312d25 — same distance, opposite sign.
+   It sits on HSL hue 40.0°, the axis of --muted and --faint.
 
    The ramp is the light ramp at half span. Two anchors fix it, both measured:
    --ink sits at the luminance of the median frame's 99th-percentile pixel, so
@@ -28,15 +28,29 @@
 
   --paper:         #fbfaf6;   /* page ground                              */
   --ink:           #2a2724;   /* headings, body, every hover target       */
-  --prose:         #3a352e;   /* project and bio paragraphs               */
-  --secondary:     #5a554c;   /* nav, captions, buttons, the focus ring   */
+  --prose:         #3a352e;   /* movement and bio paragraphs              */
+  --secondary:     #5a554c;   /* captions, turn controls, the focus ring  */
   --note:          #6a6358;   /* italic asides                            */
-  --muted:         #8a8478;   /* small caps labels, dates, footer         */
-  --faint:         #a89e8a;   /* credit roles, quote attribution          */
-  --faintest:      #b0a896;   /* the 8px portrait credit on /about        */
-  --hairline:      #d4cfc3;   /* every 0.5px rule; .nav-button:disabled   */
-  --hairline-soft: #ece8df;   /* the two quieter rules                    */
+  --muted:         #8a8478;   /* small caps labels, dates, years          */
+  --faint:         #a89e8a;   /* running heads, roman numerals            */
+  --faintest:      #b0a896;   /* the footer rank                          */
+  --hairline:      #d4cfc3;   /* every 0.5px rule; a spent turn control   */
+  --hairline-soft: #ece8df;   /* the quieter rules                        */
   --placeholder:   #ece9e1;   /* an image frame before its photograph     */
+
+  /* Three tones the book adds. They sit between --faintest and
+     --hairline-soft, in this order: soft 1.17 < contents 1.25 <
+     hairline 1.49 < ornament 1.61 < dimmer 1.83 < faintest 2.26. */
+  --rule-contents: #e6e1d6;   /* contents + interleaf hairline            */
+  --ornament:      #cfc7b6;   /* the 36x1 rule; a forthcoming title       */
+  --dimmer:        #c3bba9;   /* leaf counter; the first-edition line     */
+
+  /* The navigation floor. The book's quiet labels sit at 2.26–2.54:1 on
+     paper, which is fine for a date but not for the ONLY way out of a leaf.
+     This is the light twin of the dark ramp's --faintest: exactly 4.50:1,
+     on the same hue axis — as quiet as the standard permits, and used only
+     where a label is a link a reader has to be able to find. */
+  --label:         #797368;   /*  4.50:1                                  */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -52,17 +66,28 @@
     --hairline:      #4b473d;  /*  1.48:1  — light is 1.49:1               */
     --hairline-soft: #3b3831;  /*  1.17:1  — light is 1.17:1               */
     --placeholder:   #3a3832;  /*  1.17:1  — light is 1.16:1               */
+
+    /* Solved by matching each one's step off the ground rather than by the
+       ramp: all three are rules or deliberately recessive labels, so equal
+       visual weight matters more than the compressed text ramp. */
+    --rule-contents: #443c29;  /*  1.26:1  — light is 1.25:1               */
+    --ornament:      #554c38;  /*  1.62:1  — light is 1.61:1               */
+    --dimmer:        #5d5441;  /*  1.83:1  — light is 1.83:1               */
+    --label:         #9c9380;  /*  4.50:1  — dark already met the floor    */
   }
 }
 
 /* Printers force light in Chrome but not always in Safari; without this a
-   visitor with a dark system could print an essay as near-black pages. */
+   visitor with a dark system could print a passage as near-black pages. */
 @media print {
   :root {
     --paper: #fbfaf6; --ink: #2a2724; --prose: #3a352e; --secondary: #5a554c;
     --note: #6a6358; --muted: #8a8478; --faint: #a89e8a; --faintest: #b0a896;
     --hairline: #d4cfc3; --hairline-soft: #ece8df; --placeholder: #ece9e1;
+    --rule-contents: #e6e1d6; --ornament: #cfc7b6; --dimmer: #c3bba9;
+    --label: #797368;
   }
+  .turn, .spine-back { display: none; }
 }
 
 html, body {
@@ -75,21 +100,20 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+* { box-sizing: border-box; }
+
 a { color: inherit; text-decoration: none; }
 ul { list-style: none; padding: 0; margin: 0; }
 
-/* There was no focus style anywhere on the site, so a keyboard visitor had no
-   way to see where they were. :focus-visible rather than :focus, so this never
-   appears on a mouse click. #5a554c on the paper is ~7:1 — well past the 3:1
-   WCAG asks of a focus indicator — while staying inside the palette. */
+/* :focus-visible rather than :focus, so this never appears on a mouse click.
+   #5a554c on the paper is ~7:1 — well past the 3:1 WCAG asks of a focus
+   indicator — while staying inside the palette. */
 :focus-visible {
   outline: 1.5px solid var(--secondary);
   outline-offset: 3px;
   border-radius: 1px;
 }
 
-/* The slideshow advances by swapping which slide is displayed, and tiles fade on
-   hover. Honour a request for less movement. */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -98,324 +122,4 @@ ul { list-style: none; padding: 0; margin: 0; }
     animation-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-.page {
-  max-width: 920px;
-  margin: 0 auto;
-  padding: 48px 56px;
-}
-
-.masthead {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  padding-bottom: 28px;
-  border-bottom: 0.5px solid var(--hairline);
-}
-
-.name {
-  font-family: Georgia, serif;
-  font-size: 22px;
-  letter-spacing: 0.02em;
-  font-weight: 400;
-}
-
-.nav {
-  display: flex;
-  gap: 28px;
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 12px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--secondary);
-}
-
-.nav a:hover { color: var(--ink); }
-
-/* ── The running head ───────────────────────────────────────────────────
-   Every page below the home page now carries the same two cells as the
-   masthead — the name, then the four sections — one step down in scale. This
-   replaces .about-header, .work-header, .editorial-header, .writing-header and
-   .project-header: five copies of the same twelve declarations, differing only
-   in max-width and in which single link sat on the left. A substitution, not an
-   addition — the row already existed, at this exact type, with four characters
-   in one cell. */
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 32px;
-  max-width: 920px;
-  margin: 0 auto;
-  width: 100%;
-  box-sizing: border-box;
-  padding: 32px 56px 28px;
-  border-bottom: 0.5px solid var(--hairline);
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-/* Each family keeps the measure its own header already had. 920px is the
-   default because it is the majority, and because a page type that forgets to
-   declare one lands on a sane column rather than silently full-bleed. */
-.work-page .site-header      { max-width: 1032px; }
-.editorial-page .site-header { max-width: 1160px; }
-.project-page .site-header   { max-width: none;   }
-
-/* The name, in the italic serif the five headers already set it in — but a link
-   now. It was inert text on every interior page of the site. */
-.site-header .signature {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-size: 14px;
-  color: var(--secondary);
-  letter-spacing: normal;
-  text-transform: none;
-  white-space: nowrap;
-}
-
-.site-header .signature:hover { color: var(--ink); }
-
-/* No font declarations: the four words inherit the header's own 11px/0.18em, so
-   the nav introduces no type this row was not already set in. The colour is
-   .nav above, verbatim. That is also a contrast repair — the single link these
-   headers used to carry was #8a8478 at 3.56:1, under the 4.5:1 floor; #5a554c
-   is 7.08:1. */
-.site-nav {
-  display: flex;
-  flex-wrap: wrap;      /* safety valve below ~340px; never fires above it */
-  gap: 10px 24px;
-  color: var(--secondary);
-}
-
-.site-nav a:hover { color: var(--ink); }
-
-/* On a section's own page the word is not a link — it would point at the page
-   you are reading — so it steps back into the tone this site sets every inert
-   label in (.meta-type, .about-label, .slide-numeral). A leaf page marks nothing
-   at all. */
-.site-nav [aria-current] { color: var(--muted); }
-
-.intro {
-  padding: 64px 0 56px;
-  max-width: 480px;
-}
-
-.location {
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 18px;
-}
-
-.lede {
-  font-family: Georgia, serif;
-  font-size: 22px;
-  line-height: 1.55;
-  font-style: italic;
-  color: var(--ink);
-  margin: 0;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px 28px;
-  margin-top: 24px;
-}
-
-.tile { display: block; }
-
-.thumb {
-  aspect-ratio: 4 / 3;
-  border-radius: 2px;
-  margin-bottom: 14px;
-  transition: opacity 200ms ease;
-}
-
-.thumb-image {
-  overflow: hidden;
-  background: var(--placeholder);
-}
-
-/* <Picture> wraps the img in a <picture>; display:contents takes the wrapper out
-   of layout so the img still sizes against .thumb-image. */
-.thumb-image picture {
-  display: contents;
-}
-
-.thumb-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.tile:hover .thumb { opacity: 0.92; }
-
-.meta { display: flex; flex-direction: column; gap: 4px; }
-
-.meta-type {
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.meta-title {
-  font-family: Georgia, serif;
-  font-size: 19px;
-  color: var(--ink);
-}
-
-.writing {
-  margin-top: 80px;
-  padding-top: 28px;
-  border-top: 0.5px solid var(--hairline);
-}
-
-.writing-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-.writing-title {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-size: 14px;
-  color: var(--secondary);
-}
-
-.writing-all {
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.writing-list {
-  margin-top: 24px;
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.writing-list li a {
-  display: flex;
-  gap: 24px;
-  align-items: baseline;
-}
-
-.piece-date {
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 11px;
-  color: var(--muted);
-  min-width: 90px;
-  letter-spacing: 0.05em;
-}
-
-.piece-title {
-  font-family: Georgia, serif;
-  font-size: 16px;
-  color: var(--ink);
-}
-
-.notfound-note {
-  margin: 20px 0 0 0;
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-.notfound-note a {
-  border-bottom: 0.5px solid var(--hairline);
-  padding-bottom: 2px;
-  transition: border-color 200ms ease;
-}
-
-.notfound-note a:hover { border-bottom-color: var(--ink); }
-
-/* Two cells, never three: on the home page and the section indexes the
-   copyright, on an essay or a story the way back to its index — and, on all of
-   them, the address. This is the block .piece-footer and .editorial-story-foot
-   already were, so both absorb into it. Three footers become one. */
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 12px 24px;
-  margin-top: 96px;
-  padding-top: 24px;
-  border-top: 0.5px solid var(--hairline);
-  font-family: -apple-system, "Helvetica Neue", sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
-/* The same negative-margin trick .nav-button uses: a 44px hit area without
-   moving the type a pixel or growing the row. */
-.footer a {
-  display: inline-block;
-  padding: 14px 0;
-  margin: -14px 0;
-}
-
-.footer a:hover { color: var(--ink); }
-
-/* An address is not a label. CONTACT@HABIBSALEH.COM at 0.12em shouts, and this
-   site never shouts — so it takes the other quiet voice, the italic Georgia the
-   header signs with, and the page ends in the hand it began in. #5a554c is
-   7.08:1: this is the one link that has to be legible. */
-.footer-mail {
-  font-family: Georgia, serif;
-  font-style: italic;
-  font-size: 13px;
-  letter-spacing: normal;
-  text-transform: none;
-  color: var(--secondary);
-  white-space: nowrap;
-  border-bottom: 0.5px solid var(--hairline);
-  padding-bottom: 2px;
-  transition: border-color 200ms ease, color 200ms ease;
-}
-
-.footer-mail:hover {
-  color: var(--ink);
-  border-bottom-color: var(--ink);
-}
-
-@media (max-width: 640px) {
-  .page { padding: 32px 24px; }
-  .masthead { flex-direction: column; gap: 14px; align-items: flex-start; }
-
-  /* The same move .masthead makes here, for the same reason. Measured at
-     11px/0.18em the four words are 222px of glyph; with the signature and a gap
-     they need 389px, and a 375px phone offers 327px. Stacked, the nav has the
-     row to itself — 282px at a 20px gap. */
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 20px 24px 16px;
-  }
-
-  .site-header .signature { font-size: 13px; }
-
-  .site-nav { gap: 10px 20px; }
-  .grid { grid-template-columns: 1fr; gap: 32px; }
-  .intro { padding: 48px 0 40px; }
-  .lede { font-size: 19px; }
 }

@@ -1,0 +1,42 @@
+---
+// The notebook — the writings gathered as back matter, sorted newest first.
+import Book from "../../layouts/Book.astro";
+import BookFoot from "../../components/BookFoot.astro";
+import { photo } from "../../lib/images.js";
+import book from "../../content/book/book.json";
+
+const modules = import.meta.glob("../../content/writing/*.json", { eager: true });
+const writings = Object.values(modules)
+  .map((mod) => mod.default || mod)
+  .sort((a, b) => String(b.dateSort).localeCompare(String(a.dateSort)));
+---
+
+<Book
+  title="Notebook — Habib Saleh"
+  description={book.notebook.intro}
+  path="/notebook/"
+  image={photo("colored-air/HS-ColoredAir-2025-01.JPG")}
+  screen="notebook"
+>
+  <div class="head">
+    <a class="wordmark" href="/">Habib Saleh</a>
+    <span class="head-label">Notebook</span>
+  </div>
+
+  <main class="notebook-body">
+    <p class="notebook-intro">{book.notebook.intro}</p>
+
+    <ul class="notebook-list">
+      {writings.map((piece) => (
+        <li>
+          <a class="notebook-item" href={`/notebook/${piece.slug}/`}>
+            <span class="notebook-date">{piece.date}</span>
+            <span class="notebook-title">{piece.title}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </main>
+
+  <BookFoot ruled back={{ href: "/contents/", label: "Contents" }} />
+</Book>

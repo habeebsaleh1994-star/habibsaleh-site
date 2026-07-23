@@ -1,0 +1,29 @@
+---
+// The prelude — the reader's first encounter with the voice of the work,
+// before any photograph and before the map.
+import Book from "../layouts/Book.astro";
+import { photo } from "../lib/images.js";
+import book from "../content/book/book.json";
+---
+
+<Book
+  title="Prelude — Habib Saleh"
+  description={book.prelude.opening}
+  path="/prelude/"
+  image={photo("colored-air/HS-ColoredAir-2025-01.JPG")}
+  screen="prelude"
+>
+  <div class="head">
+    <a class="wordmark" href="/">Habib Saleh</a>
+    <span class="head-label">Prelude</span>
+  </div>
+
+  <main class="prelude-body">
+    <p class="prelude-opening">{book.prelude.opening}</p>
+    {book.prelude.body.map((para) => <p class="prelude-para">{para}</p>)}
+  </main>
+
+  <footer class="prelude-foot">
+    <a class="door-medium" href="/contents/">Contents →</a>
+  </footer>
+</Book>

@@ -1,0 +1,252 @@
+---
+// The reader. One route per leaf, so every photograph has an address a curator
+// can send to someone, and so a leaf only ever loads its own image.
+//
+// A leaf's address comes from its content, never from its position in the run
+// — inserting a plate ahead of another does not move the one behind it.
+import { Picture } from "astro:assets";
+import Book from "../../layouts/Book.astro";
+import { photo } from "../../lib/images.js";
+import { manuscript } from "../../lib/manuscript.js";
+import book from "../../content/book/book.json";
+
+export async function getStaticPaths() {
+  const { leaves, extent } = manuscript();
+  return leaves.map((leaf) => ({
+    // The route is the leaf's path minus the /read/ mount and its slashes.
+    params: { leaf: leaf.path.replace(/^\/read\//, "").replace(/\/$/, "") || undefined },
+    props: { leaf, extent },
+  }));
+}
+
+const { leaf, extent } = Astro.props;
+const mv = leaf.movement;
+
+// Head copy differs per leaf type so a shared plate does not preview as the
+// whole book.
+const meta = {
+  interleaf: {
+    title: `${mv?.title} — Habib Saleh`,
+    description: (mv?.opening && mv.opening[0]) || book.subtitle,
+  },
+  frontmatter: {
+    title: `${mv?.title} — Habib Saleh`,
+    description: (mv?.opening && mv.opening[0]) || book.subtitle,
+  },
+  photo: {
+    title: `${mv?.title} — Habib Saleh`,
+    description: leaf.photo?.cap || book.subtitle,
+  },
+  story: {
+    title: `${leaf.story?.story} — Habib Saleh`,
+    description:
+      (leaf.story?.opening && leaf.story.opening[0]) ||
+      `A story within ${mv?.title}.`,
+  },
+  closing: {
+    title: `${mv?.title} — Habib Saleh`,
+    description: (mv?.closing && mv.closing[0]) || book.subtitle,
+  },
+  end: {
+    title: `The present edge — Habib Saleh`,
+    description: book.end.note,
+  },
+}[leaf.type];
+
+// The plate's own frame, so the caption aligns to the photograph's left edge
+// rather than to the stage.
+const src = leaf.type === "photo" ? photo(leaf.photo.photo) : null;
+const ogImage =
+  src ??
+  photo(
+    mv?.sequence?.find((i) => i.photo)?.photo ??
+      "colored-air/HS-ColoredAir-2025-01.JPG",
+  );
+---
+
+<Book
+  title={meta.title}
+  description={meta.description}
+  path={leaf.path}
+  image={ogImage}
+  screen="reader"
+  rises={false}
+>
+  <div class="spine">
+    <a class="spine-back" href="/contents/">Contents</a>
+    <span class="spine-title">{leaf.type === "end" ? "" : mv?.title}</span>
+    <span class="spine-counter">
+      {leaf.type === "end" ? "" : `${leaf.number} / ${extent}`}
+    </span>
+  </div>
+
+  {/* Only the leaf body rises, at the shorter duration — the spine and the
+      turn controls are furniture and stay put between leaves. */}
+  <div class="leaf rises-leaf">
+    {leaf.type === "interleaf" && (
+      <div class="interleaf">
+        <div class="ornament"></div>
+        <div class="interleaf-roman">{mv.roman}</div>
+        <h1 class="interleaf-title">{mv.title}</h1>
+        <div class="interleaf-years">{mv.years}</div>
+      </div>
+    )}
+
+    {leaf.type === "frontmatter" && (
+      <div class="frontmatter">
+        {mv.epigraph && (
+          <>
+            <p class="epigraph">{mv.epigraph}</p>
+            {mv.epigraphSource && (
+              <div class="epigraph-source">— {mv.epigraphSource}</div>
+            )}
+            {mv.epigraphNote && <p class="epigraph-note">{mv.epigraphNote}</p>}
+          </>
+        )}
+        {mv.opening && (
+          <div class="frontmatter-prose">
+            {mv.opening.map((para) => <p>{para}</p>)}
+          </div>
+        )}
+      </div>
+    )}
+
+    {leaf.type === "photo" && (
+      <figure class="plate">
+        <div class="plate-image">
+          <Picture
+            src={src}
+            alt={leaf.photo.cap || mv.title}
+            formats={["avif"]}
+            fallbackFormat="jpeg"
+            widths={[800, 1400, 2200]}
+            sizes="(max-width: 640px) 100vw, 1000px"
+            loading="eager"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        {leaf.photo.cap && (
+          <figcaption class="plate-caption">
+            <p>{leaf.photo.cap}</p>
+          </figcaption>
+        )}
+      </figure>
+    )}
+
+    {leaf.type === "story" && (
+      <div class="story-leaf">
+        <div class="story-label">A story within {mv.title}</div>
+        <h2 class="story-leaf-title">{leaf.story.story}</h2>
+        <div class="story-leaf-years">{leaf.story.years}</div>
+        {leaf.story.opening && (
+          <div class="story-opening">
+            {leaf.story.opening.map((para) => <p>{para}</p>)}
+          </div>
+        )}
+      </div>
+    )}
+
+    {leaf.type === "closing" && (
+      <div class="closing">
+        <div class="closing-prose">
+          {mv.closing.map((para) => <p>{para}</p>)}
+        </div>
+        {mv.credit && <p class="credit">{mv.credit}</p>}
+      </div>
+    )}
+
+    {leaf.type === "end" && (
+      <div class="end-leaf">
+        <p class="end-line">{book.end.line}</p>
+        <p class="end-note">{book.end.note}</p>
+        <div class="end-links">
+          <a href="/contents/">↑ Contents</a>
+          <a href="/colophon/">Colophon</a>
+        </div>
+      </div>
+    )}
+  </div>
+
+  <nav class="turn" aria-label="Turn the leaf">
+    {leaf.prev ? (
+      <a href={leaf.prev} rel="prev" data-turn="prev">← turn back</a>
+    ) : (
+      <span aria-disabled="true">← turn back</span>
+    )}
+    {leaf.next ? (
+      <a href={leaf.next} rel="next" data-turn="next">turn →</a>
+    ) : (
+      <span aria-disabled="true">turn →</span>
+    )}
+  </nav>
+</Book>
+
+<script>
+  // Arrow keys turn the leaf, and the current leaf is remembered. Both read
+  // the links already in the document, so there is no second copy of the
+  // manuscript on the client and nothing to keep in step.
+  const prev = document.querySelector('[data-turn="prev"]');
+  const next = document.querySelector('[data-turn="next"]');
+
+  document.addEventListener("keydown", (e) => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === "ArrowRight" && next) window.location.href = next.href;
+    if (e.key === "ArrowLeft" && prev) window.location.href = prev.href;
+  });
+
+  try {
+    window.localStorage.setItem("tp:leaf", window.location.pathname);
+  } catch (e) {
+    /* private mode — the book simply does not remember */
+  }
+
+  // A photograph is one swipe away on a phone, as it is in a real book.
+  let x0 = null;
+  let y0 = null;
+  let multi = false;
+
+  addEventListener(
+    "touchstart",
+    (e) => {
+      // A second finger means the reader is pinching a photograph, not turning
+      // the leaf. Arm nothing, and stay disarmed until every finger is lifted.
+      if (e.touches.length > 1) {
+        multi = true;
+        x0 = null;
+        return;
+      }
+      x0 = e.changedTouches[0].clientX;
+      y0 = e.changedTouches[0].clientY;
+    },
+    { passive: true },
+  );
+
+  addEventListener(
+    "touchend",
+    (e) => {
+      if (multi) {
+        if (e.touches.length === 0) multi = false;
+        x0 = null;
+        return;
+      }
+      if (x0 === null) return;
+      const dx = e.changedTouches[0].clientX - x0;
+      const dy = e.changedTouches[0].clientY - y0;
+      x0 = null;
+      // Panning a photograph the reader has zoomed into is not a page turn.
+      const zoomed = window.visualViewport && window.visualViewport.scale > 1.01;
+      if (zoomed) return;
+      // Ignore mostly-vertical movement so scrolling a long caption still works.
+      if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy)) return;
+      if (dx < 0 && next) window.location.href = next.href;
+      if (dx > 0 && prev) window.location.href = prev.href;
+    },
+    { passive: true },
+  );
+
+  addEventListener("touchcancel", () => {
+    x0 = null;
+    multi = false;
+  }, { passive: true });
+</script>

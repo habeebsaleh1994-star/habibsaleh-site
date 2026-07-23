@@ -1,0 +1,38 @@
+---
+// The commissions wing. Not the book: white, sans, plain, and carrying its own
+// ground rather than the palette. A client landing here should not have to work
+// out whether they are inside an artist's manuscript.
+import Meta from "../components/Meta.astro";
+import "../styles/global.css";
+import "../styles/commissions.css";
+
+// `class="wing"` on <body> forces the page ground light — see commissions.css.
+// Nothing may sit between </head> and <body> in this file: a JSX comment there
+// makes Astro drop the <body> element, and an HTML comment makes it emit three.
+const { title, description, path, image } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Meta title={title} description={description} path={path} image={image} />
+  </head>
+  <body class="wing">
+    <div class="commissions">
+      <div class="cx-head">
+        <a class="cx-name" href="/commissions/">
+          <strong>Habib Saleh</strong>
+          <span class="cx-kicker">Commissions</span>
+        </a>
+        <a class="cx-back" href="/">The Work ↗</a>
+      </div>
+
+      <main class="cx-body">
+        <slot />
+      </main>
+
+      <footer class="cx-foot">© Habib Saleh — Commissions</footer>
+    </div>
+  </body>
+</html>

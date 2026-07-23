@@ -1,147 +1,56 @@
 ---
-import { Picture } from "astro:assets";
-import "../styles/global.css";
-import Meta from "../components/Meta.astro";
+// The threshold — the book's half-title, and the only page that is not itself
+// part of the work.
+import Book from "../layouts/Book.astro";
+import BookFoot from "../components/BookFoot.astro";
 import { photo } from "../lib/images.js";
+import book from "../content/book/book.json";
+import { manuscript } from "../lib/manuscript.js";
 
-const featuredProjects = [
-  {
-    title: "Colored Air",
-    type: "Documentary",
-    year: "2023 — Ongoing",
-    slug: "colored-air",
-    cover: "colored-air/HS-ColoredAir-2025-01.JPG",
-  },
-  {
-    title: "Before It Disappears",
-    type: "Documentary",
-    year: "2023 — 2025",
-    slug: "before-it-disappears",
-    cover: "before-it-disappears/before-it-disappears-01.jpg",
-  },
-  {
-    title: "The Season of the Mulberry",
-    type: "Documentary",
-    year: "2025",
-    slug: "season-of-the-mulberry",
-    cover: "season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-01.JPG",
-  },
-  {
-    title: "When Roses Bloom",
-    type: "Documentary",
-    year: "2025",
-    slug: "when-roses-bloom",
-    cover: "when-roses-bloom/IMG_0487.JPG",
-  },
-];
-
-const recentWriting = [
-  { title: "More Sweet Than Bitter", date: "Oct 2025", slug: "more-sweet-than-bitter" },
-  { title: "The Unfinished God", date: "Sep 2025", slug: "the-unfinished-god" },
-];
-
-// Which projects actually have a page? work/[slug].astro builds its routes from
-// this same glob, so a tile can never link to a route that was not generated —
-// and a forthcoming project becomes a link the moment its content dir appears.
-const workModules = import.meta.glob("../content/work/*/project.json", { eager: true });
-const publishedSlugs = new Set(
-  Object.keys(workModules).map((path) => path.split("/").slice(-2, -1)[0]),
-);
-
-// The reading order lives in project.json, so the home grid cannot drift out of
-// step with /work and the endpaper. Unpublished tiles keep their written order.
-const workOrder = Object.fromEntries(
-  Object.entries(workModules).map(([path, mod]) => [
-    path.split("/").slice(-2, -1)[0],
-    (mod.default || mod).order ?? 99,
-  ]),
-);
-featuredProjects.sort((a, b) => (workOrder[a.slug] ?? 99) - (workOrder[b.slug] ?? 99));
+const { leaves } = manuscript();
+const firstLeaf = leaves[0].path;
 ---
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <Meta
-      title="Habib Saleh"
-      description="A photographer's record of light, slow disappearance, and the irreplaceable ordinary. Documentary, editorial and portrait work from Lebanon."
-      path="/"
-      image={photo("colored-air/HS-ColoredAir-2025-01.JPG")}
-    />
-  </head>
-  <body>
-    <main class="page">
-      <header class="masthead">
-        <div class="name">Habib Saleh</div>
-        <nav class="nav">
-          <a href="/work/">work</a>
-          <a href="/editorial/">editorial</a>
-          <a href="/writing/">writing</a>
-          <a href="/about/">about</a>
-        </nav>
-      </header>
 
-      <section class="intro">
-        <p class="lede">A record of light.<br/>A record of the strangeness of being alive.</p>
-      </section>
+<Book
+  title="Habib Saleh"
+  description={`${book.title} — ${book.subtitle} Photographs and writing by Habib Saleh, made in Lebanon.`}
+  path="/"
+  image={photo("colored-air/HS-ColoredAir-2025-01.JPG")}
+  screen="threshold"
+>
+  <div class="head">
+    <span class="wordmark">Habib Saleh</span>
+    <span class="wordmark edition">{book.edition}</span>
+  </div>
 
-      <section class="grid">
-        {featuredProjects.map((project) => {
-          const published = publishedSlugs.has(project.slug);
-          const Tile = published ? "a" : "div";
-          return (
-            <Tile class="tile" href={published ? `/work/${project.slug}/` : undefined}>
-              {project.cover ? (
-                <div class="thumb thumb-image">
-                  <Picture
-                    src={photo(project.cover)}
-                    {/* Astro strips alt="" from the output, leaving no alt attribute at
-                        all — worse than the title being announced twice. */}
-                    alt={project.title}
-                    formats={["avif"]}
-                    fallbackFormat="jpeg"
-                    widths={[450, 900, 1200]}
-                    sizes="(max-width: 640px) 100vw, 446px"
-                    loading="lazy"
-                    decoding="async"
-                  />
-                </div>
-              ) : (
-                <div class="thumb" style={`background: ${project.color};`}></div>
-              )}
-              <div class="meta">
-                <span class="meta-type">
-                  {project.type}
-                  {published ? (project.year ? ` · ${project.year}` : "") : " · Forthcoming"}
-                </span>
-                <span class="meta-title">{project.title}</span>
-              </div>
-            </Tile>
-          );
-        })}
-      </section>
+  <section class="threshold-body">
+    <h1 class="work-title">{book.title}</h1>
+    <p class="work-subtitle">{book.subtitle}</p>
 
-      <section class="writing">
-        <header class="writing-head">
-          <span class="writing-title">Recent writing</span>
-          <a class="writing-all" href="/writing/">all writing →</a>
-        </header>
-        <ul class="writing-list">
-          {recentWriting.map((piece) => (
-            <li>
-              <a href={`/writing/${piece.slug}/`}>
-                <span class="piece-date">{piece.date}</span>
-                <span class="piece-title">{piece.title}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
-      </section>
+    <div class="doors">
+      <a class="door" href="/prelude/">Begin the work →</a>
+      {/* Revealed by the script below only when a bookmark exists, so a
+          first-time reader is never offered a place to resume. */}
+      <a class="door-small" id="resume" href={firstLeaf} hidden>Continue reading</a>
+      <a class="door-small" href="/contents/">Contents</a>
+    </div>
+  </section>
 
-      <footer class="footer">
-        <span>© Habib Saleh</span>
-        <a class="footer-mail" href="mailto:contact@habibsaleh.com">contact@habibsaleh.com</a>
-      </footer>
-    </main>
-  </body>
-</html>
+  <BookFoot />
+</Book>
+
+<script>
+  // The bookmark is a leaf's address rather than its number: an address is
+  // built from the leaf's own content, so inserting a photograph ahead of it
+  // never moves anyone's place in the book.
+  const resume = document.getElementById("resume");
+  try {
+    const saved = window.localStorage.getItem("tp:leaf");
+    if (resume && saved && saved.startsWith("/read/")) {
+      resume.setAttribute("href", saved);
+      resume.hidden = false;
+    }
+  } catch (e) {
+    /* private mode — the offer simply never appears */
+  }
+</script>

@@ -1,0 +1,35 @@
+---
+// A passage.
+import Book from "../../layouts/Book.astro";
+import { photo } from "../../lib/images.js";
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob("../../content/writing/*.json", { eager: true });
+  return Object.values(modules)
+    .map((mod) => mod.default || mod)
+    .map((piece) => ({ params: { slug: piece.slug }, props: { piece } }));
+}
+
+const { piece } = Astro.props;
+---
+
+<Book
+  title={`${piece.title} — Habib Saleh`}
+  description={piece.paragraphs[0]}
+  path={`/notebook/${piece.slug}/`}
+  image={photo("colored-air/HS-ColoredAir-2025-01.JPG")}
+  screen="piece"
+>
+  <div class="head">
+    <a class="wordmark" href="/notebook/">← Notebook</a>
+    <a class="wordmark" href="/">Habib Saleh</a>
+  </div>
+
+  <article class="piece-body">
+    <header class="piece-head">
+      <div class="piece-date">{piece.date}</div>
+      <h1 class="piece-title">{piece.title}</h1>
+    </header>
+    {piece.paragraphs.map((para) => <p>{para}</p>)}
+  </article>
+</Book>

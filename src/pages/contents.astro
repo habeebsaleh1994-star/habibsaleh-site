@@ -1,0 +1,65 @@
+---
+// The contents — the map of the whole work. Movements outweigh the stories
+// nested inside them by size, by rule, and by indent, so the hierarchy reads
+// even at a glance.
+import Book from "../layouts/Book.astro";
+import BookFoot from "../components/BookFoot.astro";
+import { photo } from "../lib/images.js";
+import book from "../content/book/book.json";
+import { manuscript } from "../lib/manuscript.js";
+
+const { contents } = manuscript();
+---
+
+<Book
+  title="Contents — Habib Saleh"
+  description={`The contents of ${book.title} — the movements and stories gathered in Habib Saleh's continuous body of work.`}
+  path="/contents/"
+  image={photo("colored-air/HS-ColoredAir-2025-01.JPG")}
+  screen="contents"
+>
+  <div class="head">
+    <a class="wordmark" href="/">Habib Saleh</a>
+    <span class="head-label">Contents</span>
+  </div>
+
+  <main class="contents-body">
+    <h2 class="contents-title">{book.title}</h2>
+
+    {contents.map(({ movement, path, stories }) => {
+      // A forthcoming movement is rendered as a span, never a link — nothing
+      // about it should invite a click that cannot be answered.
+      const Entry = path ? "a" : "div";
+      return (
+        <div class:list={["movement-entry", movement.forthcoming && "forthcoming"]}>
+          <Entry class="movement-link" href={path ?? undefined}>
+            <div class="movement-roman">{movement.roman}</div>
+            <div class="movement-row">
+              <span class="movement-title">{movement.title || "⋯"}</span>
+              <span class="movement-years">{movement.years}</span>
+            </div>
+          </Entry>
+
+          {stories.length > 0 && (
+            <div class="stories">
+              {stories.map((story) => {
+                const Row = story.path ? "a" : "div";
+                return (
+                  <Row
+                    class:list={["story-row", story.forthcoming && "forthcoming"]}
+                    href={story.path ?? undefined}
+                  >
+                    <span class="story-title">{story.title}</span>
+                    <span class="story-years">{story.years}</span>
+                  </Row>
+                );
+              })}
+            </div>
+          )}
+        </div>
+      );
+    })}
+  </main>
+
+  <BookFoot ruled />
+</Book>

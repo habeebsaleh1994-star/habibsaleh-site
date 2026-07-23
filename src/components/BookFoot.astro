@@ -1,0 +1,18 @@
+---
+// The foot that carries the back matter. Notebook and Colophon live here
+// rather than in a nav bar — the book has no nav bar, and these are the two
+// things a reader reaches for after the work rather than before it.
+const { ruled = false, back = null } = Astro.props;
+---
+
+<footer class:list={["foot", ruled && "foot-ruled"]}>
+  {back ? (
+    <a href={back.href}>{back.label}</a>
+  ) : (
+    <div class="foot-links">
+      <a href="/notebook/">Notebook</a>
+      <a href="/colophon/">Colophon</a>
+    </div>
+  )}
+  <span>© Habib Saleh</span>
+</footer>

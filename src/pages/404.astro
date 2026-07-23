@@ -1,42 +1,37 @@
 ---
+// Deliberately not using Meta.astro — a missing page should emit no canonical
+// and no share preview — so it carries its own head.
 import "../styles/global.css";
+import "../styles/book.css";
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Page not found — Habib Saleh</title>
+    <title>Not in this book — Habib Saleh</title>
     <meta name="robots" content="noindex" />
-    {/* This page deliberately does not use Meta.astro — it should emit no
-        canonical and no share preview — so it carries the icons itself. */}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" sizes="32x32" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
   </head>
   <body>
-    <main class="page">
-      <header class="masthead">
-        <div class="name"><a href="/">Habib Saleh</a></div>
-        <nav class="nav">
-          <a href="/work/">work</a>
-          <a href="/editorial/">editorial</a>
-          <a href="/writing/">writing</a>
-          <a href="/about/">about</a>
-        </nav>
-      </header>
+    <div class="book prelude rises">
+      <div class="head">
+        <a class="wordmark" href="/">Habib Saleh</a>
+        <span class="head-label">Not found</span>
+      </div>
 
-      <section class="intro">
-        <p class="lede">This page doesn't exist.</p>
-        <p class="notfound-note">
-          <a href="/">Return to the beginning</a>
+      <main class="prelude-body">
+        <p class="prelude-opening">This leaf is not in the book.</p>
+        <p class="prelude-para">
+          It may have been moved, or it may never have been written.
         </p>
-      </section>
+      </main>
 
-      <footer class="footer">
-        <span>© Habib Saleh</span>
-        <a class="footer-mail" href="mailto:contact@habibsaleh.com">contact@habibsaleh.com</a>
+      <footer class="prelude-foot">
+        <a class="door-medium" href="/contents/">Contents →</a>
       </footer>
-    </main>
+    </div>
   </body>
 </html>

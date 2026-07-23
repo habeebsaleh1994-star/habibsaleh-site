@@ -1,0 +1,83 @@
+---
+// A single commission. Plain, scrolling, no ceremony — a client wants to see
+// the pictures, not turn leaves.
+import { Picture } from "astro:assets";
+import Wing from "../../layouts/Wing.astro";
+import { photo } from "../../lib/images.js";
+
+export async function getStaticPaths() {
+  const modules = import.meta.glob("../../content/editorial/*.json", { eager: true });
+  return Object.entries(modules)
+    .filter(([file]) => !file.includes("_template"))
+    .map(([, mod]) => mod.default || mod)
+    .map((job) => ({ params: { slug: job.slug }, props: { job } }));
+}
+
+const { job } = Astro.props;
+
+// A photos entry is "file.jpg", { file, alt }, or an array of either — a pair
+// shot side by side. Normalise inside the array branch so a bare filename in a
+// pair is handled too.
+const plates = job.photos.map((entry) =>
+  (Array.isArray(entry) ? entry : [entry]).map((item) =>
+    typeof item === "string" ? { file: item, alt: null } : item,
+  ),
+);
+
+// The client is only worth printing when it says something the title does not.
+const clientLabel = job.client && job.client !== job.title ? job.client : "";
+const meta = [job.category, job.year].filter(Boolean).join(" · ");
+---
+
+<Wing
+  title={`${job.title} — Habib Saleh`}
+  description={`${job.title} — ${(job.category || "commissioned").toLowerCase()} photography by Habib Saleh${clientLabel ? ` for ${clientLabel}` : ""}.`}
+  path={`/commissions/${job.slug}/`}
+  image={photo(`editorial/${job.slug}/${job.cover}`)}
+>
+  <header class="cx-project-head">
+    <h1 class="cx-project-title">{job.title}</h1>
+    <div class="cx-project-meta">
+      {[clientLabel, meta].filter(Boolean).join(" — ")}
+    </div>
+    {job.link && (
+      <p><a class="cx-project-link" href={job.link} target="_blank" rel="noopener">{job.linkLabel || "Visit ↗"}</a></p>
+    )}
+  </header>
+
+  <div class="cx-plates">
+    {plates.map((pair) => {
+      const images = pair.map((item) => ({
+        item,
+        src: photo(`editorial/${job.slug}/${item.file}`),
+      }));
+      const isPair = images.length > 1;
+      const isLonePortrait =
+        !isPair && images[0].src.height > images[0].src.width;
+      return (
+        <div class:list={[isPair && "cx-pair", isLonePortrait && "cx-single-portrait"]}>
+          {images.map(({ item, src }) => (
+            <Picture
+              src={src}
+              alt={item.alt || job.title}
+              formats={["avif"]}
+              fallbackFormat="jpeg"
+              widths={[800, 1400, 2200]}
+              sizes={isPair ? "(max-width: 560px) 100vw, 560px" : "(max-width: 900px) 100vw, 1100px"}
+              loading="lazy"
+              decoding="async"
+            />
+          ))}
+        </div>
+      );
+    })}
+  </div>
+
+  {Array.isArray(job.credits) && job.credits.length > 0 && (
+    <div class="cx-project-head" style="margin-top:56px;margin-bottom:0;">
+      {job.credits.map((c) => (
+        <div class="cx-sub">{c.role} — {c.name}</div>
+      ))}
+    </div>
+  )}
+</Wing>

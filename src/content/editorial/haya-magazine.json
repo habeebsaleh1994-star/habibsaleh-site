@@ -3,6 +3,8 @@
   "slug": "haya-magazine",
   "client": "Haya Magazine",
   "year": "2020",
+  "category": "Editorial",
+  "order": 6,
   "dateSort": "2020-11",
   "note": "Dubai.",
   "cover": "6c6a8600.jpg",

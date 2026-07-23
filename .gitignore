@@ -28,3 +28,6 @@ originals/
 
 # local editor / agent config
 .claude/
+
+# local Cloudflare/wrangler state
+.wrangler/

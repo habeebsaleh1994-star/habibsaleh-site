@@ -1,0 +1,53 @@
+---
+// The commissions grid.
+import { Picture } from "astro:assets";
+import Wing from "../../layouts/Wing.astro";
+import { photo } from "../../lib/images.js";
+import book from "../../content/book/book.json";
+
+const modules = import.meta.glob("../../content/editorial/*.json", { eager: true });
+const commissions = Object.entries(modules)
+  .filter(([file]) => !file.includes("_template"))
+  .map(([, mod]) => mod.default || mod)
+  // Explicit order rather than by date: two pairs share a month, and a tie
+  // broken by directory listing is not an order anyone chose.
+  .sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
+
+const email = book.colophon.email;
+---
+
+<Wing
+  title="Commissions — Habib Saleh"
+  description="Commissioned editorial, fashion, and portrait photography by Habib Saleh. Available for assignments and collaborations."
+  path="/commissions/"
+  image={photo(`editorial/${commissions[0].slug}/${commissions[0].cover}`)}
+>
+  <p class="cx-intro">
+    {book.commissions.intro} <a href={`mailto:${email}`}>{email}</a>.
+  </p>
+
+  <div class="cx-grid">
+    {commissions.map((job) => (
+      <a href={`/commissions/${job.slug}/`}>
+        <div class="cx-cover">
+          <Picture
+            src={photo(`editorial/${job.slug}/${job.cover}`)}
+            alt={job.title}
+            formats={["avif"]}
+            fallbackFormat="jpeg"
+            widths={[400, 800, 1200]}
+            sizes="(max-width: 560px) 100vw, (max-width: 900px) 50vw, 370px"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+        <div class="cx-meta">
+          <div class="cx-title">{job.title}</div>
+          <div class="cx-sub">
+            {job.category}{job.year ? ` · ${job.year}` : ""}
+          </div>
+        </div>
+      </a>
+    ))}
+  </div>
+</Wing>

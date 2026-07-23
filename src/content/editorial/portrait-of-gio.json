@@ -3,6 +3,8 @@
   "slug": "portrait-of-gio",
   "client": "",
   "year": "2025",
+  "category": "Portrait",
+  "order": 3,
   "dateSort": "2025-01",
   "cover": "6c6a2403.jpg",
   "photos": [
@@ -28,7 +30,13 @@
     }
   ],
   "credits": [
-    { "role": "Photography", "name": "Habib Saleh" },
-    { "role": "Model", "name": "Gio Dardi" }
+    {
+      "role": "Photography",
+      "name": "Habib Saleh"
+    },
+    {
+      "role": "Model",
+      "name": "Gio Dardi"
+    }
   ]
 }

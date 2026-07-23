@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>
+    *{box-sizing:border-box;}
+    html,body{margin:0;padding:0;background:#fbfaf6;}
+    a{color:inherit;text-decoration:none;}
+    button{font:inherit;color:inherit;background:none;border:none;padding:0;margin:0;cursor:pointer;}
+    :focus-visible{outline:1.5px solid #5a554c;outline-offset:3px;border-radius:1px;}
+    @keyframes om-rise{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:translateY(0);}}
+    @keyframes om-fade{from{opacity:0;}to{opacity:1;}}
+    @media (prefers-reduced-motion: reduce){*,*::before,*::after{transition-duration:.01ms !important;animation-duration:.01ms !important;}}
+  </style>
+</helmet>
+<div style="min-height:100vh;background:#fbfaf6;color:#2a2724;font-family:Georgia,'Times New Roman',serif;-webkit-font-smoothing:antialiased;">
+
+  <!-- ═══════════ THRESHOLD ═══════════ -->
+  <sc-if value="{{ isThreshold }}" hint-placeholder-val="{{ true }}">
+    <div style="min-height:100vh;display:flex;flex-direction:column;animation:om-rise .7s cubic-bezier(.2,.7,.2,1) both;">
+      <div style="max-width:800px;margin:0 auto;width:100%;box-sizing:border-box;padding:30px 56px 0;display:flex;justify-content:space-between;align-items:baseline;">
+        <span style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#a89e8a;">Habib Saleh</span>
+        <span style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#c3bba9;">First edition · a living manuscript</span>
+      </div>
+      <section style="flex:1;max-width:800px;margin:0 auto;width:100%;box-sizing:border-box;padding:0 56px;display:flex;flex-direction:column;justify-content:center;">
+        <h1 style="font-family:Georgia,serif;font-weight:normal;font-size:52px;line-height:1.18;letter-spacing:-.015em;color:#2a2724;margin:0;max-width:15ch;">To Pray Is to Wander About the Meaning of Life</h1>
+        <p style="font-family:Georgia,serif;font-style:italic;font-size:18px;line-height:1.6;color:#6a6358;margin:38px 0 0 0;max-width:440px;">A record of light. A record of the strangeness of being alive.</p>
+        <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:14px 40px;margin-top:64px;">
+          <button onClick="{{ begin }}" style="font-family:Georgia,serif;font-size:22px;color:#2a2724;border-bottom:1px solid #2a2724;padding-bottom:3px;" style-hover="color:#6a6358;border-bottom-color:#6a6358;">Begin the work →</button>
+          <sc-if value="{{ hasBookmark }}" hint-placeholder-val="{{ false }}">
+            <button onClick="{{ resume }}" style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8478;" style-hover="color:#2a2724;">Continue reading</button>
+          </sc-if>
+          <button onClick="{{ openContents }}" style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8478;" style-hover="color:#2a2724;">Contents</button>
+        </div>
+      </section>
+      <footer style="max-width:800px;margin:0 auto;width:100%;box-sizing:border-box;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px 24px;padding:24px 56px 40px;font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#b0a896;">
+        <div style="display:flex;gap:24px;">
+          <button onClick="{{ openNotebook }}" style="letter-spacing:.18em;text-transform:uppercase;color:#b0a896;" style-hover="color:#5a554c;">Notebook</button>
+          <button onClick="{{ openColophon }}" style="letter-spacing:.18em;text-transform:uppercase;color:#b0a896;" style-hover="color:#5a554c;">Colophon</button>
+        </div>
+        <span>© Habib Saleh</span>
+      </footer>
+    </div>
+  </sc-if>
+
+  <!-- ═══════════ PRELUDE (first encounter) ═══════════ -->
+  <sc-if value="{{ isPrelude }}" hint-placeholder-val="{{ false }}">
+    <div style="min-height:100vh;display:flex;flex-direction:column;animation:om-rise .7s cubic-bezier(.2,.7,.2,1) both;">
+      <div style="max-width:680px;margin:0 auto;width:100%;box-sizing:border-box;padding:30px 56px 0;display:flex;justify-content:space-between;align-items:baseline;">
+        <button onClick="{{ goThreshold }}" style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#a89e8a;" style-hover="color:#5a554c;">Habib Saleh</button>
+        <span style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#a89e8a;">Prelude</span>
+      </div>
+      <main style="flex:1;max-width:580px;margin:0 auto;width:100%;box-sizing:border-box;padding:12vh 56px;display:flex;flex-direction:column;justify-content:center;">
+        <p style="font-family:Georgia,serif;font-style:italic;font-size:26px;line-height:1.5;color:#2a2724;margin:0 0 60px 0;">This is not a collection of photographs. It is a way of looking, kept.</p>
+        <p style="font-family:Georgia,serif;font-size:18px;line-height:1.9;color:#3a352e;margin:0 0 26px 0;">For a long time I moved through the world without seeing it. Then something broke, and the ordinary turned vivid — light on a wall, a child in a doorway, a familiar street made strange. I began photographing not to hold these things, but to confirm they were there.</p>
+        <p style="font-family:Georgia,serif;font-size:18px;line-height:1.9;color:#3a352e;margin:0;">What follows is one continuous work, still unfolding. Move through it slowly. Some of it is meant to be passed in silence.</p>
+      </main>
+      <footer style="max-width:580px;margin:0 auto;width:100%;box-sizing:border-box;padding:24px 56px 64px;">
+        <button onClick="{{ openContents }}" style="font-family:Georgia,serif;font-size:20px;color:#2a2724;border-bottom:1px solid #2a2724;padding-bottom:3px;" style-hover="color:#6a6358;border-bottom-color:#6a6358;">Contents →</button>
+      </footer>
+    </div>
+  </sc-if>
+
+  <!-- ═══════════ CONTENTS ═══════════ -->
+  <sc-if value="{{ isContents }}" hint-placeholder-val="{{ false }}">
+    <div style="min-height:100vh;display:flex;flex-direction:column;animation:om-rise .7s cubic-bezier(.2,.7,.2,1) both;">
+      <div style="max-width:800px;margin:0 auto;width:100%;box-sizing:border-box;padding:30px 56px 0;display:flex;justify-content:space-between;align-items:baseline;">
+        <button onClick="{{ goThreshold }}" style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#a89e8a;" style-hover="color:#5a554c;">Habib Saleh</button>
+        <span style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#a89e8a;">Contents</span>
+      </div>
+      <main style="flex:1;max-width:800px;margin:0 auto;width:100%;box-sizing:border-box;padding:72px 56px 40px;">
+        <h2 style="font-family:Georgia,serif;font-style:italic;font-weight:normal;font-size:22px;line-height:1.4;color:#6a6358;margin:0 0 72px 0;max-width:24ch;">To Pray Is to Wander About the Meaning of Life</h2>
+        <sc-for list="{{ contents }}" as="m" hint-placeholder-count="2">
+          <div style="margin-bottom:88px;padding-top:34px;border-top:.5px solid #e6e1d6;">
+            <button onClick="{{ m.open }}" style="{{ m.rowStyle }}">
+              <div style="font-family:Georgia,serif;font-style:italic;font-size:15px;letter-spacing:.04em;color:#a89e8a;margin-bottom:14px;">{{ m.roman }}</div>
+              <div style="display:flex;align-items:baseline;justify-content:space-between;gap:24px;">
+                <span style="{{ m.titleStyle }}">{{ m.title }}</span>
+                <span style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#8a8478;white-space:nowrap;">{{ m.years }}</span>
+              </div>
+            </button>
+            <div style="margin-top:26px;margin-left:2px;padding-left:26px;border-left:.5px solid #e6e1d6;display:flex;flex-direction:column;gap:14px;">
+              <sc-for list="{{ m.stories }}" as="st" hint-placeholder-count="1">
+                <button onClick="{{ st.open }}" style="{{ st.rowStyle }}">
+                  <span style="{{ st.titleStyle }}">{{ st.title }}</span>
+                  <span style="{{ st.yearStyle }}">{{ st.years }}</span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+        </sc-for>
+      </main>
+      <footer style="max-width:800px;margin:0 auto;width:100%;box-sizing:border-box;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:12px 24px;padding:24px 56px 48px;border-top:.5px solid #ece8df;font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#b0a896;">
+        <div style="display:flex;gap:24px;">
+          <button onClick="{{ openNotebook }}" style="letter-spacing:.18em;text-transform:uppercase;color:#b0a896;" style-hover="color:#5a554c;">Notebook</button>
+          <button onClick="{{ openColophon }}" style="letter-spacing:.18em;text-transform:uppercase;color:#b0a896;" style-hover="color:#5a554c;">Colophon</button>
+        </div>
+        <span>© Habib Saleh</span>
+      </footer>
+    </div>
+  </sc-if>
+
+  <!-- ═══════════ READER (the continuous manuscript) ═══════════ -->
+  <sc-if value="{{ isReader }}" hint-placeholder-val="{{ false }}">
+    <div style="min-height:100vh;display:flex;flex-direction:column;">
+      <div style="max-width:1100px;margin:0 auto;width:100%;box-sizing:border-box;padding:26px 56px 0;display:grid;grid-template-columns:1fr auto 1fr;align-items:baseline;gap:16px;">
+        <button onClick="{{ openContents }}" style="justify-self:start;font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a89e8a;" style-hover="color:#5a554c;">Contents</button>
+        <span style="justify-self:center;font-family:Georgia,serif;font-style:italic;font-size:13px;color:#a89e8a;text-align:center;">{{ spineTitle }}</span>
+        <span style="justify-self:end;font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.14em;color:#c3bba9;">{{ counter }}</span>
+      </div>
+
+      <div key="leaf-{{ leafKey }}" style="flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:48px 56px;min-height:70vh;animation:om-rise .55s cubic-bezier(.2,.7,.2,1) both;">
+        <sc-if value="{{ leafIsInterleaf }}" hint-placeholder-val="{{ true }}">
+          <div style="text-align:center;max-width:680px;">
+            <div style="width:36px;height:1px;background:#cfc7b6;margin:0 auto 32px;"></div>
+            <div style="font-family:Georgia,serif;font-style:italic;font-size:17px;letter-spacing:.08em;color:#a89e8a;margin-bottom:28px;">{{ mvRoman }}</div>
+            <h1 style="font-family:Georgia,serif;font-weight:normal;font-size:58px;line-height:1.12;letter-spacing:-.02em;color:#2a2724;margin:0;">{{ mvTitle }}</h1>
+            <div style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:#8a8478;margin-top:30px;">{{ mvYears }}</div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ leafIsFrontmatter }}" hint-placeholder-val="{{ false }}">
+          <div style="max-width:480px;margin:0 auto;">
+            <p style="font-family:Georgia,serif;font-style:italic;font-size:19px;line-height:1.65;color:#3a352e;margin:0;">{{ mvEpigraph }}</p>
+            <sc-if value="{{ mvHasEpigraphSource }}" hint-placeholder-val="{{ false }}">
+              <div style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:#a89e8a;margin-top:16px;">— {{ mvEpigraphSource }}</div>
+            </sc-if>
+            <div style="margin-top:44px;">
+              <sc-for list="{{ mvOpening }}" as="para" hint-placeholder-count="2">
+                <p style="font-family:Georgia,serif;font-size:17px;line-height:1.85;color:#3a352e;margin:0 0 22px 0;">{{ para }}</p>
+              </sc-for>
+            </div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ leafIsPhoto }}" hint-placeholder-val="{{ false }}">
+          <figure style="margin:0 auto;max-width:1000px;">
+            <div style="text-align:center;">
+              <img src="{{ photoSrc }}" alt="{{ photoCap }}" style="max-width:100%;max-height:calc(100vh - 300px);width:auto;height:auto;display:inline-block;"/>
+            </div>
+            <figcaption style="margin-top:18px;max-width:640px;">
+              <p style="font-family:Georgia,serif;font-size:14px;line-height:1.6;color:#5a554c;margin:0;">{{ photoCap }}</p>
+            </figcaption>
+          </figure>
+        </sc-if>
+
+        <sc-if value="{{ leafIsStory }}" hint-placeholder-val="{{ false }}">
+          <div style="text-align:center;max-width:600px;">
+            <div style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#a89e8a;margin-bottom:26px;">A story within {{ mvTitle }}</div>
+            <h2 style="font-family:Georgia,serif;font-weight:normal;font-style:italic;font-size:38px;line-height:1.22;color:#2a2724;margin:0;">{{ storyTitle }}</h2>
+            <div style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8a8478;margin-top:22px;">{{ storyYears }}</div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ leafIsClosing }}" hint-placeholder-val="{{ false }}">
+          <div style="max-width:480px;margin:0 auto;">
+            <sc-for list="{{ mvClosing }}" as="para" hint-placeholder-count="2">
+              <p style="font-family:Georgia,serif;font-size:17px;line-height:1.85;color:#3a352e;margin:0 0 22px 0;">{{ para }}</p>
+            </sc-for>
+            <sc-if value="{{ mvHasCredit }}" hint-placeholder-val="{{ false }}">
+              <p style="font-family:Georgia,serif;font-style:italic;font-size:13px;line-height:1.6;color:#8a8478;margin:36px 0 0 0;padding-top:24px;border-top:.5px solid #d4cfc3;">{{ mvCredit }}</p>
+            </sc-if>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ leafIsEnd }}" hint-placeholder-val="{{ false }}">
+          <div style="max-width:520px;margin:0 auto;text-align:center;">
+            <p style="font-family:Georgia,serif;font-style:italic;font-size:20px;line-height:1.6;color:#6a6358;margin:0 0 12px 0;">You have reached the present edge of the work.</p>
+            <p style="font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#a89e8a;margin:0 0 44px 0;">The manuscript is still unfolding. More will appear here in time.</p>
+            <div style="display:flex;justify-content:center;gap:32px;">
+              <button onClick="{{ openContents }}" style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#5a554c;" style-hover="color:#2a2724;">↑ Contents</button>
+              <button onClick="{{ openColophon }}" style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8478;" style-hover="color:#2a2724;">Colophon</button>
+            </div>
+          </div>
+        </sc-if>
+      </div>
+
+      <nav style="position:sticky;bottom:0;background:#fbfaf6;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:20px 56px 26px;font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:11px;letter-spacing:.18em;text-transform:uppercase;user-select:none;">
+        <button onClick="{{ turnPrev }}" style="{{ prevStyle }}" style-hover="color:#2a2724;">← turn back</button>
+        <button onClick="{{ turnNext }}" style="{{ nextStyle }}" style-hover="color:#2a2724;">turn →</button>
+      </nav>
+    </div>
+  </sc-if>
+
+  <!-- ═══════════ NOTEBOOK ═══════════ -->
+  <sc-if value="{{ isNotebook }}" hint-placeholder-val="{{ false }}">
+    <div style="min-height:100vh;display:flex;flex-direction:column;">
+      <div style="max-width:720px;margin:0 auto;width:100%;box-sizing:border-box;padding:30px 56px 0;display:flex;justify-content:space-between;align-items:baseline;">
+        <button onClick="{{ goThreshold }}" style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#a89e8a;" style-hover="color:#5a554c;">Habib Saleh</button>
+        <span style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#a89e8a;">Notebook</span>
+      </div>
+      <main style="flex:1;max-width:720px;margin:0 auto;width:100%;box-sizing:border-box;padding:72px 56px 40px;">
+        <p style="font-family:Georgia,serif;font-style:italic;font-size:20px;line-height:1.55;color:#6a6358;margin:0 0 56px 0;max-width:34ch;">Writings that move alongside the work — the same inquiry, approached in language.</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:28px;">
+          <sc-for list="{{ writings }}" as="w" hint-placeholder-count="2">
+            <li>
+              <button onClick="{{ w.open }}" style="display:flex;flex-direction:column;gap:6px;text-align:left;padding-bottom:28px;border-bottom:.5px solid #ece8df;width:100%;">
+                <span style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#8a8478;">{{ w.date }}</span>
+                <span style="font-family:Georgia,serif;font-size:24px;line-height:1.3;color:#2a2724;" style-hover="color:#5a554c;">{{ w.title }}</span>
+              </button>
+            </li>
+          </sc-for>
+        </ul>
+      </main>
+      <footer style="max-width:720px;margin:0 auto;width:100%;box-sizing:border-box;display:flex;justify-content:space-between;align-items:baseline;padding:24px 56px 48px;border-top:.5px solid #ece8df;font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#b0a896;">
+        <button onClick="{{ openContents }}" style="letter-spacing:.18em;text-transform:uppercase;color:#b0a896;" style-hover="color:#5a554c;">Contents</button>
+        <span>© Habib Saleh</span>
+      </footer>
+    </div>
+  </sc-if>
+
+  <!-- ═══════════ PASSAGE (a writing) ═══════════ -->
+  <sc-if value="{{ isPiece }}" hint-placeholder-val="{{ false }}">
+    <div style="min-height:100vh;display:flex;flex-direction:column;">
+      <div style="max-width:620px;margin:0 auto;width:100%;box-sizing:border-box;padding:30px 32px 0;display:flex;justify-content:space-between;align-items:baseline;">
+        <button onClick="{{ openNotebook }}" style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#a89e8a;" style-hover="color:#5a554c;">← Notebook</button>
+        <button onClick="{{ goThreshold }}" style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#a89e8a;" style-hover="color:#5a554c;">Habib Saleh</button>
+      </div>
+      <article style="flex:1;max-width:620px;margin:0 auto;width:100%;box-sizing:border-box;padding:72px 32px 96px;">
+        <header style="margin-bottom:52px;">
+          <div style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8a8478;margin-bottom:18px;">{{ pieceDate }}</div>
+          <h1 style="font-family:Georgia,serif;font-size:36px;line-height:1.2;letter-spacing:-.01em;font-weight:normal;color:#2a2724;margin:0;">{{ pieceTitle }}</h1>
+        </header>
+        <sc-for list="{{ pieceBody }}" as="para" hint-placeholder-count="4">
+          <p style="font-family:Georgia,serif;font-size:18px;line-height:1.85;color:#2a2724;margin:0 0 24px 0;">{{ para }}</p>
+        </sc-for>
+      </article>
+    </div>
+  </sc-if>
+
+  <!-- ═══════════ COLOPHON ═══════════ -->
+  <sc-if value="{{ isColophon }}" hint-placeholder-val="{{ false }}">
+    <div style="min-height:100vh;display:flex;flex-direction:column;">
+      <div style="max-width:560px;margin:0 auto;width:100%;box-sizing:border-box;padding:30px 32px 0;display:flex;justify-content:space-between;align-items:baseline;">
+        <button onClick="{{ goThreshold }}" style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#a89e8a;" style-hover="color:#5a554c;">Habib Saleh</button>
+        <span style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:#a89e8a;">Colophon</span>
+      </div>
+      <main style="flex:1;max-width:560px;margin:0 auto;width:100%;box-sizing:border-box;padding:72px 32px 40px;">
+        <p style="font-family:Georgia,serif;font-size:17px;line-height:1.8;color:#3a352e;margin:0 0 22px 0;">Habib Saleh is a Lebanese visual artist working across photography, film, and writing. Rather than approaching these as separate disciplines, he sees them as different ways of following the same inquiry, each capable of expressing what the others cannot.</p>
+        <p style="font-family:Georgia,serif;font-size:17px;line-height:1.8;color:#3a352e;margin:0 0 22px 0;">Working primarily in Lebanon, Saleh photographs the people and places closest to him — family, villages, cities, and the quiet rhythms of everyday life. Guided by natural light, long-term observation, and a sensitivity to the ordinary, his work explores presence, memory, time, and the fragile coexistence of beauty and devastation. Rather than centering extraordinary events, his photographs remain attentive to what continues around them: the gestures, relationships, and atmospheres through which life quietly persists.</p>
+        <p style="font-family:Georgia,serif;font-size:17px;line-height:1.8;color:#3a352e;margin:0 0 22px 0;">Writing moves alongside the images as an equal part of his practice, not as explanation but as another way of approaching what cannot be fully held by a photograph. Together, photography, film, and text form an ongoing body of work that reflects on perception, the limits of language, and the experience of being alive.</p>
+        <p style="font-family:Georgia,serif;font-size:17px;line-height:1.8;color:#3a352e;margin:0;"><em>To Pray Is to Wander About the Meaning of Life</em> is the continuous body of work gathered here — a living manuscript that keeps unfolding. The printed book will one day emerge from it.</p>
+
+        <div style="margin-top:56px;padding-top:28px;border-top:.5px solid #ece8df;display:flex;flex-direction:column;gap:28px;">
+          <div>
+            <div style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#8a8478;margin-bottom:8px;">Contact</div>
+            <a href="mailto:contact@habibsaleh.com" style="font-family:Georgia,serif;font-size:17px;color:#2a2724;border-bottom:.5px solid #d4cfc3;padding-bottom:1px;" style-hover="border-bottom-color:#2a2724;">contact@habibsaleh.com</a>
+          </div>
+          <div>
+            <div style="font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:#8a8478;margin-bottom:8px;">Instagram</div>
+            <div style="display:flex;flex-direction:column;gap:6px;font-family:Georgia,serif;font-size:17px;">
+              <a href="https://instagram.com/habibsfoto" target="_blank" rel="noopener" style="color:#2a2724;border-bottom:.5px solid #d4cfc3;padding-bottom:1px;width:fit-content;" style-hover="border-bottom-color:#2a2724;">@habibsfoto</a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:40px;padding-top:28px;border-top:.5px solid #ece8df;">
+          <p style="font-family:Georgia,serif;font-size:16px;line-height:1.7;color:#5a554c;margin:0;">Habib Saleh also photographs on commission. <button onClick="{{ openCommissions }}" style="font-family:Georgia,serif;font-size:16px;color:#2a2724;border-bottom:.5px solid #d4cfc3;padding-bottom:1px;" style-hover="border-bottom-color:#2a2724;">Commissions →</button></p>
+        </div>
+      </main>
+      <footer style="max-width:560px;margin:0 auto;width:100%;box-sizing:border-box;display:flex;justify-content:space-between;align-items:baseline;padding:24px 32px 48px;font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:#b0a896;">
+        <button onClick="{{ openContents }}" style="letter-spacing:.18em;text-transform:uppercase;color:#b0a896;" style-hover="color:#5a554c;">Contents</button>
+        <span>© Habib Saleh</span>
+      </footer>
+    </div>
+  </sc-if>
+
+  <!-- ═══════════ COMMISSIONS (separate wing · plain register) ═══════════ -->
+  <sc-if value="{{ isCommissions }}" hint-placeholder-val="{{ false }}">
+    <div style="min-height:100vh;background:#ffffff;color:#1c1c1c;font-family:-apple-system,'Helvetica Neue',Helvetica,Arial,sans-serif;display:flex;flex-direction:column;">
+      <div style="max-width:1200px;margin:0 auto;width:100%;box-sizing:border-box;padding:28px 48px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #ececec;">
+        <div style="display:flex;flex-direction:column;gap:2px;">
+          <span style="font-size:15px;font-weight:600;letter-spacing:.01em;color:#111;">Habib Saleh</span>
+          <span style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#999;">Commissions</span>
+        </div>
+        <button onClick="{{ goThreshold }}" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#999;" style-hover="color:#111;">The Work ↗</button>
+      </div>
+      <main style="flex:1;max-width:1200px;margin:0 auto;width:100%;box-sizing:border-box;padding:48px 48px 80px;">
+        <p style="font-size:15px;line-height:1.6;color:#555;margin:0 0 44px 0;max-width:52ch;">Commissioned editorial, fashion, and portrait photography. Available for assignments and collaborations — <a href="mailto:contact@habibsaleh.com" style="color:#111;text-decoration:underline;text-underline-offset:2px;">contact@habibsaleh.com</a>.</p>
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:36px 28px;">
+          <sc-for list="{{ commissions }}" as="c" hint-placeholder-count="6">
+            <div>
+              <div style="aspect-ratio:3/4;overflow:hidden;background:#f2f2f2;">
+                <img src="{{ c.cover }}" alt="{{ c.title }}" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+              </div>
+              <div style="margin-top:12px;">
+                <div style="font-size:15px;font-weight:500;color:#111;">{{ c.title }}</div>
+                <div style="font-size:12px;letter-spacing:.04em;color:#999;margin-top:3px;">{{ c.meta }}</div>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </main>
+      <footer style="max-width:1200px;margin:0 auto;width:100%;box-sizing:border-box;padding:24px 48px 40px;border-top:1px solid #ececec;font-size:11px;letter-spacing:.06em;color:#aaa;">© Habib Saleh — Commissions</footer>
+    </div>
+  </sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { screen: 'threshold', leaf: 0, bookmark: 0 };
+
+  componentDidMount() {
+    try {
+      const b = window.localStorage.getItem('tp:leaf');
+      if (b !== null) this.setState({ bookmark: Math.max(0, parseInt(b, 10) || 0) });
+    } catch (e) {}
+    this._onKey = (e) => {
+      if (this.state.screen !== 'reader') return;
+      if (e.key === 'ArrowRight') this.turn(1);
+      if (e.key === 'ArrowLeft') this.turn(-1);
+    };
+    document.addEventListener('keydown', this._onKey);
+  }
+  componentWillUnmount() {
+    if (this._onKey) document.removeEventListener('keydown', this._onKey);
+  }
+
+  // ── The manuscript: movements → flattened into one continuous run of leaves.
+  //    To grow the work, append to a movement's `sequence` or add a movement.
+  data() {
+    const B = 'src/assets/photos/';
+    const movements = [
+      {
+        roman: 'I', title: 'Colored Air', years: '2023 — Ongoing',
+        epigraph: 'Sometimes I go about in pity for myself, and all the while, a great wind carries me across the sky.',
+        epigraphSource: 'Ojibwe proverb',
+        opening: [
+          'Colored Air was the first name I gave to a change I did not yet understand.',
+          'The world itself had not become different, but my relationship to it had. Familiar places began to feel strangely vivid — children in the street, an old man outside his home, evening light moving across a wall. Nothing extraordinary had happened, yet everything seemed quietly charged with a presence I had spent years overlooking.',
+        ],
+        sequence: [
+          { photo: 'colored-air/HS-ColoredAir-2025-01.JPG', cap: 'Young girls playing in a neighbourhood in the town of Joun, Lebanon, 2024.' },
+          { photo: 'colored-air/HS-ColoredAir-2025-02.JPG', cap: 'A scene from Sidon during Eid El Fitr celebrations, 2024.' },
+          { story: 'The Season of the Mulberry', years: '2025' },
+          { photo: 'season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-01.JPG', cap: 'The mulberry season, Joun, 2025.' },
+          { story: 'When Roses Bloom', years: '2025' },
+          { photo: 'when-roses-bloom/IMG_0487.JPG', cap: 'When roses bloom, 2025.' },
+          { photo: 'colored-air/HS-ColoredAir-2025-05.JPG', cap: 'A candid shot of my little cousin on the balcony of our home in Joun, Lebanon, 2025.' },
+          { photo: 'colored-air/HS-ColoredAir-2025-07.JPG', cap: 'A portrait of an elderly woman in front of her home in Joun, Lebanon, 2025.' },
+        ],
+        closing: [
+          'This movement emerged after a period of personal loss that permanently altered my way of seeing. Over time the work moved beyond the event that initiated it — what remained was an increasing attentiveness to the quiet persistence of life itself.',
+          'Looking gradually ceased to feel like searching. It became a way of remaining available.',
+        ],
+        credit: 'Produced under the guidance of Ali Arkady as part of the Level 1 Visual Journalism Workshop organized by the VII Foundation, 2025.',
+      },
+      {
+        roman: 'II', title: 'Before It Disappears', years: '2023 — 2025',
+        epigraph: 'There comes a moment when a place no longer belongs only to the present. It begins to exist in two times at once.',
+        opening: [
+          'Some places are photographed not because they are vanishing, but because we have finally learned to see them.',
+        ],
+        sequence: [
+          { photo: 'before-it-disappears/before-it-disappears-01.jpg', cap: 'Before it disappears, 2024.' },
+          { story: 'What Light Knows About Us', years: 'Forthcoming', forthcoming: true },
+        ],
+      },
+      { roman: 'III', title: '', years: 'Forthcoming', forthcoming: true },
+    ];
+
+    // Flatten into the continuous manuscript + build the Contents map.
+    const manuscript = [];
+    const contents = [];
+    movements.forEach((mv) => {
+      if (mv.forthcoming) { contents.push({ mv, leafIndex: null, stories: [] }); return; }
+      const mvLeafIndex = manuscript.length;
+      manuscript.push({ type: 'interleaf', mv });
+      manuscript.push({ type: 'frontmatter', mv });
+      const stories = [];
+      mv.sequence.forEach((item) => {
+        if (item.story) {
+          if (item.forthcoming) {
+            stories.push({ title: item.story, years: item.years, forthcoming: true, leafIndex: null });
+          } else {
+            const li = manuscript.length;
+            manuscript.push({ type: 'story', mv, story: { title: item.story, years: item.years } });
+            stories.push({ title: item.story, years: item.years, leafIndex: li });
+          }
+        } else {
+          manuscript.push({ type: 'photo', mv, photo: item });
+        }
+      });
+      if (mv.closing) manuscript.push({ type: 'closing', mv });
+      contents.push({ mv, leafIndex: mvLeafIndex, stories });
+    });
+    manuscript.push({ type: 'end' });
+    return { movements, manuscript, contents };
+  }
+
+  writingsData() {
+    return [
+      { title: 'More Sweet Than Bitter', date: 'October 2025', body: [
+        'You know this the way you know weather. Not because someone explained it to you but because you stood inside it long enough. There are things that do not survive being named. You can circle them with language, you can build sentences that lean toward them the way trees lean toward light, but the thing itself stays where it is, untouched, whole, indifferent to your effort. This is not a failure of language. It is the shape of what is real.',
+        'We are prior to our words. Whatever we are, we were that before we learned to speak it, and whatever remains most true about us still lives there, in that silence before the first syllable. Every photograph, every poem, every careful arrangement of color and sound is an attempt to point back toward that place. Not to capture it. To confirm that it exists.',
+        'There is a method for growing rhubarb called forcing. The plant is raised in total darkness, tended only in brief intervals of candlelight. It thrives by reaching toward an absent sun, stretching so fast its growth can be heard. I am not making an allegory. I am just saying that some things grow toward what they cannot see, and the growing is not separate from the sweetness.',
+        "It's more sweet than bitter. You don't notice it at first. Then it doesn't leave.",
+      ] },
+      { title: 'The Unfinished God', date: 'September 2025', body: [
+        'To make anything at all is to admit that the world was not yet complete without it. This is either arrogance or prayer, and most days I cannot tell the difference.',
+        'A photograph does not stop time. It confesses that time was here, and that we were paying attention, for once, when it passed.',
+      ] },
+    ];
+  }
+
+  commissionsData() {
+    const B = 'src/assets/photos/editorial/';
+    return [
+      { title: 'Matilda London', meta: 'Editorial · 2025', cover: B + 'matilda-london/dscf3661.jpg' },
+      { title: 'Maison Makarem', meta: 'Fashion · 2025', cover: B + 'maison-makarem/dscf2169.jpg' },
+      { title: 'Portrait of Gio', meta: 'Portrait · 2025', cover: B + 'portrait-of-gio/6c6a2403.jpg' },
+      { title: 'Portraits of Jana', meta: 'Portrait · 2024', cover: B + 'portraits-of-jana/dscf4796.jpg' },
+      { title: 'Antoine Saliba Jewelry', meta: 'Commercial', cover: B + 'antoine-saliba-jewelry/1g1a7273.jpg' },
+      { title: 'Haya Magazine', meta: 'Editorial · 2020', cover: B + 'haya-magazine/6c6a8600.jpg' },
+      { title: 'Portrait of Elif', meta: 'Portrait · 2020', cover: B + 'portrait-of-elif/6c6a4775.jpeg' },
+      { title: 'Gabi × Julia', meta: 'Tanks Management · 2020', cover: B + 'gabi-x-julia/6c6a3986.jpg' },
+    ];
+  }
+
+  go(screen) { this.setState({ screen }); try { window.scrollTo(0, 0); } catch (e) {} }
+  begin() { this.go('prelude'); }
+  resume() { this.gotoLeaf(this.state.bookmark || 0); }
+  gotoLeaf(i) {
+    const len = this.data().manuscript.length;
+    const idx = Math.min(Math.max(i, 0), len - 1);
+    this.setState({ screen: 'reader', leaf: idx });
+    try { window.scrollTo(0, 0); window.localStorage.setItem('tp:leaf', String(idx)); } catch (e) {}
+  }
+  turn(d) {
+    const len = this.data().manuscript.length;
+    const idx = Math.min(Math.max(this.state.leaf + d, 0), len - 1);
+    if (idx === this.state.leaf) return;
+    this.setState({ leaf: idx, bookmark: idx });
+    try { window.scrollTo(0, 0); window.localStorage.setItem('tp:leaf', String(idx)); } catch (e) {}
+  }
+  openPiece(i) { this.setState({ screen: 'piece', piece: i }); try { window.scrollTo(0, 0); } catch (e) {} }
+
+  renderVals() {
+    const s = this.state.screen;
+    const { manuscript, contents } = this.data();
+
+    // Contents map rows (styled here; forthcoming rows are inert + dimmed).
+    const contentsRows = contents.map((c) => {
+      const dim = !!c.mv.forthcoming;
+      return {
+        roman: c.mv.roman,
+        title: c.mv.title || '⋯',
+        years: c.mv.years,
+        open: dim || c.leafIndex == null ? (() => {}) : (() => this.gotoLeaf(c.leafIndex)),
+        rowStyle: 'display:block;width:100%;text-align:left;' + (dim ? 'cursor:default;' : 'cursor:pointer;'),
+        titleStyle: 'font-family:Georgia,serif;font-size:34px;line-height:1.14;letter-spacing:-.01em;color:' + (dim ? '#cfc7b6' : '#2a2724') + ';',
+        stories: c.stories.map((st) => {
+          const sdim = !!st.forthcoming;
+          return {
+            title: st.title, years: st.years,
+            open: sdim || st.leafIndex == null ? (() => {}) : (() => this.gotoLeaf(st.leafIndex)),
+            rowStyle: 'display:flex;align-items:baseline;justify-content:space-between;gap:16px;width:100%;text-align:left;padding:2px 0;' + (sdim ? 'cursor:default;' : 'cursor:pointer;'),
+            titleStyle: 'font-family:Georgia,serif;font-style:italic;font-size:17px;line-height:1.5;color:' + (sdim ? '#b0a896' : '#3a352e') + ';',
+            yearStyle: "font-family:-apple-system,'Helvetica Neue',sans-serif;font-size:10px;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;color:" + (sdim ? '#b0a896' : '#8a8478') + ';',
+          };
+        }),
+      };
+    });
+
+    // Current leaf.
+    const i = Math.min(Math.max(this.state.leaf, 0), manuscript.length - 1);
+    const lv = manuscript[i];
+    const mv = lv.mv || {};
+    const isPhoto = lv.type === 'photo';
+    const isStory = lv.type === 'story';
+
+    const btn = (disabled) =>
+      'color:' + (disabled ? '#d4cfc3' : '#5a554c') + ';cursor:' + (disabled ? 'default' : 'pointer') +
+      ';letter-spacing:.18em;text-transform:uppercase;padding:14px 8px;margin:-14px -8px;';
+
+    const bm = this.state.bookmark || 0;
+
+    // Writings.
+    const writingsAll = this.writingsData();
+    const pieceIdx = Math.min(this.state.piece || 0, writingsAll.length - 1);
+    const piece = writingsAll[pieceIdx];
+
+    return {
+      isThreshold: s === 'threshold', isPrelude: s === 'prelude', isContents: s === 'contents', isReader: s === 'reader',
+      isNotebook: s === 'notebook', isPiece: s === 'piece', isColophon: s === 'colophon', isCommissions: s === 'commissions',
+
+      goThreshold: () => this.go('threshold'),
+      openContents: () => this.go('contents'),
+      openNotebook: () => this.go('notebook'),
+      openColophon: () => this.go('colophon'),
+      openCommissions: () => this.go('commissions'),
+      begin: () => this.begin(),
+      resume: () => this.resume(),
+      hasBookmark: bm > 0,
+
+      contents: contentsRows,
+
+      // reader — current leaf
+      leafKey: i,
+      leafIsInterleaf: lv.type === 'interleaf',
+      leafIsFrontmatter: lv.type === 'frontmatter',
+      leafIsPhoto: isPhoto,
+      leafIsStory: isStory,
+      leafIsClosing: lv.type === 'closing',
+      leafIsEnd: lv.type === 'end',
+      mvRoman: mv.roman || '',
+      mvTitle: mv.title || '',
+      mvYears: mv.years || '',
+      mvEpigraph: mv.epigraph || '',
+      mvEpigraphSource: mv.epigraphSource || '',
+      mvHasEpigraphSource: !!mv.epigraphSource,
+      mvOpening: mv.opening || [],
+      mvClosing: mv.closing || [],
+      mvCredit: mv.credit || '',
+      mvHasCredit: !!mv.credit,
+      storyTitle: isStory ? lv.story.title : '',
+      storyYears: isStory ? lv.story.years : '',
+      photoSrc: isPhoto ? ('src/assets/photos/' + lv.photo.photo) : '',
+      photoCap: isPhoto ? lv.photo.cap : '',
+      spineTitle: lv.type === 'end' ? '' : (mv.title || ''),
+      counter: lv.type === 'end' ? '' : (String(i + 1) + ' / ' + (manuscript.length - 1)),
+      turnPrev: () => this.turn(-1),
+      turnNext: () => this.turn(1),
+      prevStyle: btn(i === 0),
+      nextStyle: btn(i === manuscript.length - 1),
+
+      // notebook + piece
+      writings: writingsAll.map((w, idx) => ({ title: w.title, date: w.date, open: () => this.openPiece(idx) })),
+      pieceTitle: piece.title, pieceDate: piece.date, pieceBody: piece.body,
+
+      // commissions
+      commissions: this.commissionsData(),
+    };
+  }
+}
+</script>
+</body>
+</html>

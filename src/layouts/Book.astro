@@ -1,0 +1,22 @@
+---
+// Every screen of the book. Commissions is the one exception — it is another
+// register on purpose and brings its own ground.
+import Meta from "../components/Meta.astro";
+import "../styles/global.css";
+import "../styles/book.css";
+
+const { title, description, path, image, screen, rises = true } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <Meta title={title} description={description} path={path} image={image} />
+  </head>
+  <body>
+    <div class:list={["book", screen, rises && "rises"]}>
+      <slot />
+    </div>
+  </body>
+</html>

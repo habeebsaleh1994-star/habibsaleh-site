@@ -1,0 +1,50 @@
+---
+// The colophon — who made this, how to reach him, and the single seam to the
+// commercial wing. That seam is the only bridge out of the book.
+import Book from "../layouts/Book.astro";
+import BookFoot from "../components/BookFoot.astro";
+import { photo } from "../lib/images.js";
+import book from "../content/book/book.json";
+
+const { colophon } = book;
+---
+
+<Book
+  title="Colophon — Habib Saleh"
+  description={colophon.about[0]}
+  path="/colophon/"
+  image={photo("colored-air/HS-ColoredAir-2025-01.JPG")}
+  screen="colophon"
+>
+  <div class="head">
+    <a class="wordmark" href="/">Habib Saleh</a>
+    <span class="head-label">Colophon</span>
+  </div>
+
+  <main class="colophon-body">
+    {colophon.about.map((para) => <p>{para}</p>)}
+    <p><em>{book.title}</em> {colophon.manuscriptNote}</p>
+
+    <div class="colophon-contact">
+      <div>
+        <div class="colophon-label">Contact</div>
+        <a class="colophon-value" href={`mailto:${colophon.email}`}>{colophon.email}</a>
+      </div>
+      <div>
+        <div class="colophon-label">Instagram</div>
+        <a
+          class="colophon-value"
+          href={colophon.instagram.url}
+          target="_blank"
+          rel="noopener"
+        >{colophon.instagram.handle}</a>
+      </div>
+    </div>
+
+    <div class="seam">
+      <p>{colophon.seam} <a href="/commissions/">Commissions →</a></p>
+    </div>
+  </main>
+
+  <BookFoot back={{ href: "/contents/", label: "Contents" }} />
+</Book>
