@@ -41,6 +41,12 @@ const meta = {
     title: `${leaf.film?.title} — a film by Habib Saleh`,
     description: leaf.film?.cap || book.subtitle,
   },
+  // A fragment previews as the movement, not as itself. Its sentence read
+  // alone in a link preview is the whole point of the leaf spent for nothing.
+  fragment: {
+    title: `${mv?.title} — Habib Saleh`,
+    description: book.subtitle,
+  },
   story: {
     title: `${leaf.story?.story} — Habib Saleh`,
     description:
@@ -172,6 +178,15 @@ const ogImage =
           </p>
         </figcaption>
       </figure>
+    )}
+
+    {leaf.type === "fragment" && (
+      /* No label, no title, no rule. A fragment that announces itself becomes
+         a caption for the plate the reader just turned away from. `hold` is
+         for a single line meant to stand alone at scale. */
+      <div class={leaf.fragment.hold ? "fragment-leaf held" : "fragment-leaf"}>
+        {leaf.fragment.fragment.map((para) => <p>{para}</p>)}
+      </div>
     )}
 
     {leaf.type === "story" && (

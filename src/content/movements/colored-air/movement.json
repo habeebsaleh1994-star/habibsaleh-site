@@ -45,6 +45,13 @@
       "cap": "A tree blossoming during spring season in the town of Joun, Lebanon, 2024"
     },
     {
+      "id": "seeing",
+      "fragment": [
+        "I photograph because the photograph is the most immediate expression of something I have seen and felt. It begins before thought has organized the encounter. The camera does not teach me to look, it follows a way of seeing that is already there.",
+        "Color is more than appearance. It carries the inner atmosphere of the moment, not only what the camera recorded, but what being there felt like."
+      ]
+    },
+    {
       "photo": "colored-air/HS-ColoredAir-2025-09.JPG",
       "cap": "Kids playing in one of Joun's streets, 2025."
     },
@@ -179,6 +186,13 @@
       "cap": "The row of roses at dusk, the flowers going dark in the leaves, a narrow path opening between them."
     },
     {
+      "id": "what-is-here",
+      "fragment": [
+        "A gesture repeated until it becomes invisible, a door that still opens, the light falling in the same room at the same hour, a child passing through a street, an old man holding a piece of fruit.",
+        "These are not evidence of anything. They are what is here."
+      ]
+    },
+    {
       "photo": "colored-air/HS-ColoredAir-2025-11.JPG",
       "cap": "A candid shot of my father's uncle and my cousin kissing him on the cheek. The town of Joun, Lebanon, 2025."
     },
@@ -199,6 +213,13 @@
       "cap": "A candid photo of friends at sunset in one of Joun's neighbourhoods, 2024."
     },
     {
+      "id": "sorrow",
+      "fragment": [
+        "There are days the light is more than I can take, and I wait them out in a dark room.",
+        "Sorrow moves through a person and a place the way weather moves through them, changing what it touches without emptying it. What remains is not what existed before. Neither is it nothing."
+      ]
+    },
+    {
       "photo": "colored-air/HS-ColoredAir-2025-16.JPG",
       "cap": "Olive trees standing in a sea of wildflowers and grass. The town of Joun, Lebanon 2025."
     },
@@ -213,6 +234,13 @@
     {
       "photo": "colored-air/HS-ColoredAir-2025-19.JPG",
       "cap": "A candid shot of a group of kids playing football in Ancient Sidon, Lebanon, 2023."
+    },
+    {
+      "id": "ordinary",
+      "hold": true,
+      "fragment": [
+        "Ordinary and ordinary and ordinary until it breaks your heart."
+      ]
     },
     {
       "photo": "colored-air/HS-ColoredAir-2025-20.JPG",

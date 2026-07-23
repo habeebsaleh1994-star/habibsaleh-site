@@ -579,6 +579,42 @@ a.story-row:hover .story-title { color: var(--ink); }
   .film-frame:hover .film-play { transform: none; }
 }
 
+/* fragment — prose held alone between plates.
+   Narrower than the frontmatter measure and set a little larger, so a reader
+   arriving from a photograph meets a different register rather than a smaller
+   one. Nothing above it and nothing below it: the leaf is the frame. */
+.fragment-leaf {
+  max-width: 440px;
+  margin: 0 auto;
+}
+.fragment-leaf p {
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 1.9;
+  color: var(--prose);
+  margin: 0 0 26px 0;
+}
+.fragment-leaf p:last-child { margin-bottom: 0; }
+
+/* A single line meant to carry a leaf on its own. Italic and ink rather than
+   prose, centred, at the scale of a story title — because at body size, alone
+   on a page, it reads as something the build dropped the rest of. */
+.fragment-leaf.held {
+  max-width: 620px;
+  text-align: center;
+}
+.fragment-leaf.held p {
+  font-style: italic;
+  font-size: 30px;
+  line-height: 1.42;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+}
+
+@media (max-width: 640px) {
+  .fragment-leaf.held p { font-size: 24px; }
+}
+
 /* story — an intertitle announcing a story inside a movement */
 .story-leaf { text-align: center; max-width: 600px; }
 .story-label {

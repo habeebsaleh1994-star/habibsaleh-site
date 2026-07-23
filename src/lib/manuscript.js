@@ -27,9 +27,15 @@ function slugify(value) {
  * contents map in the same pass so the two can never drift.
  *
  * A leaf is `{ type, movement, path, index, ... }` where `type` is one of
- * interleaf · frontmatter · photo · story · closing · end. Room is left for a
- * `film` leaf: add the type here and a branch in Leaf.astro — the movement
- * sequence already carries arbitrary item shapes.
+ * interleaf · frontmatter · photo · fragment · story · closing · end. Room is
+ * left for a `film` leaf: add the type here and a branch in Leaf.astro — the
+ * movement sequence already carries arbitrary item shapes.
+ *
+ * A fragment is prose held alone between plates. It differs from a story in
+ * having no title, no label and no years — nothing announces it, because the
+ * moment it announces itself it reads as a caption for the plate behind it.
+ * Its address comes from an explicit `id` rather than from its text, so the
+ * sentence can be rewritten without the leaf moving.
  */
 export function manuscript() {
   const entries = Object.entries(movementModules)
@@ -79,6 +85,28 @@ export function manuscript() {
         continue;
       }
 
+      // A fragment is deliberately absent from the contents. It is not a
+      // destination, and listing it would let a reader arrive at the sentence
+      // without the photographs that earn it.
+      if (item.fragment) {
+        if (!item.id) {
+          throw new Error(
+            `[manuscript] ${slug}/movement.json: a fragment needs an "id".\n` +
+              `  Got: ${JSON.stringify(item)}\n` +
+              `  A fragment is { "id": "seeing", "fragment": ["…"] }\n` +
+              `  The id is the leaf's address, so it must not change when the ` +
+              `text does.`,
+          );
+        }
+        leaves.push({
+          type: "fragment",
+          movement: mv,
+          fragment: item,
+          path: `${base}/${slugify(item.id)}/`,
+        });
+        continue;
+      }
+
       if (item.story) {
         if (item.forthcoming) {
           stories.push({ title: item.story, years: item.years, forthcoming: true, path: null });
@@ -97,8 +125,9 @@ export function manuscript() {
         throw new Error(
           `[manuscript] ${slug}/movement.json: a sequence item has neither a ` +
             `"photo" nor a "story".\n  Got: ${JSON.stringify(item)}\n` +
-            `  A plate is { "photo": "folder/file.jpg", "cap": "…" }\n` +
-            `  A story is { "story": "Title", "years": "2025" }`,
+            `  A plate is    { "photo": "folder/file.jpg", "cap": "…" }\n` +
+            `  A story is    { "story": "Title", "years": "2025" }\n` +
+            `  A fragment is { "id": "seeing", "fragment": ["…"] }`,
         );
       }
 
