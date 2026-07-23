@@ -1,16 +1,116 @@
 {
   "roman": "III",
   "title": "What Light Knows About Us",
-  "years": "Forthcoming",
-  "forthcoming": true,
+  "years": "2024 — Ongoing",
   "order": 3,
   "opening": [
     "I return to one photograph constantly.",
     "It shows a birthday table with a white cake my mother prepared, topped with a few candles leaning toward one side. Around it, members of my family gather, some smiling, others frozen in incomplete movements. If I shake the photograph gently, the moment itself seems to move. I turn the page and return. The colours have faded, and the album grows heavier in my hands. That was my first lesson that things pass.",
-    "I wasn't always drawn to the photographs themselves, but to the way they existed within our home. Some belonged to weddings or birthdays. Others were gathered only because they were taken in the same year. Then there were the photographs that never found their place at all, loose images left inside envelopes, preserving ordinary afternoons, passing gestures, unfinished moments, things too quiet to belong anywhere except memory.",
-    "Our house in the village of Joun changed over the years. Rooms were added, walls rebuilt, windows opened, yet many spaces never lost the names of those who had once lived within them. My grandmother's room is still called Hajje Fatima's room, although she has long been gone. The room became something else. The name never did.",
+    "I wasn’t always drawn to the photographs themselves, but to the way they existed within our home. Some belonged to weddings or birthdays. Others were gathered only because they were taken in the same year. Then there were the photographs that never found their place at all, loose images left inside envelopes, preserving ordinary afternoons, passing gestures, unfinished moments, things too quiet to belong anywhere except memory.",
+    "Our house in the village of Joun changed over the years. Rooms were added, walls rebuilt, windows opened, yet many spaces never lost the names of those who had once lived within them. My grandmother’s room is still called Hajje Fatima’s room, although she has long been gone. The room became something else. The name never did.",
     "The elderly still move through the village using names that no longer belong to what stands before them. Perhaps they are not forgetting. Perhaps they continue to inhabit another layer of the same place. Sometimes I think photography does something similar. It allows different moments to remain together without asking them to become one.",
-    "After returning to Joun, I found myself photographing passing light, moving bodies, familiar rooms, gardens, and the slow changes that rarely announce themselves. I wasn't searching for the past. I was trying to remain close to what was quietly becoming memory while it was still here.",
+    "After returning to Joun, I found myself photographing passing light, moving bodies, familiar rooms, gardens, and the slow changes that rarely announce themselves. I wasn’t searching for the past. I was trying to remain close to what was quietly becoming memory while it was still here.",
     "Perhaps this is what light has always known about us. It falls on everything equally, without choosing between what is arriving and what is leaving. It witnesses change without trying to preserve it. The photographs that follow are not an attempt to stop time, but to remain present as it passes."
+  ],
+  "sequence": [
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-04.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-01.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-05.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-06.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-10.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-11.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-13.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-03.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-32.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-22.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-21.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-31.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-33.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-19.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-07.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-14.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-27.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-25.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-15.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-12.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-09.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-29.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-24.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-23.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-28.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-30.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-16.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-26.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-18.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-17.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-08.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-20.jpg"
+    },
+    {
+      "photo": "what-light-knows-about-us/what-light-knows-about-us-02.jpg"
+    }
   ]
 }
