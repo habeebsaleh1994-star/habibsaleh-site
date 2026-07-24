@@ -125,7 +125,11 @@ const ogImage =
 
     {leaf.type === "photo" && (
       <figure class="plate">
-        <div class="plate-image">
+        {/* The photograph is a button when it carries a caption: a tap reveals
+            the words, so the page can hold only the image until asked. The
+            caption is also the alt text, so a screen reader loses nothing by
+            the hiding. */}
+        <div class="plate-image" data-caption-toggle={leaf.photo.cap ? "" : undefined}>
           <Picture
             src={src}
             alt={leaf.photo.cap || mv.title}
@@ -140,7 +144,13 @@ const ogImage =
         </div>
         {leaf.photo.cap && (
           <figcaption class="plate-caption">
-            <p>{leaf.photo.cap}</p>
+            <button
+              class="caption-toggle"
+              id="cap-toggle"
+              aria-expanded="false"
+              aria-controls="cap-text"
+            >caption</button>
+            <p id="cap-text" hidden>{leaf.photo.cap}</p>
           </figcaption>
         )}
       </figure>
@@ -254,6 +264,34 @@ const ogImage =
     window.localStorage.setItem("tp:leaf", window.location.pathname);
   } catch (e) {
     /* private mode — the book simply does not remember */
+  }
+
+  // Captions are held back until asked for — the photograph should not arrive
+  // pre-explained. Tapping the plate or the small "caption" label reveals the
+  // words, and the choice is remembered: a reader who wants captions gets them
+  // on every leaf after, like a book read with the notes open.
+  const capToggle = document.getElementById("cap-toggle");
+  const capText = document.getElementById("cap-text");
+  if (capToggle && capText) {
+    const setCaps = (on) => {
+      capText.hidden = !on;
+      capToggle.setAttribute("aria-expanded", String(on));
+      capToggle.textContent = on ? "hide caption" : "caption";
+      try {
+        on
+          ? window.localStorage.setItem("tp:caps", "1")
+          : window.localStorage.removeItem("tp:caps");
+      } catch (e) {
+        /* private mode — the choice lasts one leaf */
+      }
+    };
+    try {
+      if (window.localStorage.getItem("tp:caps") === "1") setCaps(true);
+    } catch (e) {}
+    capToggle.addEventListener("click", () => setCaps(capText.hidden));
+    const plateImage = document.querySelector("[data-caption-toggle]");
+    if (plateImage)
+      plateImage.addEventListener("click", () => setCaps(capText.hidden));
   }
 
   // Pressing play is what loads YouTube — not turning to the leaf. Until then

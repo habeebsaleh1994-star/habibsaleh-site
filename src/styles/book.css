@@ -510,8 +510,26 @@ a.story-row:hover .story-title { color: var(--ink); }
   font-size: 14px;
   line-height: 1.6;
   color: var(--secondary);
-  margin: 0;
+  margin: 8px 0 0 0;
 }
+
+/* Captions are held back until asked for. This is the asking: a label in the
+   quietest register a link is allowed, sitting where the caption will appear.
+   The photograph itself also answers a tap. */
+.caption-toggle {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--dimmer);
+  background: none;
+  border: 0;
+  padding: 8px 8px 8px 0;
+  margin: -8px 0;
+  cursor: pointer;
+}
+.caption-toggle:hover { color: var(--label); }
+[data-caption-toggle] { cursor: pointer; }
 
 /* film — a leaf that holds a film rather than a photograph. It is a facade:
    Habib's own frame with a play mark, and the player replaces it on click. */
