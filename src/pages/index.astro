@@ -7,8 +7,12 @@ import { photo } from "../lib/images.js";
 import book from "../content/book/book.json";
 import { manuscript } from "../lib/manuscript.js";
 
-const { leaves } = manuscript();
+const { leaves, prelude } = manuscript();
 const firstLeaf = leaves[0].path;
+const firstPreludeLeaf = prelude.leaves[0].path;
+const resumableLeafPaths = leaves
+  .filter(({ type }) => type !== "end")
+  .map(({ path }) => path);
 ---
 
 <Book
@@ -28,10 +32,16 @@ const firstLeaf = leaves[0].path;
     <p class="work-subtitle">{book.subtitle}</p>
 
     <div class="doors">
-      <a class="door" href="/prelude/">Begin the work →</a>
+      <a class="door" href={firstPreludeLeaf}>Begin the work →</a>
       {/* Revealed by the script below only when a bookmark exists, so a
           first-time reader is never offered a place to resume. */}
-      <a class="door-small" id="resume" href={firstLeaf} hidden>Continue reading</a>
+      <a
+        class="door-small"
+        id="resume"
+        href={firstLeaf}
+        data-leaves={JSON.stringify(resumableLeafPaths)}
+        hidden
+      >Continue reading</a>
       <a class="door-small" href="/contents/">Contents</a>
     </div>
   </section>
@@ -46,9 +56,12 @@ const firstLeaf = leaves[0].path;
   const resume = document.getElementById("resume");
   try {
     const saved = window.localStorage.getItem("tp:leaf");
-    if (resume && saved && saved.startsWith("/read/")) {
+    const validLeaves = new Set(JSON.parse(resume?.dataset.leaves || "[]"));
+    if (resume && saved && validLeaves.has(saved)) {
       resume.setAttribute("href", saved);
       resume.hidden = false;
+    } else if (saved) {
+      window.localStorage.removeItem("tp:leaf");
     }
   } catch (e) {
     /* private mode — the offer simply never appears */

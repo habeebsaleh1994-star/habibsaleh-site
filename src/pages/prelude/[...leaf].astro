@@ -1,0 +1,46 @@
+---
+// The unnumbered opening run. The Prelude now turns like the manuscript rather
+// than becoming a long scrolling page before it: one passage per address, the
+// same spine, and the same neighbours in both directions.
+import Book from "../../layouts/Book.astro";
+import TurnNav from "../../components/TurnNav.astro";
+import { photo } from "../../lib/images.js";
+import { manuscript } from "../../lib/manuscript.js";
+
+export function getStaticPaths() {
+  const { prelude } = manuscript();
+  return prelude.leaves.map((leaf) => ({
+    params: {
+      leaf:
+        leaf.path.replace(/^\/prelude\//, "").replace(/\/$/, "") ||
+        undefined,
+    },
+    props: { leaf, opening: prelude.leaves[0].paragraphs[0] },
+  }));
+}
+
+const { leaf, opening } = Astro.props;
+---
+
+<Book
+  title="Prelude — Habib Saleh"
+  description={opening}
+  path={leaf.path}
+  image={photo("colored-air/HS-ColoredAir-2025-01.JPG")}
+  screen="reader"
+  rises={false}
+>
+  <div class="spine">
+    <a class="spine-back" href="/contents/">Contents</a>
+    <span class="spine-title">Prelude</span>
+    <span class="spine-counter" aria-hidden="true"></span>
+  </div>
+
+  <main class="leaf rises-leaf">
+    <div class:list={["prelude-leaf", leaf.kind === "opening" && "opening"]}>
+      {leaf.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+    </div>
+  </main>
+
+  <TurnNav prev={leaf.prev} next={leaf.next} />
+</Book>

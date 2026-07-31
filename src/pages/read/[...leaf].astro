@@ -6,6 +6,7 @@
 // — inserting a plate ahead of another does not move the one behind it.
 import { Picture } from "astro:assets";
 import Book from "../../layouts/Book.astro";
+import TurnNav from "../../components/TurnNav.astro";
 import { photo } from "../../lib/images.js";
 import { manuscript } from "../../lib/manuscript.js";
 import book from "../../content/book/book.json";
@@ -94,7 +95,11 @@ const ogImage =
 
   {/* Only the leaf body rises, at the shorter duration — the spine and the
       turn controls are furniture and stay put between leaves. */}
-  <div class="leaf rises-leaf">
+  <div
+    class="leaf rises-leaf"
+    data-bookmark-path={leaf.type === "end" ? undefined : leaf.path}
+    data-bookmark-clear={leaf.type === "end" ? "" : undefined}
+  >
     {leaf.type === "interleaf" && (
       <div class="interleaf">
         <div class="ornament"></div>
@@ -233,35 +238,22 @@ const ogImage =
     )}
   </div>
 
-  <nav class="turn" aria-label="Turn the leaf">
-    {leaf.prev ? (
-      <a href={leaf.prev} rel="prev" data-turn="prev">← turn back</a>
-    ) : (
-      <span aria-disabled="true">← turn back</span>
-    )}
-    {leaf.next ? (
-      <a href={leaf.next} rel="next" data-turn="next">turn →</a>
-    ) : (
-      <span aria-disabled="true">turn →</span>
-    )}
-  </nav>
+  <TurnNav prev={leaf.prev} next={leaf.next} />
 </Book>
 
 <script>
-  // Arrow keys turn the leaf, and the current leaf is remembered. Both read
-  // the links already in the document, so there is no second copy of the
-  // manuscript on the client and nothing to keep in step.
-  const prev = document.querySelector('[data-turn="prev"]');
-  const next = document.querySelector('[data-turn="next"]');
-
-  document.addEventListener("keydown", (e) => {
-    if (e.metaKey || e.ctrlKey || e.altKey) return;
-    if (e.key === "ArrowRight" && next) window.location.href = next.href;
-    if (e.key === "ArrowLeft" && prev) window.location.href = prev.href;
-  });
-
+  // The current numbered leaf is remembered. Its address comes from the same
+  // manuscript object that renders the counter, Contents, and turn links.
+  const bookmarkLeaf = document.querySelector(
+    "[data-bookmark-path], [data-bookmark-clear]",
+  );
   try {
-    window.localStorage.setItem("tp:leaf", window.location.pathname);
+    const bookmarkPath = bookmarkLeaf?.getAttribute("data-bookmark-path");
+    if (bookmarkPath) {
+      window.localStorage.setItem("tp:leaf", bookmarkPath);
+    } else if (bookmarkLeaf?.hasAttribute("data-bookmark-clear")) {
+      window.localStorage.removeItem("tp:leaf");
+    }
   } catch (e) {
     /* private mode — the book simply does not remember */
   }
@@ -317,52 +309,4 @@ const ogImage =
     });
   }
 
-  // A photograph is one swipe away on a phone, as it is in a real book.
-  let x0 = null;
-  let y0 = null;
-  let multi = false;
-
-  addEventListener(
-    "touchstart",
-    (e) => {
-      // A second finger means the reader is pinching a photograph, not turning
-      // the leaf. Arm nothing, and stay disarmed until every finger is lifted.
-      if (e.touches.length > 1) {
-        multi = true;
-        x0 = null;
-        return;
-      }
-      x0 = e.changedTouches[0].clientX;
-      y0 = e.changedTouches[0].clientY;
-    },
-    { passive: true },
-  );
-
-  addEventListener(
-    "touchend",
-    (e) => {
-      if (multi) {
-        if (e.touches.length === 0) multi = false;
-        x0 = null;
-        return;
-      }
-      if (x0 === null) return;
-      const dx = e.changedTouches[0].clientX - x0;
-      const dy = e.changedTouches[0].clientY - y0;
-      x0 = null;
-      // Panning a photograph the reader has zoomed into is not a page turn.
-      const zoomed = window.visualViewport && window.visualViewport.scale > 1.01;
-      if (zoomed) return;
-      // Ignore mostly-vertical movement so scrolling a long caption still works.
-      if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy)) return;
-      if (dx < 0 && next) window.location.href = next.href;
-      if (dx > 0 && prev) window.location.href = prev.href;
-    },
-    { passive: true },
-  );
-
-  addEventListener("touchcancel", () => {
-    x0 = null;
-    multi = false;
-  }, { passive: true });
 </script>

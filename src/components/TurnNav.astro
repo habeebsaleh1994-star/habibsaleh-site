@@ -1,0 +1,79 @@
+---
+// One turning contract for the unnumbered Prelude and every numbered leaf.
+// The links remain the source of truth; keyboard and touch only activate them.
+const { prev = null, next = null } = Astro.props;
+---
+
+<nav class="turn" aria-label="Turn the leaf">
+  {prev ? (
+    <a href={prev} rel="prev" data-turn="prev">← turn back</a>
+  ) : (
+    <span aria-disabled="true">← turn back</span>
+  )}
+  {next ? (
+    <a href={next} rel="next" data-turn="next">turn →</a>
+  ) : (
+    <span aria-disabled="true">turn →</span>
+  )}
+</nav>
+
+<script>
+  const prev = document.querySelector('[data-turn="prev"]');
+  const next = document.querySelector('[data-turn="next"]');
+
+  document.addEventListener("keydown", (event) => {
+    if (event.metaKey || event.ctrlKey || event.altKey) return;
+    if (event.key === "ArrowRight" && next) window.location.href = next.href;
+    if (event.key === "ArrowLeft" && prev) window.location.href = prev.href;
+  });
+
+  // A horizontal one-finger swipe turns; pinching, zoomed panning, and mostly
+  // vertical movement remain native browser gestures.
+  let x0 = null;
+  let y0 = null;
+  let multi = false;
+
+  addEventListener(
+    "touchstart",
+    (event) => {
+      if (event.touches.length > 1) {
+        multi = true;
+        x0 = null;
+        return;
+      }
+      x0 = event.changedTouches[0].clientX;
+      y0 = event.changedTouches[0].clientY;
+    },
+    { passive: true },
+  );
+
+  addEventListener(
+    "touchend",
+    (event) => {
+      if (multi) {
+        if (event.touches.length === 0) multi = false;
+        x0 = null;
+        return;
+      }
+      if (x0 === null) return;
+      const dx = event.changedTouches[0].clientX - x0;
+      const dy = event.changedTouches[0].clientY - y0;
+      x0 = null;
+      const zoomed = window.visualViewport && window.visualViewport.scale > 1.01;
+      if (zoomed) return;
+      if (Math.abs(dx) < 50 || Math.abs(dx) < Math.abs(dy)) return;
+      if (dx < 0 && next) window.location.href = next.href;
+      if (dx > 0 && prev) window.location.href = prev.href;
+    },
+    { passive: true },
+  );
+
+  addEventListener(
+    "touchcancel",
+    () => {
+      x0 = null;
+      multi = false;
+    },
+    { passive: true },
+  );
+</script>

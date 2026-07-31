@@ -3,11 +3,23 @@
   "subtitle": "A record of light. A record of the strangeness of being alive.",
   "edition": "First edition · a living manuscript",
   "prelude": {
-    "opening": "There are moments when the world seems to withdraw from its own noise, and something quietly begins to appear. Nothing extraordinary has happened. The streets remain the same, light still falls across familiar walls, children continue to play, seasons return as they always have. And yet, the ordinary begins to resist its own familiarity.",
-    "body": [
-      "What follows is an ongoing body of work unfolding through photography, writing, and film. These are not separate practices or independent projects, but different ways of approaching the same experience. Each movement, each photographic story, and each fragment belongs to a longer wandering through the ordinary mysteries of being alive.",
-      "This work does not move toward conclusions. It lingers with places, people, gestures, and passing moments, allowing them to reveal themselves without asking them to become symbols or explanations. Some parts speak through images, others through words. Neither is complete on its own. Together, they move toward what neither can fully hold.",
-      "The pages that follow are not meant to be hurried through. They are invitations to look a little longer, to remain with what is already here before familiarity quietly covers it again."
+    "leaves": [
+      {
+        "id": "opening",
+        "kind": "opening",
+        "text": "There are moments when the world seems to withdraw from its own noise, and something quietly begins to appear. Nothing extraordinary has happened. The streets remain the same, light still falls across familiar walls, children continue to play, seasons return as they always have. And yet, the ordinary begins to resist its own familiarity."
+      },
+      {
+        "id": "one-work",
+        "text": "What follows is an ongoing body of work unfolding through photography, writing, and film. These are not separate practices or independent projects, but different ways of approaching the same experience. Each movement, each photographic story, and each fragment belongs to a longer wandering through the ordinary mysteries of being alive."
+      },
+      {
+        "id": "without-conclusions",
+        "paragraphs": [
+          "This work does not move toward conclusions. It lingers with places, people, gestures, and passing moments, allowing them to reveal themselves without asking them to become symbols or explanations. Some parts speak through images, others through words. Neither is complete on its own. Together, they move toward what neither can fully hold.",
+          "The pages that follow are not meant to be hurried through. They are invitations to look a little longer, to remain with what is already here before familiarity quietly covers it again."
+        ]
+      }
     ]
   },
   "end": {

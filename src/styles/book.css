@@ -235,6 +235,13 @@ a.wordmark:hover { color: var(--secondary); }
   padding: 24px var(--gutter) 64px;
 }
 
+.prelude-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 14px 32px;
+}
+
 .door-medium {
   font-family: var(--serif);
   font-size: 20px;
@@ -404,7 +411,7 @@ a.story-row:hover .story-title { color: var(--ink); }
   font-family: var(--sans);
   font-size: 10px;
   letter-spacing: 0.14em;
-  color: var(--dimmer);
+  color: var(--label);
   white-space: nowrap;
 }
 
@@ -416,6 +423,27 @@ a.story-row:hover .story-title { color: var(--ink); }
   align-items: center;
   padding: 48px var(--gutter);
   min-height: 70vh;
+}
+
+/* Prelude — an unnumbered opening run inside the reader. Each passage is held
+   as a leaf at the same measure as the manuscript prose; no scrolling page
+   changes the interaction language before the first movement begins. */
+.prelude-leaf {
+  max-width: 580px;
+  margin: 0 auto;
+}
+.prelude-leaf p {
+  font-family: var(--serif);
+  font-size: 22px;
+  line-height: 1.72;
+  color: var(--prose);
+  margin: 0;
+}
+.prelude-leaf p + p { margin-top: 28px; }
+.prelude-leaf.opening p {
+  font-style: italic;
+  font-size: 23px;
+  color: var(--ink);
 }
 
 /* interleaf — the part-title, held in silence */
@@ -521,7 +549,7 @@ a.story-row:hover .story-title { color: var(--ink); }
   font-size: 10px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--dimmer);
+  color: var(--label);
   background: none;
   border: 0;
   padding: 8px 8px 8px 0;
@@ -931,6 +959,8 @@ a.story-row:hover .story-title { color: var(--ink); }
   .story-leaf-title { font-size: 30px; }
   .piece-title { font-size: 30px; }
   .prelude-opening { font-size: 22px; }
+  .prelude-leaf p { font-size: 20px; line-height: 1.68; }
+  .prelude-leaf.opening p { font-size: 21px; }
   .plate-image img { max-height: calc(100vh - 260px); }
   .leaf { padding-top: 32px; padding-bottom: 32px; }
   .contents-body,

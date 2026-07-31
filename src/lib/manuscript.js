@@ -8,6 +8,7 @@
 // a movement's `sequence`; add a movement by adding a directory. No page needs
 // to change, and no existing URL moves, because a leaf's address is built from
 // its own content rather than from its position in the run.
+import book from "../content/book/book.json";
 
 const movementModules = import.meta.glob("../content/movements/*/movement.json", {
   eager: true,
@@ -20,6 +21,51 @@ function slugify(value) {
     .replace(/[^a-zA-Z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")
     .toLowerCase();
+}
+
+/**
+ * The Prelude belongs to the reading run but not to its numbered extent. Its
+ * stable ids give every passage an address without making editorial wording a
+ * routing authority. The first address remains /prelude/ so the cover's door
+ * and every existing external link keep their meaning.
+ */
+function preludeRun() {
+  const source = book.prelude?.leaves;
+  if (!Array.isArray(source) || source.length === 0) {
+    throw new Error("[manuscript] book.json: the prelude needs at least one leaf.");
+  }
+
+  const seen = new Set();
+  const leaves = source.map((passage, index) => {
+    const paragraphs = Array.isArray(passage.paragraphs)
+      ? passage.paragraphs
+      : passage.text
+        ? [passage.text]
+        : [];
+    if (
+      !passage.id ||
+      paragraphs.length === 0 ||
+      paragraphs.some((paragraph) => typeof paragraph !== "string" || !paragraph)
+    ) {
+      throw new Error(
+        `[manuscript] book.json: every prelude leaf needs an id and prose.\n` +
+          `  Got: ${JSON.stringify(passage)}`,
+      );
+    }
+    const id = slugify(passage.id);
+    if (seen.has(id)) {
+      throw new Error(`[manuscript] book.json: duplicate prelude id "${id}".`);
+    }
+    seen.add(id);
+    return {
+      ...passage,
+      paragraphs,
+      type: "prelude",
+      path: index === 0 ? "/prelude/" : `/prelude/${id}/`,
+    };
+  });
+
+  return { leaves };
 }
 
 /**
@@ -38,6 +84,7 @@ function slugify(value) {
  * sentence can be rewritten without the leaf moving.
  */
 export function manuscript() {
+  const prelude = preludeRun();
   const entries = Object.entries(movementModules)
     .map(([file, mod]) => {
       const movement = mod.default || mod;
@@ -153,8 +200,18 @@ export function manuscript() {
   leaves.forEach((leaf, i) => {
     leaf.index = i;
     leaf.number = i + 1;
-    leaf.prev = i > 0 ? leaves[i - 1].path : null;
+    leaf.prev = i > 0 ? leaves[i - 1].path : prelude.leaves.at(-1).path;
     leaf.next = i < leaves.length - 1 ? leaves[i + 1].path : null;
+  });
+
+  // The Prelude uses the same neighbours as the numbered work without taking
+  // a number from it. This is the continuous seam: cover ↔ Prelude ↔ leaf 1.
+  prelude.leaves.forEach((leaf, i) => {
+    leaf.prev = i > 0 ? prelude.leaves[i - 1].path : "/";
+    leaf.next =
+      i < prelude.leaves.length - 1
+        ? prelude.leaves[i + 1].path
+        : leaves[0].path;
   });
 
   // The counter excludes the end leaf: it is the edge of the work, not part
@@ -162,5 +219,5 @@ export function manuscript() {
   // an error rather than an ending.
   const extent = leaves.length - 1;
 
-  return { leaves, contents, extent };
+  return { leaves, contents, extent, prelude };
 }
