@@ -642,6 +642,18 @@ a.story-row:hover .story-title { color: var(--ink); }
 }
 .fragment-leaf p:last-child { margin-bottom: 0; }
 
+/* A sustained thought still belongs to one leaf. Its quieter measure keeps
+   the whole interruption visible at once, while shorter fragments retain the
+   larger cadence above. */
+.fragment-leaf.long {
+  max-width: 560px;
+}
+.fragment-leaf.long p {
+  font-size: 15.5px;
+  line-height: 1.58;
+  margin-bottom: 14px;
+}
+
 /* A single line meant to carry a leaf on its own. Italic and ink rather than
    prose, centred, at the scale of a story title — because at body size, alone
    on a page, it reads as something the build dropped the rest of. */
