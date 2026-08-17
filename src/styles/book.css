@@ -18,6 +18,7 @@
   --m-prelude: 580px;
   --m-contents: 800px;
   --m-spine: 1100px;
+  --m-plate: 1320px;
   --m-notebook: 720px;
   --m-piece: 620px;
   --m-colophon: 560px;
@@ -518,15 +519,20 @@ a.story-row:hover .story-title { color: var(--ink); }
 .frontmatter-prose p:last-child,
 .closing-prose p:last-child { margin-bottom: 0; }
 
-/* photo — a plate */
-.plate { margin: 0 auto; max-width: 1000px; }
+/* photo — a plate
+   The photograph is the leaf's central presence, not an illustration held
+   inside the prose measure. On a wide screen it may therefore open beyond
+   the running head, while the viewport-height limit keeps the whole image
+   visible and leaves room for the spine, caption, and turn controls. */
+.plate { margin: 0 auto; max-width: var(--m-plate); }
 .plate-image { text-align: center; }
 /* Without this the <picture> shrink-wraps to nothing: it is an inline-block
    whose only child is max-width:100%, which resolves to a zero-width cycle. */
 .plate-image picture { display: contents; }
 .plate-image img {
   max-width: 100%;
-  max-height: calc(100vh - 300px);
+  max-height: calc(100vh - 220px);
+  max-height: calc(100svh - 220px);
   width: auto;
   height: auto;
   display: inline-block;
@@ -567,7 +573,7 @@ a.story-row:hover .story-title { color: var(--ink); }
   display: block;
   position: relative;
   width: 100%;
-  max-width: 1000px;
+  max-width: var(--m-plate);
   margin: 0 auto;
   padding: 0;
   border: 0;
@@ -579,7 +585,8 @@ a.story-row:hover .story-title { color: var(--ink); }
 .film-frame img {
   width: 100%;
   height: auto;
-  max-height: calc(100vh - 300px);
+  max-height: calc(100vh - 220px);
+  max-height: calc(100svh - 220px);
   object-fit: cover;
   display: block;
   border-radius: 1px;
@@ -603,7 +610,7 @@ a.story-row:hover .story-title { color: var(--ink); }
 .film-player {
   display: block;
   width: 100%;
-  max-width: 1000px;
+  max-width: var(--m-plate);
   margin: 0 auto;
   aspect-ratio: 16 / 9;
   border: 0;
@@ -973,7 +980,11 @@ a.story-row:hover .story-title { color: var(--ink); }
   .prelude-opening { font-size: 22px; }
   .prelude-leaf p { font-size: 20px; line-height: 1.68; }
   .prelude-leaf.opening p { font-size: 21px; }
-  .plate-image img { max-height: calc(100vh - 260px); }
+  .plate-image img,
+  .film-frame img {
+    max-height: calc(100vh - 220px);
+    max-height: calc(100svh - 220px);
+  }
   .leaf { padding-top: 32px; padding-bottom: 32px; }
   .contents-body,
   .notebook-body { padding-top: 56px; }
