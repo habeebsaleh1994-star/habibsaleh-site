@@ -1,0 +1,60 @@
+{
+  "roman": "IV",
+  "title": "After the Weather",
+  "years": "2026",
+  "sequence": [
+    { "photo": "after-the-weather/DSC_5226.jpg" },
+    { "photo": "after-the-weather/DSC_5228.jpg" },
+    { "photo": "after-the-weather/DSC_5227.jpg" },
+    { "photo": "after-the-weather/DSC_5229.jpg" },
+    {
+      "id": "no-problem-to-solve",
+      "fragment": [
+        "To understand the nature of existence is to realize that there is no problem to solve, only a continuous unfolding of what is.",
+        "As creatures shaped by the age and context in which we are born, we are often blind to the deeper truths of our reality.",
+        "Most live without ever questioning, caught in the flow of their time, while a few are driven to reflect on the fabric of life itself."
+      ]
+    },
+    { "photo": "after-the-weather/DSC_5230.jpg" },
+    { "photo": "after-the-weather/DSC_5231.jpg" },
+    { "photo": "after-the-weather/DSC_5232.jpg" },
+    { "photo": "after-the-weather/DSC_5233.jpg" },
+    {
+      "id": "to-look-more-closely",
+      "fragment": [
+        "This reflection does not offer solutions, nor does it change the world around us, but it allows us to experience life in a more profound way, seeing beyond the surface.",
+        "The moment we realize that there is no inherent problem, no ultimate challenge that needs fixing, an understanding arises, and with it, a certain peace."
+      ]
+    },
+    { "photo": "after-the-weather/DSC_5234.jpg" },
+    { "photo": "after-the-weather/DSC_5235.jpg" },
+    { "photo": "after-the-weather/DSC_5240.jpg" },
+    {
+      "id": "liberating-and-empty",
+      "fragment": [
+        "But this peace, paradoxically, is both liberating and empty.",
+        "Once we see that nothing holds ultimate meaning beyond its existence, we come face-to-face with the realization that everything just is, without reason or resolution.",
+        "This understanding neither gives us answers nor removes us from the cycle, it merely transforms our experience of it."
+      ]
+    },
+    { "photo": "after-the-weather/DSC_5248.jpg" },
+    { "photo": "after-the-weather/DSC_5236.jpg" },
+    { "photo": "after-the-weather/DSC_5250.jpg" },
+    { "photo": "after-the-weather/DSC_5255.jpg" },
+    { "photo": "after-the-weather/DSC_5258.jpg" },
+    {
+      "id": "without-escape",
+      "fragment": [
+        "The search for meaning becomes an illusion in itself, but by raising ourselves beyond the noise, we witness the chaos with clarity, not seeking to escape it, but accepting it for what it is."
+      ]
+    },
+    { "photo": "after-the-weather/DSC_5238.jpg" },
+    { "photo": "after-the-weather/DSC_5257.jpg" },
+    { "photo": "after-the-weather/DSC_5251.jpg" },
+    { "photo": "after-the-weather/DSC_5256.jpg" }
+  ],
+  "closing": [
+    "Thus, understanding brings peace, but that peace is marked by the awareness that, in the end, there is no problem, and there never was."
+  ],
+  "order": 4
+}
