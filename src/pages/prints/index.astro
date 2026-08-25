@@ -1,0 +1,81 @@
+---
+// Prints — the storefront, kept inside the book. The photographs are shown on
+// the book's own ground, with the book's own captions; Saatchi Art appears
+// only at the moment of acquiring, as the press that prints and ships.
+import { Picture } from "astro:assets";
+import Book from "../../layouts/Book.astro";
+import BookFoot from "../../components/BookFoot.astro";
+import { photo } from "../../lib/images.js";
+import prints from "../../content/prints/prints.json";
+import "../../styles/prints.css";
+
+// The book's own captions, keyed by photograph. A print speaks with the same
+// voice it has inside the manuscript; the short titles in prints.json are only
+// a fallback for photographs the book has not captioned.
+const movementModules = import.meta.glob("../../content/movements/*/movement.json", {
+  eager: true,
+});
+const captions = new Map();
+for (const mod of Object.values(movementModules)) {
+  const movement = mod.default || mod;
+  for (const entry of movement.sequence || []) {
+    if (entry.photo && entry.cap) captions.set(entry.photo, entry.cap);
+  }
+}
+
+const cover = prints.series[0].prints[0];
+---
+
+<Book
+  title="Prints — Habib Saleh"
+  description="Archival prints of photographs by Habib Saleh, made in Lebanon. Printed and shipped worldwide."
+  path="/prints/"
+  image={photo(cover.photo)}
+  screen="prints"
+>
+  <div class="head">
+    <a class="wordmark" href="/">Habib Saleh</a>
+    <span class="head-label">Prints</span>
+  </div>
+
+  <main class="prints-body">
+    <p class="prints-intro">{prints.intro}</p>
+    <p class="prints-note">{prints.note}</p>
+
+    {prints.series.map((series) => (
+      <section class="prints-series">
+        <div class="prints-series-head">
+          <h2 class="prints-series-title">{series.title}</h2>
+          <span class="prints-series-years">{series.years}</span>
+        </div>
+        <div class="prints-grid">
+          {series.prints.map((print) => (
+            <a
+              class="prints-item"
+              href={print.saatchi}
+              target="_blank"
+              rel="noopener"
+            >
+              <div class="prints-frame">
+                <Picture
+                  src={photo(print.photo)}
+                  alt={`${print.title} — ${series.title}`}
+                  formats={["avif"]}
+                  fallbackFormat="jpeg"
+                  widths={[500, 900, 1400]}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1200px) 50vw, 520px"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <p class="prints-cap">{captions.get(print.photo) || print.title}</p>
+              <span class="prints-acquire">Acquire →</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </main>
+
+  <BookFoot ruled back={{ href: "/contents/", label: "Contents" }} />
+</Book>

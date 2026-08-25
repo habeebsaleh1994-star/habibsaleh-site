@@ -1,0 +1,103 @@
+/* ── Prints ─────────────────────────────────────────────────────────────
+   Back matter of the book, not a wing: the prints are the work leaving the
+   page, so they sit on the book's own ground and inherit its dark mode.
+   Photographs are shown uncropped — these are the works themselves, and no
+   frame may cut into them. */
+
+.prints { --measure: var(--m-spine); }
+
+.prints-body {
+  max-width: var(--measure);
+  margin: 0 auto;
+  width: 100%;
+  padding: 72px var(--gutter) 96px;
+  flex: 1;
+}
+
+.prints-intro {
+  font-family: var(--serif);
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--prose);
+  margin: 0 0 14px 0;
+  max-width: 58ch;
+}
+
+.prints-note {
+  font-family: var(--serif);
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--note);
+  margin: 0 0 72px 0;
+  max-width: 58ch;
+}
+
+.prints-series { margin-bottom: 88px; }
+.prints-series:last-child { margin-bottom: 0; }
+
+.prints-series-head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 0.5px solid var(--hairline-soft);
+  padding-bottom: 12px;
+  margin-bottom: 32px;
+}
+.prints-series-title {
+  font-family: var(--serif);
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+  margin: 0;
+}
+.prints-series-years {
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--faint);
+  white-space: nowrap;
+}
+
+.prints-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 64px 44px;
+  align-items: start;
+}
+
+.prints-item { display: block; }
+.prints-frame picture { display: contents; }
+.prints-frame img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prints-cap {
+  font-family: var(--serif);
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.65;
+  color: var(--note);
+  margin: 14px 0 0 0;
+  max-width: 58ch;
+}
+
+.prints-acquire {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--faint);
+  transition: color 140ms ease;
+}
+.prints-item:hover .prints-acquire { color: var(--ink); }
+
+@media (max-width: 640px) {
+  .prints-body { padding-top: 48px; }
+  .prints-grid { grid-template-columns: 1fr; gap: 56px; }
+}
