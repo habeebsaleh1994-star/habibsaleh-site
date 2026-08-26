@@ -191,6 +191,12 @@ a.wordmark:hover { color: var(--secondary); }
    title sits, clearing to nothing at the right so the olive canopy keeps
    its depth. */
 
+/* The jacket owns its own containing block. Without this the absolutely
+   positioned .cover would hang off the initial containing block, and it
+   only appeared to work because the `rises` animation applies a transform
+   — which reduced-motion removes. */
+.threshold-cover { position: relative; }
+
 .threshold-cover .cover {
   position: absolute;
   inset: 0;
