@@ -216,12 +216,18 @@ a.wordmark:hover { color: var(--secondary); }
   content: "";
   position: absolute;
   inset: 0;
+  /* The stops are measured from the centre, not from the left edge, because
+     the title is centred on the 800px measure while the window is not. Anchored
+     to the edge in percentages, the dark core drifted off the type as the
+     display widened — on a 2000px screen the title floated in bright canopy
+     while the scrim darkened empty space beside it. */
   background: linear-gradient(
     100deg,
-    rgba(28, 26, 22, 0.72) 0%,
-    rgba(28, 26, 22, 0.52) 38%,
-    rgba(28, 26, 22, 0.12) 72%,
-    rgba(28, 26, 22, 0) 100%
+    rgba(28, 26, 22, 0.74) 0,
+    rgba(28, 26, 22, 0.72) calc(50% - 460px),
+    rgba(28, 26, 22, 0.54) calc(50% - 140px),
+    rgba(28, 26, 22, 0.16) calc(50% + 300px),
+    rgba(28, 26, 22, 0) calc(50% + 620px)
   );
 }
 
