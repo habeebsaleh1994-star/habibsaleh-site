@@ -1,6 +1,7 @@
 ---
 // The threshold — the book's half-title, and the only page that is not itself
 // part of the work.
+import { Picture } from "astro:assets";
 import Book from "../layouts/Book.astro";
 import BookFoot from "../components/BookFoot.astro";
 import { photo } from "../lib/images.js";
@@ -19,9 +20,26 @@ const resumableLeafPaths = leaves
   title="Habib Saleh"
   description={`${book.title} — ${book.subtitle} Photographs and writing by Habib Saleh, made in Lebanon.`}
   path="/"
-  image={photo("colored-air/HS-ColoredAir-2025-01.JPG")}
-  screen="threshold"
+  image={photo("cover/manuscript-cover.jpg")}
+  screen="threshold threshold-cover"
 >
+  {/* The jacket. Eager and high priority: it is the largest paint on the
+      first screen a reader ever sees, and lazy-loading it would leave the
+      title hanging over bare paper for a beat. */}
+  <div class="cover">
+    <Picture
+      src={photo("cover/manuscript-cover.jpg")}
+      alt="An olive tree standing in poppies. Joun, Lebanon."
+      formats={["avif"]}
+      fallbackFormat="jpeg"
+      widths={[900, 1400, 1920, 2560]}
+      sizes="100vw"
+      loading="eager"
+      fetchpriority="high"
+      decoding="sync"
+    />
+  </div>
+
   <div class="head">
     <span class="wordmark">Habib Saleh</span>
     <span class="wordmark edition">{book.edition}</span>

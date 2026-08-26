@@ -100,7 +100,9 @@ a.wordmark:hover { color: var(--secondary); }
 }
 
 .foot-ruled { border-top: 0.5px solid var(--hairline-soft); padding-bottom: 48px; }
-.foot-links { display: flex; gap: 24px; }
+/* Wraps: with Prints alongside the other three, the row is wider than a
+   phone and would otherwise run off the right edge. */
+.foot-links { display: flex; flex-wrap: wrap; gap: 12px 24px; }
 /* Notebook and Colophon are the only links to the back matter, and the
    colophon is where the email address lives — so they take the floor tone
    rather than the footer's. The copyright beside them stays quiet. */
@@ -176,6 +178,95 @@ a.wordmark:hover { color: var(--secondary); }
 /* Shown only once a bookmark exists. Hidden by default so a first-time
    reader never sees an offer to resume a book they have not opened. */
 #resume[hidden] { display: none; }
+
+/* ── The jacket ─────────────────────────────────────────────────────────
+   The threshold carries the cover photograph full bleed. This is the one
+   screen in the book whose ground is a picture rather than paper, so its
+   type is written in literal light tones instead of the palette: the
+   photograph is dark in both system themes, and text that followed --ink
+   would vanish in light mode. Everything inside the jacket therefore stops
+   inheriting and states its own colour, the way the commissions wing does.
+
+   The scrim is angled rather than flat — heaviest at the left where the
+   title sits, clearing to nothing at the right so the olive canopy keeps
+   its depth. */
+
+.threshold-cover .cover {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+/* Same shrink-to-fit trap as elsewhere: <picture> is an inline-block whose
+   only child is width:100%, which collapses it. */
+.threshold-cover .cover picture { display: contents; }
+.threshold-cover .cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.threshold-cover .cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(28, 26, 22, 0.72) 0%,
+    rgba(28, 26, 22, 0.52) 38%,
+    rgba(28, 26, 22, 0.12) 72%,
+    rgba(28, 26, 22, 0) 100%
+  );
+}
+
+/* The head, the title block and the foot ride above the photograph. */
+.threshold-cover > .head,
+.threshold-cover > .threshold-body,
+.threshold-cover > .foot { position: relative; z-index: 1; }
+
+.threshold-cover .wordmark { color: rgba(255, 252, 246, 0.72); }
+.threshold-cover a.wordmark:hover { color: rgba(255, 252, 246, 0.92); }
+.threshold-cover .edition { color: rgba(255, 252, 246, 0.48); }
+
+/* A soft halation under the type rather than a hard shadow: Georgia over a
+   photograph needs separation, but a drop shadow would read as a sticker. */
+.threshold-cover .work-title {
+  color: #fdfbf7;
+  text-shadow: 0 1px 24px rgba(20, 18, 15, 0.42);
+}
+.threshold-cover .work-subtitle {
+  color: rgba(253, 251, 247, 0.82);
+  text-shadow: 0 1px 18px rgba(20, 18, 15, 0.4);
+}
+
+.threshold-cover .door {
+  color: #fdfbf7;
+  border-bottom-color: rgba(253, 251, 247, 0.9);
+}
+.threshold-cover .door:hover {
+  color: rgba(253, 251, 247, 0.78);
+  border-bottom-color: rgba(253, 251, 247, 0.78);
+}
+.threshold-cover .door-small { color: rgba(253, 251, 247, 0.7); }
+.threshold-cover .door-small:hover { color: #fdfbf7; }
+
+.threshold-cover .foot { color: rgba(253, 251, 247, 0.55); }
+.threshold-cover .foot a { color: rgba(253, 251, 247, 0.72); }
+.threshold-cover .foot a:hover { color: #fdfbf7; }
+
+/* On a phone the frame is tall and narrow: the angled scrim would leave the
+   title over open canopy, so it becomes a vertical one weighted to the foot,
+   which is where the type collects once the block stops being centred. */
+@media (max-width: 640px) {
+  .threshold-cover .cover::after {
+    background: linear-gradient(
+      180deg,
+      rgba(28, 26, 22, 0.52) 0%,
+      rgba(28, 26, 22, 0.38) 34%,
+      rgba(28, 26, 22, 0.62) 100%
+    );
+  }
+}
 
 /* ── Prelude ────────────────────────────────────────────────────────── */
 
