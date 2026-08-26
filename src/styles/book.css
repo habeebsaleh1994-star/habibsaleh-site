@@ -210,25 +210,31 @@ a.wordmark:hover { color: var(--secondary); }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 50% 52%;
   display: block;
 }
 .threshold-cover .cover::after {
   content: "";
   position: absolute;
   inset: 0;
-  /* The stops are measured from the centre, not from the left edge, because
-     the title is centred on the 800px measure while the window is not. Anchored
-     to the edge in percentages, the dark core drifted off the type as the
-     display widened — on a 2000px screen the title floated in bright canopy
-     while the scrim darkened empty space beside it. */
-  background: linear-gradient(
-    100deg,
-    rgba(28, 26, 22, 0.74) 0,
-    rgba(28, 26, 22, 0.72) calc(50% - 460px),
-    rgba(28, 26, 22, 0.54) calc(50% - 140px),
-    rgba(28, 26, 22, 0.16) calc(50% + 300px),
-    rgba(28, 26, 22, 0) calc(50% + 620px)
-  );
+  /* A local pool of shade lets the title inhabit the grove without turning
+     the photograph's entire left half into a dark panel. The quieter vertical
+     wash only protects the running head and foot. */
+  background:
+    radial-gradient(
+      ellipse 42% 58% at calc(50% - 180px) 50%,
+      rgba(28, 26, 22, 0.68) 0,
+      rgba(28, 26, 22, 0.5) 42%,
+      rgba(28, 26, 22, 0.16) 76%,
+      rgba(28, 26, 22, 0) 100%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(24, 22, 19, 0.2) 0,
+      rgba(24, 22, 19, 0) 24%,
+      rgba(24, 22, 19, 0) 72%,
+      rgba(24, 22, 19, 0.3) 100%
+    );
 }
 
 /* The head, the title block and the foot ride above the photograph. */
@@ -236,9 +242,12 @@ a.wordmark:hover { color: var(--secondary); }
 .threshold-cover > .threshold-body,
 .threshold-cover > .foot { position: relative; z-index: 1; }
 
-.threshold-cover .wordmark { color: rgba(255, 252, 246, 0.72); }
+.threshold-cover .wordmark {
+  color: rgba(255, 252, 246, 0.78);
+  text-shadow: 0 1px 12px rgba(20, 18, 15, 0.62);
+}
 .threshold-cover a.wordmark:hover { color: rgba(255, 252, 246, 0.92); }
-.threshold-cover .edition { color: rgba(255, 252, 246, 0.48); }
+.threshold-cover .edition { color: rgba(255, 252, 246, 0.76); }
 
 /* A soft halation under the type rather than a hard shadow: Georgia over a
    photograph needs separation, but a drop shadow would read as a sticker. */
@@ -278,6 +287,44 @@ a.wordmark:hover { color: var(--secondary); }
       rgba(28, 26, 22, 0.62) 100%
     );
   }
+}
+
+/* The photograph is a cover when the frame itself is cover-shaped. In a
+   landscape window it becomes scenery, so the desktop returns to the book's
+   original paper half-title instead of forcing the image to perform there. */
+@media (orientation: landscape) {
+  .threshold-cover .cover { display: none; }
+
+  .threshold-cover .wordmark {
+    color: var(--faint);
+    text-shadow: none;
+  }
+  .threshold-cover a.wordmark:hover { color: var(--secondary); }
+  .threshold-cover .edition { color: var(--dimmer); }
+
+  .threshold-cover .work-title {
+    color: var(--ink);
+    text-shadow: none;
+  }
+  .threshold-cover .work-subtitle {
+    color: var(--note);
+    text-shadow: none;
+  }
+
+  .threshold-cover .door {
+    color: var(--ink);
+    border-bottom-color: var(--ink);
+  }
+  .threshold-cover .door:hover {
+    color: var(--note);
+    border-bottom-color: var(--note);
+  }
+  .threshold-cover .door-small { color: var(--muted); }
+  .threshold-cover .door-small:hover { color: var(--ink); }
+
+  .threshold-cover .foot { color: var(--faintest); }
+  .threshold-cover .foot a { color: var(--label); }
+  .threshold-cover .foot a:hover { color: var(--ink); }
 }
 
 /* ── Prelude ────────────────────────────────────────────────────────── */
