@@ -31,12 +31,12 @@ const pages = [], films = [];
 
 // the prelude
 const leaves = book.prelude.leaves.flatMap((l) => l.text ? [l.text] : l.paragraphs ?? []);
-pages.push({ id: "prelude", kind: "writing", title: "Prelude", titleEm: "", inNav: true, form: "Prelude", place: "", year: "", paras: leaves, margin: book.edition, image: null, appears: { title: "", description: "", share: null }, word: "" });
+pages.push({ id: "prelude", kind: "story", title: "Prelude", titleEm: "", inNav: true, kicker: book.edition, note: "", arrangement: "leaves", pieces: leaves.map((t) => pause(t)), appears: { title: "", description: "", share: null }, word: "" });
 
 // the movements, each a story turned like a book
 for (const m of movements) {
   const [t, em] = split(m.title), pieces = [];
-  if (m.epigraph) pieces.push(pause(m.epigraph, m.epigraphSource || ""));
+  if (m.epigraph) pieces.push(pause(`${m.epigraph}${m.epigraphSource ? `\n\n— ${m.epigraphSource}` : ""}${m.epigraphNote ? `\n\n${m.epigraphNote}` : ""}`));
   if (m.opening?.length) pieces.push(pause(m.opening.join("\n\n")));
   for (const p of m.sequence) {
     if (!p.photo) {
@@ -49,14 +49,20 @@ for (const m of movements) {
     const cap = p.cap || ""; const a = work(p.photo, { title: cap, date: yearIn(cap) ? "" : (m.years || "").slice(0, 4), alt: cap || `${m.title}, a photograph` }); if (a) pieces.push(piece(a));
   }
   if (m.closing?.length) pieces.push(pause(m.closing.join("\n\n")));
+  if (m === movements[movements.length - 1]) pieces.push(pause(`${book.end.line}\n\n${book.end.note}`, "The end"));
   pages.push({ id: slug(m.title), kind: "story", title: t, titleEm: em, inNav: true, kicker: `${m.roman} · ${m.years}`, note: (m.opening?.[0] || m.closing?.[0] || "").slice(0, 5000), arrangement: "book", pieces, appears: { title: "", description: "", share: null }, word: "" });
+}
+// the films, each a page with its poster and its link, after the movements (they belong to Before It Disappears)
+for (const f of films) {
+  const poster = work(f.poster, { title: f.title, alt: f.cap || f.title }); const [t, em] = split(f.title.replace(", Part Two", " Part Two"));
+  pages.push({ id: `film-${slug(f.title)}`, kind: "film", title: t, titleEm: em, inNav: true, form: "Short film", year: "2025", runtime: "", ratio: "16:9", synopsis: f.cap || "", poster, video: null, link: `https://www.youtube.com/watch?v=${f.film}`, stills: [], credits: ["A film by Habib Saleh"], appears: { title: "", description: "", share: null }, word: "" });
 }
 // the notebook
 for (const w of writings) pages.push({ id: w.slug, kind: "writing", title: w.title, titleEm: "", inNav: true, form: "From the notebook", place: "", year: yearIn(w.date), paras: w.paragraphs, margin: w.date, image: null, appears: { title: "", description: "", share: null }, word: "" });
 // prints: one story, series by series
 {
   const pieces = [pause(`${prints.intro} ${prints.note}`)];
-  for (const s of prints.series) { pieces.push(pause(`${s.title}, ${s.years}`, "Series")); for (const p of s.prints) { const a = work(p.photo, { title: p.title, date: p.year, caption: "Archival print, through Saatchi Art" }); if (a) pieces.push(piece(a)); } }
+  for (const s of prints.series) { pieces.push(pause(s.years, s.title)); for (const p of s.prints) { const a = work(p.photo, { title: p.title, date: p.year, caption: "Archival print, through Saatchi Art" }); if (a) pieces.push(piece(a)); } }
   pages.push({ id: "prints", kind: "story", title: "Prints", titleEm: "", inNav: true, kicker: "Archival prints", note: prints.intro, arrangement: "held", pieces, appears: { title: "", description: "", share: null }, word: "" });
 }
 // commissions, as projects
@@ -65,11 +71,6 @@ for (const e of editorial) {
   const cover = work(`editorial/${e.slug}/${e.cover}`, { alt: e.title, date: e.year }); if (cover && !outcome.includes(cover)) outcome.unshift(cover); else if (cover) { outcome.splice(outcome.indexOf(cover), 1); outcome.unshift(cover); }
   pages.push({ id: e.slug, kind: "project", title: t, titleEm: em, inNav: true, discipline: e.category, client: e.client || "", year: e.year || "", summary: e.note || book.commissions.intro.replace(/\s*—\s*$/, "."), outcome, process: [], compare: false, facts: [], appears: { title: "", description: "", share: null }, word: "" });
 }
-// the films, each a page with its poster and its link
-for (const f of films) {
-  const poster = work(f.poster, { title: f.title, alt: f.cap || f.title }); const [t, em] = split(f.title.replace(", Part Two", " Part Two"));
-  pages.push({ id: `film-${slug(f.title)}`, kind: "film", title: t, titleEm: em, inNav: true, form: "Short film", year: "2025", runtime: "", ratio: "16:9", synopsis: f.cap || "", poster, video: null, link: `https://www.youtube.com/watch?v=${f.film}`, stills: [], credits: ["A film by Habib Saleh"], appears: { title: "", description: "", share: null }, word: "" });
-}
 // about, contact
 pages.push({ id: "about", kind: "about", title: "About", titleEm: "", inNav: true, paras: [...book.colophon.about, `${book.title} ${book.colophon.manuscriptNote}`, book.colophon.seam], principles: [], appears: { title: "", description: "", share: null }, word: "" });
 pages.push({ id: "contact", kind: "contact", title: "Contact", titleEm: "", inNav: true, paras: [`Prints, commissions and enquiries: ${book.colophon.email}.`, `Instagram: ${book.colophon.instagram.handle}.`], appears: { title: "", description: "", share: null }, word: "" });
@@ -77,7 +78,7 @@ pages.push({ id: "contact", kind: "contact", title: "Contact", titleEm: "", inNa
 const cover = work("cover/manuscript-cover.jpg", { title: book.title, alt: "The manuscript's cover" });
 const site = {
   version: 15, house: "manuscript", name: "Habib Saleh", contact: `${book.colophon.email} · ${book.colophon.instagram.handle}`, email: book.colophon.email,
-  front: { form: "threshold", kicker: book.edition, title: "To Pray Is to Wander", titleEm: "About the Meaning of Life", note: book.subtitle },
+  front: { form: "threshold", kicker: book.edition, title: "To Pray Is to Wander", titleEm: "About the Meaning of Life", note: book.subtitle, end: "" },
   appears: { description: `${book.title}. ${book.subtitle} Photographs and writing by Habib Saleh, made in Lebanon.`.slice(0, 200), share: cover },
   door: { word: "", soon: false, note: "" }, mark: { logo: null, icon: cover },
   theme: { look: "quiet", options: {}, palette: "silk", mode: "system", accent: null, type: "silk", mount: "bare", space: "standard", motion: "slow", read: "standard" },

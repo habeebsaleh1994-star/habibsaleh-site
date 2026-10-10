@@ -9,7 +9,8 @@
   "kicker": "First edition · a living manuscript",
   "title": "To Pray Is to Wander",
   "titleEm": "About the Meaning of Life",
-  "note": "A record of light. A record of the strangeness of being alive."
+  "note": "A record of light. A record of the strangeness of being alive.",
+  "end": ""
  },
  "appears": {
   "description": "To Pray Is to Wander About the Meaning of Life. A record of light. A record of the strangeness of being alive. Photographs and writing by Habib Saleh, made in Lebanon.",
@@ -2697,6 +2698,46 @@
     "made": ""
    }
   },
+  "/photos/before-it-disappears/film-before-it-disappears.jpg": {
+   "kind": "image",
+   "w": 1280,
+   "h": 720,
+   "title": "Before It Disappears",
+   "date": "",
+   "caption": "",
+   "alt": "Before It Disappears — a film. Joun, Lebanon.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/film-before-it-disappears-pt2.jpg": {
+   "kind": "image",
+   "w": 1280,
+   "h": 720,
+   "title": "Before It Disappears, Part Two",
+   "date": "",
+   "caption": "",
+   "alt": "Before It Disappears, Part Two — a film. Joun, Lebanon.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
   "/photos/what-light-knows-about-us/what-light-knows-about-us-olive-grove.jpg": {
    "kind": "image",
    "w": 1920,
@@ -5097,46 +5138,6 @@
     "made": ""
    }
   },
-  "/photos/before-it-disappears/film-before-it-disappears.jpg": {
-   "kind": "image",
-   "w": 1280,
-   "h": 720,
-   "title": "Before It Disappears",
-   "date": "",
-   "caption": "",
-   "alt": "Before It Disappears — a film. Joun, Lebanon.",
-   "focal": {
-    "x": 50,
-    "y": 50
-   },
-   "size": null,
-   "verso": {
-    "place": "",
-    "line": "",
-    "edition": "",
-    "made": ""
-   }
-  },
-  "/photos/before-it-disappears/film-before-it-disappears-pt2.jpg": {
-   "kind": "image",
-   "w": 1280,
-   "h": 720,
-   "title": "Before It Disappears, Part Two",
-   "date": "",
-   "caption": "",
-   "alt": "Before It Disappears, Part Two — a film. Joun, Lebanon.",
-   "focal": {
-    "x": 50,
-    "y": 50
-   },
-   "size": null,
-   "verso": {
-    "place": "",
-    "line": "",
-    "edition": "",
-    "made": ""
-   }
-  },
   "/photos/cover/manuscript-cover.jpg": {
    "kind": "image",
    "w": 2800,
@@ -5161,21 +5162,35 @@
  "pages": [
   {
    "id": "prelude",
-   "kind": "writing",
+   "kind": "story",
    "title": "Prelude",
    "titleEm": "",
    "inNav": true,
-   "form": "Prelude",
-   "place": "",
-   "year": "",
-   "paras": [
-    "There are moments when the world seems to withdraw from its own noise, and something quietly begins to appear. Nothing extraordinary has happened. The streets remain the same, light still falls across familiar walls, children continue to play, seasons return as they always have. And yet, the ordinary begins to resist its own familiarity.",
-    "What follows is an ongoing body of work unfolding through photography, writing, and film. These are not separate practices or independent projects, but different ways of approaching the same experience. Each movement, each photographic story, and each fragment belongs to a longer wandering through the ordinary mysteries of being alive.",
-    "This work does not move toward conclusions. It lingers with places, people, gestures, and passing moments, allowing them to reveal themselves without asking them to become symbols or explanations. Some parts speak through images, others through words. Neither is complete on its own. Together, they move toward what neither can fully hold.",
-    "The pages that follow are not meant to be hurried through. They are invitations to look a little longer, to remain with what is already here before familiarity quietly covers it again."
+   "kicker": "First edition · a living manuscript",
+   "note": "",
+   "arrangement": "leaves",
+   "pieces": [
+    {
+     "type": "pause",
+     "label": "",
+     "text": "There are moments when the world seems to withdraw from its own noise, and something quietly begins to appear. Nothing extraordinary has happened. The streets remain the same, light still falls across familiar walls, children continue to play, seasons return as they always have. And yet, the ordinary begins to resist its own familiarity."
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "What follows is an ongoing body of work unfolding through photography, writing, and film. These are not separate practices or independent projects, but different ways of approaching the same experience. Each movement, each photographic story, and each fragment belongs to a longer wandering through the ordinary mysteries of being alive."
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "This work does not move toward conclusions. It lingers with places, people, gestures, and passing moments, allowing them to reveal themselves without asking them to become symbols or explanations. Some parts speak through images, others through words. Neither is complete on its own. Together, they move toward what neither can fully hold."
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "The pages that follow are not meant to be hurried through. They are invitations to look a little longer, to remain with what is already here before familiarity quietly covers it again."
+    }
    ],
-   "margin": "First edition · a living manuscript",
-   "image": null,
    "appears": {
     "title": "",
     "description": "",
@@ -5195,8 +5210,8 @@
    "pieces": [
     {
      "type": "pause",
-     "label": "Ojibwe proverb",
-     "text": "Sometimes I go about in pity for myself, and all the while, a great wind carries me across the sky."
+     "label": "",
+     "text": "Sometimes I go about in pity for myself, and all the while, a great wind carries me across the sky.\n\n— Ojibwe proverb\n\nI came across this quote while trying to make sense of the darkness I was in. It stayed with me ever since."
     },
     {
      "type": "pause",
@@ -6317,7 +6332,62 @@
      "type": "pause",
      "label": "",
      "text": "Thus, understanding brings peace, but that peace is marked by the awareness that, in the end, there is no problem, and there never was."
+    },
+    {
+     "type": "pause",
+     "label": "The end",
+     "text": "Perhaps to pray is nothing more than this: to wander within the mystery of being alive without demanding that it resolve itself.\n\nThe manuscript is still unfolding. More will appear here in time."
     }
+   ],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "film-before-it-disappears",
+   "kind": "film",
+   "title": "Before It",
+   "titleEm": "Disappears",
+   "inNav": true,
+   "form": "Short film",
+   "year": "2025",
+   "runtime": "",
+   "ratio": "16:9",
+   "synopsis": "Before It Disappears — a film. Joun, Lebanon.",
+   "poster": "/photos/before-it-disappears/film-before-it-disappears.jpg",
+   "video": null,
+   "link": "https://www.youtube.com/watch?v=rNw7cMnKSII",
+   "stills": [],
+   "credits": [
+    "A film by Habib Saleh"
+   ],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "film-before-it-disappears-part-two",
+   "kind": "film",
+   "title": "Before It Disappears",
+   "titleEm": "Part Two",
+   "inNav": true,
+   "form": "Short film",
+   "year": "2025",
+   "runtime": "",
+   "ratio": "16:9",
+   "synopsis": "Before It Disappears, Part Two — a film. Joun, Lebanon.",
+   "poster": "/photos/before-it-disappears/film-before-it-disappears-pt2.jpg",
+   "video": null,
+   "link": "https://www.youtube.com/watch?v=8D81vH4cxrA",
+   "stills": [],
+   "credits": [
+    "A film by Habib Saleh"
    ],
    "appears": {
     "title": "",
@@ -6399,8 +6469,8 @@
     },
     {
      "type": "pause",
-     "label": "Series",
-     "text": "Colored Air, 2023 — Ongoing"
+     "label": "Colored Air",
+     "text": "2023 — Ongoing"
     },
     {
      "type": "work",
@@ -6467,8 +6537,8 @@
     },
     {
      "type": "pause",
-     "label": "Series",
-     "text": "What Light Knows About Us, 2024 — Ongoing"
+     "label": "What Light Knows About Us",
+     "text": "2024 — Ongoing"
     },
     {
      "type": "work",
@@ -6486,8 +6556,8 @@
     },
     {
      "type": "pause",
-     "label": "Series",
-     "text": "Before It Disappears, 2023 — 2025"
+     "label": "Before It Disappears",
+     "text": "2023 — 2025"
     },
     {
      "type": "work",
@@ -6561,8 +6631,8 @@
     },
     {
      "type": "pause",
-     "label": "Series",
-     "text": "The Season of the Mulberry, 2025"
+     "label": "The Season of the Mulberry",
+     "text": "2025"
     },
     {
      "type": "work",
@@ -6587,8 +6657,8 @@
     },
     {
      "type": "pause",
-     "label": "Series",
-     "text": "When Roses Bloom, 2025"
+     "label": "When Roses Bloom",
+     "text": "2025"
     },
     {
      "type": "work",
@@ -6900,56 +6970,6 @@
    "process": [],
    "compare": false,
    "facts": [],
-   "appears": {
-    "title": "",
-    "description": "",
-    "share": null
-   },
-   "word": ""
-  },
-  {
-   "id": "film-before-it-disappears",
-   "kind": "film",
-   "title": "Before It",
-   "titleEm": "Disappears",
-   "inNav": true,
-   "form": "Short film",
-   "year": "2025",
-   "runtime": "",
-   "ratio": "16:9",
-   "synopsis": "Before It Disappears — a film. Joun, Lebanon.",
-   "poster": "/photos/before-it-disappears/film-before-it-disappears.jpg",
-   "video": null,
-   "link": "https://www.youtube.com/watch?v=rNw7cMnKSII",
-   "stills": [],
-   "credits": [
-    "A film by Habib Saleh"
-   ],
-   "appears": {
-    "title": "",
-    "description": "",
-    "share": null
-   },
-   "word": ""
-  },
-  {
-   "id": "film-before-it-disappears-part-two",
-   "kind": "film",
-   "title": "Before It Disappears",
-   "titleEm": "Part Two",
-   "inNav": true,
-   "form": "Short film",
-   "year": "2025",
-   "runtime": "",
-   "ratio": "16:9",
-   "synopsis": "Before It Disappears, Part Two — a film. Joun, Lebanon.",
-   "poster": "/photos/before-it-disappears/film-before-it-disappears-pt2.jpg",
-   "video": null,
-   "link": "https://www.youtube.com/watch?v=8D81vH4cxrA",
-   "stills": [],
-   "credits": [
-    "A film by Habib Saleh"
-   ],
    "appears": {
     "title": "",
     "description": "",
