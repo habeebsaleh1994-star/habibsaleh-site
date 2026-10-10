@@ -1,0 +1,7000 @@
+{
+ "version": 15,
+ "house": "monograph",
+ "name": "Habib Saleh",
+ "contact": "contact@habibsaleh.com · @habibsfoto",
+ "email": "contact@habibsaleh.com",
+ "front": {
+  "form": "covers",
+  "kicker": "A record of light. A record of the strangeness of being alive.",
+  "title": "To pray is to wander",
+  "titleEm": "about the meaning of life",
+  "note": "Photographs, writing and film, made in Lebanon. Perhaps to pray is nothing more than this: to wander within the mystery of being alive without demanding that it resolve itself."
+ },
+ "appears": {
+  "description": "To Pray Is to Wander About the Meaning of Life. A record of light. A record of the strangeness of being alive. Photographs and writing by Habib Saleh, made in Lebanon.",
+  "share": "/photos/cover/manuscript-cover.jpg"
+ },
+ "door": {
+  "word": "",
+  "soon": false,
+  "note": ""
+ },
+ "mark": {
+  "logo": null,
+  "icon": "/photos/cover/manuscript-cover.jpg"
+ },
+ "theme": {
+  "look": "quiet",
+  "options": {},
+  "palette": "silk",
+  "mode": "system",
+  "accent": null,
+  "type": "silk",
+  "mount": "bare",
+  "space": "standard",
+  "motion": "slow",
+  "read": "standard"
+ },
+ "library": {
+  "/photos/colored-air/HS-ColoredAir-2025-01.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "Young girls playing in a neighbourhood in the town of Joun, Lebanon, 2024.",
+   "date": "2024",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Young girls playing in a neighbourhood in the town of Joun, Lebanon, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-02.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A scene from Sidon during Eid El Fitr celebrations, 2024.",
+   "date": "2024",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "A scene from Sidon during Eid El Fitr celebrations, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-03.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A kid peeking from behind the wall of his house entrance in the town of Joun, Lebanon, 2024.",
+   "date": "2024",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "A kid peeking from behind the wall of his house entrance in the town of Joun, Lebanon, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-04.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A Landscape of pine trees at sunset in the town of Joun, Lebanon, 2024.",
+   "date": "2024",
+   "caption": "",
+   "alt": "A Landscape of pine trees at sunset in the town of Joun, Lebanon, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-05.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A candid shot of my little cousin on the balcony of our home in the town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "A candid shot of my little cousin on the balcony of our home in the town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-06.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A candid photo of a young boy happily running in one of Sidon’s old streets, 2024.",
+   "date": "2024",
+   "caption": "",
+   "alt": "A candid photo of a young boy happily running in one of Sidon’s old streets, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-07.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A portrait of an elderly woman in front of her home in the town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "A portrait of an elderly woman in front of her home in the town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-08.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A tree blossoming during spring season in the town of Joun, Lebanon, 2024",
+   "date": "2024",
+   "caption": "",
+   "alt": "A tree blossoming during spring season in the town of Joun, Lebanon, 2024",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-09.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Kids playing in one of Joun's streets, 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Kids playing in one of Joun's streets, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-10.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1599,
+   "title": "A candid shot of an elderly woman reaching out to hold a child's hand in Sidon city, Lebanon, 2024.",
+   "date": "2024",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "A candid shot of an elderly woman reaching out to hold a child's hand in Sidon city, Lebanon, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-01.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "My father’s uncle, walking down the stairs, leading me to the first mulberry tree, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "My father’s uncle, walking down the stairs, leading me to the first mulberry tree, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-02.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "My father’s uncle behind the big mulberry tree, picking its fruit, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "My father’s uncle behind the big mulberry tree, picking its fruit, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-03.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "My father’s uncle reaching for the mulberry fruit, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "My father’s uncle reaching for the mulberry fruit, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-04.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Mulberries resting in the palms of his hands, my father’s uncle showing me the fruit, 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Mulberries resting in the palms of his hands, my father’s uncle showing me the fruit, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-05.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "My father’s uncle Khalil holding a mulberry leaf with the fruit nestled in it, as gently as if he were holding newborns, 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "My father’s uncle Khalil holding a mulberry leaf with the fruit nestled in it, as gently as if he were holding newborns, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-06.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "My father’s uncle Khalil heading toward the second tree, ready to pick more fruit, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "My father’s uncle Khalil heading toward the second tree, ready to pick more fruit, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-07.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Khalil reaching up to gather the ripe mulberries, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "Khalil reaching up to gather the ripe mulberries, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-08.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Khalil bends toward the ground, where he laid a big blue cloth under the tree to catch the ripe mulberries. Then he carefully picks them up from the cloth, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "Khalil bends toward the ground, where he laid a big blue cloth under the tree to catch the ripe mulberries. Then he carefully picks them up from the cloth, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-09.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "The blue cloth laid out under the mulberry tree, filled with the season’s ripe fruit, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "The blue cloth laid out under the mulberry tree, filled with the season’s ripe fruit, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-10.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Khalil holding a mulberry leaf with both white and black mulberries on it, 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Khalil holding a mulberry leaf with both white and black mulberries on it, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/IMG_2061.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "One red rose out at the edge of the garden among the olive trees and wild grass, the hills going pale behind.",
+   "date": "2023",
+   "caption": "",
+   "alt": "One red rose out at the edge of the garden among the olive trees and wild grass, the hills going pale behind.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/IMG_0448.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Pink roses open all across the bank of bushes, the chain-link fence and the pale hills behind them.",
+   "date": "2023",
+   "caption": "",
+   "alt": "Pink roses open all across the bank of bushes, the chain-link fence and the pale hills behind them.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/IMG_0452.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "One bud still closed at the end of its stem, standing up into a sky with nothing else in it.",
+   "date": "2023",
+   "caption": "",
+   "alt": "One bud still closed at the end of its stem, standing up into a sky with nothing else in it.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/DSCF8615.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Anis has gone so far into the roses that only his cap, his shoulder and half his face still show.",
+   "date": "2023",
+   "caption": "",
+   "alt": "Anis has gone so far into the roses that only his cap, his shoulder and half his face still show.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/DSCF8668.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Anis bent low into the overgrown bushes with his back to me, the roses coming up around him on every side.",
+   "date": "2023",
+   "caption": "",
+   "alt": "Anis bent low into the overgrown bushes with his back to me, the roses coming up around him on every side.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/DSCF0286.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "My father's uncle standing deep in the canes, his face behind a branch of roses still in bloom, one hand at his side.",
+   "date": "2023",
+   "caption": "",
+   "alt": "My father's uncle standing deep in the canes, his face behind a branch of roses still in bloom, one hand at his side.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/IMG_0481.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Anis moving along the row with his head down, seen through the leaves of the bush in front of me.",
+   "date": "2023",
+   "caption": "",
+   "alt": "Anis moving along the row with his head down, seen through the leaves of the bush in front of me.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/DSCF8651.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Anis stands with his head and shoulders above the row, one hand closed around a bloom, nothing behind him but blue.",
+   "date": "2023",
+   "caption": "",
+   "alt": "Anis stands with his head and shoulders above the row, one hand closed around a bloom, nothing behind him but blue.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/IMG_0446.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "My father's uncle Anis close in profile, leaning forward under his pale cap, the bushes in flower behind him.",
+   "date": "2023",
+   "caption": "",
+   "alt": "My father's uncle Anis close in profile, leaning forward under his pale cap, the bushes in flower behind him.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/IMG_0475.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Anis close to the lens in his pale cap, head lowered, a sprig of roses sharp against the blue beyond him.",
+   "date": "2023",
+   "caption": "",
+   "alt": "Anis close to the lens in his pale cap, head lowered, a sprig of roses sharp against the blue beyond him.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/IMG_0441.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Anis's hand comes down through the leaves, the plaid sleeve rolled back, open just above a rose in full bloom.",
+   "date": "2023",
+   "caption": "",
+   "alt": "Anis's hand comes down through the leaves, the plaid sleeve rolled back, open just above a rose in full bloom.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/IMG_0487.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Anis takes a rose between his fingers at the end of a thorny cane, the light behind him almost white.",
+   "date": "2023",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Anis takes a rose between his fingers at the end of a thorny cane, the light behind him almost white.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/IMG_0439.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Both hands cupped together in front of him, full of the pink roses Anis has just cut.",
+   "date": "2023",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Both hands cupped together in front of him, full of the pink roses Anis has just cut.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/DSCF0240.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Anis works his way into the green, the basket of roses hanging from one hand, the other down among the stems.",
+   "date": "2023",
+   "caption": "",
+   "alt": "Anis works his way into the green, the basket of roses hanging from one hand, the other down among the stems.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/IMG_2063.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Anis stops in the gateway with the basket of roses held against his hip, and looks back at me.",
+   "date": "2023",
+   "caption": "",
+   "alt": "Anis stops in the gateway with the basket of roses held against his hip, and looks back at me.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/DSCF0243.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "The round basket set down among dry seed heads, seen from above, the evening's roses heaped in the middle.",
+   "date": "2023",
+   "caption": "",
+   "alt": "The round basket set down among dry seed heads, seen from above, the evening's roses heaped in the middle.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/when-roses-bloom/IMG_0454.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "The row of roses at dusk, the flowers going dark in the leaves, a narrow path opening between them.",
+   "date": "2023",
+   "caption": "",
+   "alt": "The row of roses at dusk, the flowers going dark in the leaves, a narrow path opening between them.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-11.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A candid shot of my father's uncle and my cousin kissing him on the cheek. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "A candid shot of my father's uncle and my cousin kissing him on the cheek. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-12.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A photo from a family visit during Eid El Fitr to my father's aunt house in the town of Joun, Lebanon, 2024.",
+   "date": "2024",
+   "caption": "",
+   "alt": "A photo from a family visit during Eid El Fitr to my father's aunt house in the town of Joun, Lebanon, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-13.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A man receives a haircut from a local barber in the courtyard garden of a modest home at dusk. Rows of potted plants line the perimeter. In the background, two children, distant relatives of the barbe",
+   "date": "2025",
+   "caption": "",
+   "alt": "A man receives a haircut from a local barber in the courtyard garden of a modest home at dusk. Rows of potted plants line the perimeter. In the background, two children, distant relatives of the barbe",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-14.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A candid photo of two friends holding a flower in the town of Joun, Lebanon, 2024.",
+   "date": "2024",
+   "caption": "",
+   "alt": "A candid photo of two friends holding a flower in the town of Joun, Lebanon, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-15.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A candid photo of friends at sunset in one of Joun's neighbourhoods, 2024.",
+   "date": "2024",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "A candid photo of friends at sunset in one of Joun's neighbourhoods, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-16.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Olive trees standing in a sea of wildflowers and grass. The town of Joun, Lebanon 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Olive trees standing in a sea of wildflowers and grass. The town of Joun, Lebanon 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2026-01.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1599,
+   "title": "An olive tree standing among poppies in the town of Joun, Lebanon, 2026.",
+   "date": "2026",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "An olive tree standing among poppies in the town of Joun, Lebanon, 2026.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2026-02.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "An olive tree at dusk, the far hills fading behind it. The town of Joun, Lebanon, 2026.",
+   "date": "2026",
+   "caption": "",
+   "alt": "An olive tree at dusk, the far hills fading behind it. The town of Joun, Lebanon, 2026.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2026-03.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Poppies and wildflowers in the last light beneath the olive trees. The town of Joun, Lebanon, 2026.",
+   "date": "2026",
+   "caption": "",
+   "alt": "Poppies and wildflowers in the last light beneath the olive trees. The town of Joun, Lebanon, 2026.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-17.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "My uncle's wife holding a bunch of orange blossom in her palms during orange blossom season in the town of Joun, Lebanon, 2024.",
+   "date": "2024",
+   "caption": "",
+   "alt": "My uncle's wife holding a bunch of orange blossom in her palms during orange blossom season in the town of Joun, Lebanon, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-18.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Twins in Sidon city, Lebanon, 2024.",
+   "date": "2024",
+   "caption": "",
+   "alt": "Twins in Sidon city, Lebanon, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-19.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A candid shot of a group of kids playing football in Ancient Sidon, Lebanon, 2023.",
+   "date": "2023",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "A candid shot of a group of kids playing football in Ancient Sidon, Lebanon, 2023.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/colored-air/HS-ColoredAir-2025-20.JPG": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A photo taken from the rooftop of my home in Joun, Lebanon on a foggy sunset, 2024.",
+   "date": "2024",
+   "caption": "",
+   "alt": "A photo taken from the rooftop of my home in Joun, Lebanon on a foggy sunset, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-04.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-01.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-05.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-06.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-10.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-11.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-13.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A gate's shadow, Joun",
+   "date": "2024",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-03.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-32.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-22.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-21.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-31.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-33.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-19.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-07.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-14.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-27.jpg": {
+   "kind": "image",
+   "w": 1800,
+   "h": 2400,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-25.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-15.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-12.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-09.jpg": {
+   "kind": "image",
+   "w": 1800,
+   "h": 2400,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-29.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-24.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-23.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-28.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-30.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-16.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1920,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-26.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-18.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-17.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-08.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-20.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-02.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1350,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "What Light Knows About Us, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-01.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-02.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "A grandfather and his grandson rest their hands on a steel railing at dusk, talking to each other in one of Joun’s neighborhoods, with the village’s mountains stretching out in front of them. The town",
+   "date": "2025",
+   "caption": "",
+   "alt": "A grandfather and his grandson rest their hands on a steel railing at dusk, talking to each other in one of Joun’s neighborhoods, with the village’s mountains stretching out in front of them. The town",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-03.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A grandfather holds his grandson near their home in one of the oldest village alleys, 2024.",
+   "date": "2024",
+   "caption": "",
+   "alt": "A grandfather holds his grandson near their home in one of the oldest village alleys, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-04.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "An old man is watching two kids run through a narrow street in the village of Joun, as a white cat passes by. The town of Joun, Lebanon, 2023.",
+   "date": "2023",
+   "caption": "",
+   "alt": "An old man is watching two kids run through a narrow street in the village of Joun, as a white cat passes by. The town of Joun, Lebanon, 2023.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-05.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Salam, one of the oldest residents of the village, walks past the entrance of his house with cracked concrete and peeling walls, holding a grapefruit. The town of Joun, Lebanon, 2023.",
+   "date": "2023",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Salam, one of the oldest residents of the village, walks past the entrance of his house with cracked concrete and peeling walls, holding a grapefruit. The town of Joun, Lebanon, 2023.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-06.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "An old man, Youssef — 91, one of the oldest people in Joun — stands in his rusty kitchen, waiting for the Arabic coffee pot to boil. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "An old man, Youssef — 91, one of the oldest people in Joun — stands in his rusty kitchen, waiting for the Arabic coffee pot to boil. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-07.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A portrait of Youssef — 91, among the oldest residents of Joun. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "A portrait of Youssef — 91, among the oldest residents of Joun. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-08.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A man harvesting mulberries, almost entirely concealed by the thick branches. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "A man harvesting mulberries, almost entirely concealed by the thick branches. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-09.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "An old man, Salam — 82 and one of the oldest people in Joun — contemplates the green landscape. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "An old man, Salam — 82 and one of the oldest people in Joun — contemplates the green landscape. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-10.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "An elderly man walks along a stone wall as the photographer’s shadow falls beside him in Joun. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "An elderly man walks along a stone wall as the photographer’s shadow falls beside him in Joun. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-11.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Salam, one of the oldest residents of the village, pauses during a walk as the neighbor’s dog sits nearby. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "Salam, one of the oldest residents of the village, pauses during a walk as the neighbor’s dog sits nearby. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-12.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A stray cat sits inside an abandoned house in Joun, near a staircase that leads to an orange tree with fallen fruit scattered on the ground. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "A stray cat sits inside an abandoned house in Joun, near a staircase that leads to an orange tree with fallen fruit scattered on the ground. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-13.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A locked wooden door in one of Joun’s old neighborhoods, its surface worn and covered with scribbles, and its rusted chains marking years of abandonment. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "A locked wooden door in one of Joun’s old neighborhoods, its surface worn and covered with scribbles, and its rusted chains marking years of abandonment. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-14.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A boy points a toy gun while standing on a cracked street in Joun. The town of Joun, Lebanon, 2024.",
+   "date": "2024",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "A boy points a toy gun while standing on a cracked street in Joun. The town of Joun, Lebanon, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-15.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "A cat sits on the edge of a wall at the entrance of an abandoned house in Joun. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "A cat sits on the edge of a wall at the entrance of an abandoned house in Joun. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-16.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "Salam — 82, one of the oldest people in Joun — walks down a village road at sunset, passing a tall pine tree and an old abandoned stone house. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Salam — 82, one of the oldest people in Joun — walks down a village road at sunset, passing a tall pine tree and an old abandoned stone house. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-17.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "An old abandoned house in Joun, with a large pine tree growing in front of its entrance. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "An old abandoned house in Joun, with a large pine tree growing in front of its entrance. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-18.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Two elderly men, one handing grapefruits to the other, 2023.",
+   "date": "2023",
+   "caption": "",
+   "alt": "Two elderly men, one handing grapefruits to the other, 2023.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-19.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Reda carries a basin of orange blossom flowers after harvesting while his uncle Khalil waits on the hood of his car beside a blooming tree. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Reda carries a basin of orange blossom flowers after harvesting while his uncle Khalil waits on the hood of his car beside a blooming tree. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-20.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2023.",
+   "date": "2023",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2023.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-21.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-22.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A boy tends to his sheep among olive trees in the hills surrounding Joun. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "A boy tends to his sheep among olive trees in the hills surrounding Joun. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-23.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1800,
+   "title": "A boy plays alone with a soccer ball in an open space as clouds gather over the hills at dusk. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "A boy plays alone with a soccer ball in an open space as clouds gather over the hills at dusk. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-24.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "Youssef — 91, one of the oldest men in Joun — looks toward an abandoned house that once belonged to a close friend who left the village during the civil war. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "Youssef — 91, one of the oldest men in Joun — looks toward an abandoned house that once belonged to a close friend who left the village during the civil war. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-25.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "An overgrown jasmine plant climbing an old, rustic wall in Joun, its tangled branches leaning to the right as soft, shimmering light falls across the surface. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "An overgrown jasmine plant climbing an old, rustic wall in Joun, its tangled branches leaning to the right as soft, shimmering light falls across the surface. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-26.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A portrait of Maher, a local man, in the streets of Joun. The town of Joun, Lebanon, 2024.",
+   "date": "2024",
+   "caption": "",
+   "alt": "A portrait of Maher, a local man, in the streets of Joun. The town of Joun, Lebanon, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-27.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A bougainvillea tree grows in full bloom at the entrance of an abandoned house in Joun. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "A bougainvillea tree grows in full bloom at the entrance of an abandoned house in Joun. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-28.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A covered, rusted car sits in a weathered garage in Joun, surrounded by old walls and overgrown plants. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "",
+   "alt": "A covered, rusted car sits in a weathered garage in Joun, surrounded by old walls and overgrown plants. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-29.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A long road winds past olive trees and white wildflowers at the edge of Joun’s pine forest. Once crowded with people and traffic, the road now lies quiet. The town of Joun, Lebanon, 2025.",
+   "date": "2025",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "A long road winds past olive trees and white wildflowers at the edge of Joun’s pine forest. Once crowded with people and traffic, the road now lies quiet. The town of Joun, Lebanon, 2025.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/before-it-disappears-30.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "A view of Joun on a foggy evening, seen from one of the village rooftops. The town of Joun, Lebanon, 2024.",
+   "date": "2024",
+   "caption": "",
+   "alt": "A view of Joun on a foggy evening, seen from one of the village rooftops. The town of Joun, Lebanon, 2024.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5226.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5228.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5227.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5229.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5230.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5231.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5232.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5233.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5234.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5235.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5240.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5248.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5236.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5250.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5255.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5258.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5238.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5257.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5251.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/after-the-weather/DSC_5256.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1598,
+   "title": "",
+   "date": "2026",
+   "caption": "",
+   "alt": "After the Weather, a photograph",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/what-light-knows-about-us/what-light-knows-about-us-olive-grove.jpg": {
+   "kind": "image",
+   "w": 1920,
+   "h": 1279,
+   "title": "An olive grove, Joun",
+   "date": "",
+   "caption": "Archival print, through Saatchi Art",
+   "alt": "An olive grove, Joun",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf3661.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "A model in a long black leather coat and gloves strides past a pale plaster wall in bright midday sun.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf3827.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Seen from above, a model in a black leather minidress and knee boots reclines on a white stone sphere across a hard diagonal shadow.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf3869.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "In black and white, a model in a sleeveless black gown with a sheer waist panel sits on a column plinth beside iron railings.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf3873.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "A model in a floor-length black gown with a sheer midriff and strappy heels leans back on a column plinth, eyes closed.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4096.jpg": {
+   "kind": "image",
+   "w": 1920,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Shot from below, a model with long auburn hair in a navy polka-dot top stands against dark foliage and a stone wall.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4135.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Cropped below the waist, a model's legs in a copper satin dress and tan mules, a ginger cat rubbing a bollard beside her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4205.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "A model in a deep aubergine suit with wide trousers looks down, cigarette in mouth, against an ivy-covered wall.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4213.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Cropped close, a model leans on a metal railing in an open aubergine blazer with a red stone earring.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4246-2.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "A model in a long brown suede coat stands on a concrete terrace, the story's title set in white capitals across the frame.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4271.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "A model perches on a metal terrace railing in a long brown suede coat, one leg crossed, evening light striping the wall behind.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4272.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Seated on a railing in a deep-V suede coat, the model turns her face into profile, pale rooftop walls behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4286.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Black and white frame of a model sitting on a railing in a long dark coat, holding a cigarette, legs crossed above a wooden bench.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4327.jpg": {
+   "kind": "image",
+   "w": 1920,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Close portrait of a model in a dark blazer and gold-set earrings, holding a cigarette to her lips in warm evening light.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4361.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "A model in a short-sleeved mauve herringbone wool minidress leans against a pale metal railing beside dense green foliage.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4376.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Seen from behind, a model in a belted dark coat and flat-topped hat walks past a limestone wall, a braid down her back.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4398.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "A model in a belted navy wool coat and matching flat-topped hat rests one arm along a steel railing against a limestone wall.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4419.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Small in the frame, a model in a long dark coat and flat-topped hat pauses on a landing of a grey steel fire escape.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/dscf4425.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Mid-flight on a zigzagging steel fire escape, a model in a long dark coat and pillbox hat steps forward, one leg bare.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/img_5238.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "A model in a black lace top with flared sleeves stands with hands clasped before a limestone wall and barred windows.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/img_5345.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "A model in a short mauve wool dress and sheer tights leans on a white balcony rail above dense green trees.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/img_5352.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "One hand in her hair, a model in a mauve wool minidress stands at a rooftop railing, city buildings blurred behind.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/img_5379.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Shot from above, a woman in a long black coat and black hat walks across an empty paved street, looking up at the camera.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/matilda-london/img_5395-2.jpg": {
+   "kind": "image",
+   "w": 1958,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "A Polaroid print, white border and all, of a woman in a black coat and hat crossing empty pavement, red-green film cast.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/dscf2164.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "In black and white, a model in an oversized checked coat and tall boots stands on a flagstone terrace, hands behind her back.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/dscf2169.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "The model wears a tan suede waistcoat, matching mini skirt and olive rubber boots on a stepping-stone path between palms and hedges.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/dscf2440.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Seen from behind, the model climbs stone steps in a burgundy dress with narrow straps and a gathered skirt, past arched plaster walls and potted plants.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/dscf2467.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "The model lies back across a patterned tapestry sofa in a short-sleeved brown suede jacket and matching skirt, a table lamp lit beside her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/dscf2574.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Hand on hip beside a tree trunk on flagstone paving, the model wears a denim drop-waist dress with lace trim and brown platform boots.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/dscf2582.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "The model stands beside a tree trunk in a sleeveless denim dress, pale blue panelled doors and dappled foliage behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/dscf2658.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "The model sits back on a curved banquette of leaf-print cushions, one arm along the backrest, in an olive satin shirt and tall black boots.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/img_4358.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "A model in a tan suede waistcoat and checked headscarf raises one arm to a palm frond, layered gold necklaces at the neck.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/img_4552.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "The model pauses on stone steps in a burgundy pinafore over a white blouse, looking back over her shoulder, one hand on an iron gate.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/img_4558.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Close crop of a white collared blouse with shell buttons and a burgundy strap, the model turned in profile.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/img_4635.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Low-angle view of a model in an oversized checked jacket with a suede collar, hand on hip against pine branches and bright sky.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/img_4639.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "On a low garden wall, the model raises a hand to a pine branch in a checked jacket, tan suede miniskirt and olive rubber boots.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/img_4730.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "The model walks past a stone fountain and beds of red flowers in an oversized black blazer, short black dress and knee-high boots.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/img_4765.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Head tipped back, eyes closed, the model rests along a leaf-print banquette in an olive satin shirt, dark leather skirt and tall black boots.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/maison-makarem/img_4833.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "The model stands in a sunlit sitting room in a sleeveless dark green midi dress, gold curtains and patterned rugs around her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-gio/6c6a2339.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Gio sits cross-legged on rocks above the sea, a blue paisley scarf flying out from her neck over a grey knit vest and wide cream trousers.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-gio/6c6a2387.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Turned in profile with one arm raised behind her head, the long paisley scarf running down the front of a pale linen shirt.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-gio/6c6a2403.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Close in, both arms lifted behind her head, the scarf knotted at her throat and the light washing almost white behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-gio/6c6a2378.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Toned monochrome on creased paper: Gio lies back with one arm over her head, the paisley scarf spread across her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-gio/6c6a2411.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2025",
+   "caption": "",
+   "alt": "Sepia, printed on folded and foxed paper — a hand shading her brow, the scarf falling from one shoulder, looking straight out.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portraits-of-jana/dscf4735.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "A model in a striped satin top and long black skirt stands arms folded against a red graffitied wall, a bearded man seated nearby.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portraits-of-jana/dscf4796.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "The model sits smiling on a white plastic chair in the striped top and black skirt, a red hibiscus pinned in her hair.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portraits-of-jana/dscf4832.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "The model sits with legs crossed on a white plastic chair, small in a wide frame of whitewashed walls, shutters and overhanging branches.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portraits-of-jana/dscf4837.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "Hands on hips, the model stands before an open metal gate in a long black satin skirt, stacked plastic chairs at right.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portraits-of-jana/dscf4847.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "The model crouches on her heels beside a pale concrete wall, a small silver beaded purse hanging from one hand.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portraits-of-jana/dscf4857.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "Close profile of the model, a red hibiscus at her ear, hammered gold hoop swinging, the striped satin top slipping off one shoulder.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portraits-of-jana/dscf4872.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "Reclining in the plastic chair, the model laughs off to one side, one leg kicked out, a beaded purse dangling from her raised silver flat.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portraits-of-jana/dscf4874.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2024",
+   "caption": "",
+   "alt": "The model sits back in the chair on the tarmac, one leg stretched out, chin propped on her hand, looking straight at the camera.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a7273.jpg": {
+   "kind": "image",
+   "w": 1801,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "Head and shoulders of the model looking off camera against blurred trees, wearing a long diamond drop earring and the matching fringe necklace.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a7144.jpg": {
+   "kind": "image",
+   "w": 1801,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "Close frame of the model's neck and hand: a diamond fringe necklace, two rings and a matching bracelet above a strapless white gown.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a71490.jpg": {
+   "kind": "image",
+   "w": 1800,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "The model presses her hands together beside her face, wearing a diamond drop earring, fringe necklace, two rings and two bracelets above a strapless gown.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a7297.jpg": {
+   "kind": "image",
+   "w": 1801,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "The model stands under a tree, hands crossed at the waist of a strapless white gown, wearing a diamond fringe necklace, earrings, bracelets and rings.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a7372.jpg": {
+   "kind": "image",
+   "w": 1800,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "Under a cedar, veil hung from the trunk, she holds a coupe glass in a strapless white gown, wearing a diamond drop necklace and bracelet.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a7393.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "Laughing, the model reaches for a basket of pine cones on a lace table, wearing a diamond drop necklace, bracelets and rings on both hands.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a7460.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "Black and white frame: the model holds a bouquet of dried flowers, her diamond drop necklace, bracelets and rings clear against the pale gown.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a7511.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "Beneath a cedar branch, she holds a large eucalyptus bouquet in a corseted white gown, wearing a diamond drop necklace, bracelets and several rings.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a7719.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "The model rests a ringed hand on the laid table in a strapless white gown, wearing a diamond drop necklace and slim bracelets on both wrists.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a7315.jpg": {
+   "kind": "image",
+   "w": 1800,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "Seated beside a laid table in a full white gown, veil caught on a cedar branch, she wears a diamond drop necklace, bracelet and rings.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a8206.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "In a veil, head lowered over the bouquet in her lap, she wears a V-shaped diamond necklace, drop earrings, bracelets and a cluster ring.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a8203.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "The model sits on a wooden chair in the grass, veil trailing, lowering a bouquet and wearing a V-shaped diamond necklace, bracelets and rings.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/antoine-saliba-jewelry/1g1a8393.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "",
+   "caption": "",
+   "alt": "In a strapless tulle gown and veil, the model stands beside a lilac bicycle with a flower-filled basket beneath cedars, wearing a diamond necklace and rings.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8183-edit.jpg": {
+   "kind": "image",
+   "w": 1920,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "The model spins on a sun-bleached rooftop deck in a white silk blouse printed with red, blue and black brushstrokes, over a red patchwork midi skirt and red sock boots.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8233grainy.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Close portrait in flat white daylight, the model lifting an arm in a white silk blouse printed with red and blue brushstrokes, its pussy-bow collar falling loose at the throat.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8396.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "The model turns to camera in an oversized slate-blue shaggy faux fur coat with wide notched lapels, a black and white printed scarf knotted beneath, against a hazed-out sky.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8530.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "The model walks a rooftop ramp lined with traffic cones in a turquoise tiered organza dress with high ruffled neck and blouson sleeves, white sunglasses, skyline hazed behind.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8447.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Seated on pale rooftop paving in hard midday sun, she wears the turquoise pleated organza gown, its scalloped tiers and sheer sleeves pooling across the concrete.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8465.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "The model rests her head on one hand in a sheer turquoise ruffled high-neck dress with cut-out shoulder, on a sun-bleached rooftop deck.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8569.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "The model leans against a white parapet in a red wool trouser suit and black loafers, flat daylight washing the rooftop road behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8577.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "The model stands hand on hip in an oversized red blazer over a draped red blouse, hazy skyline and traffic cones behind.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8593.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "The model bends forward with hands on her knees in a double-breasted red suit, framed against a blown-out white rooftop wall.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8600.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Close crop of the model in white oval sunglasses and a red silk headscarf worn over a matching red wool coat in bright haze.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8884.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "The model leans on a low white parapet in a high-necked dress printed with red, purple and blue brushstrokes, hazy skyline behind.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a8816.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Turning back over her shoulder on pale rooftop tiling, she wears a long-sleeved high-neck dress in red, purple and blue abstract print.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a9039.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Close waist-up frame of the model in a double-breasted boucle tweed coat with pink checks and oversized buttons, wearing rose-tinted sunglasses in warm low sun.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a9060.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Full-length on the rooftop at golden hour: pink-checked tweed coat over a dark plum skirt, snakeskin platform boots, towers rising behind.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a9094.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Seated on a small red bench, she wears a heavy striped knit coat over a plum skirt with tall snakeskin platform boots, grainy warm light.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a9235.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "The model stands on a white rooftop deck in a cobalt satin gown with high neck, gathered sleeves and wrapped waist, skyline pink behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a9412-edit-edit.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Grainy frame with the film rebate showing, the model reclining against a rooftop parapet in the blue satin gown above a hazy grey city at dusk.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/haya-magazine/6c6a9464grainy.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Grainy close frame of the model leaning on a rooftop ledge in the blue satin gown, a fine pendant chain at her neck, city lights blurred gold behind.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4719-2.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif lies back in a tan leather armchair, boots up on the radiator, one arm covering her face against the bright window.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4759.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif sits low on a grey sofa in an oversized knit sweater, legs stretched out in boots, a shelf of books above.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4746.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif sits on a blue sofa in a brown knit cardigan, one arm raised behind her head, shelves of books above.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4780.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif smiles and looks up past the camera, one hand in her hair and the other at her cheek, on the blue sofa.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4775-2.jpeg": {
+   "kind": "image",
+   "w": 1619,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif rests her cheek on her hand on the blue sofa, the shot printed with its black film rebate and frame numbers.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4783.jpeg": {
+   "kind": "image",
+   "w": 1595,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif sits on the blue sofa in a wool cardigan and checked trousers, chin resting on one hand, looking straight at the camera.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4775.jpeg": {
+   "kind": "image",
+   "w": 1619,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif leans her cheek into her hand on a blue sofa, wearing a brown knit sweater, a shelf of books and magazines behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4785-2.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif in black and white, close in, both hands under her chin, looking level at the camera inside a dark film border.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4819.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif rests her chin on her folded arms in an open window in a knitted sweater, smiling, the Galata Tower behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4820-2.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif tilts her head onto her sleeve on the window ledge, the Galata Tower soft behind her, KODAK PORTRA 400 printed along the rebate.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4822.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif rests her head on her hand at the window, soft in the foreground, with tiled roofs and the Galata Tower sharp behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4817.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif bends low in the blurred foreground with a hand to her face, the Galata Tower sharp above the rooftops behind.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4816.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif leans out of a tall window with her head tipped and eyes closed, the rooftops and the Galata Tower rising behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4815.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif's hair fills the blurred foreground as she faces away, apartment blocks, tiled roofs and the Galata Tower sharp behind.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4828.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif sits on a windowsill in a dim room, knees drawn up, turned toward the daylight and the rooftops outside.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4826.jpeg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif sits in an open window in a knitted cardigan and plaid dress, looking at the camera, rooftops behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4824.jpeg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif sits in the open window in a chunky knit cardigan, one hand on the frame, looking down, the city rooftops behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4846.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif sits in the window recess with her knees pulled up in a knitted sweater, watching the rooftops and pale sky.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4851.jpeg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif sits at the open window with her arms around one knee, in a black turtleneck and knitted cardigan, the city behind her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4843.jpeg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif sits by the window in a heavy knitted sweater, hand at her chin, looking out over the rooftops.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4835.jpeg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif stands close to the glass, blurred and looking back at the camera, the rooftops and hazy skyline sharp beyond.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4836.jpeg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif stands at the window in soft focus with her eyes lowered and a hand at her neck, rooftops sharp beyond.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4853.jpeg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif turns toward the camera in the shadowed window, a lit cigarette in her hand, daylight catching the side of her face.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4868.jpeg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif exhales smoke in profile at the open window, out of focus, the rooftops and low buildings sharp below her.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/portrait-of-elif/6c6a4872.jpeg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Elif rests her arms on the windowsill in a knitted cardigan, holding a cigarette and looking out across the rooftops.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a3933.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Two models, one in a white and silver puffer coat, one in a hot pink vinyl trench, stand before a graffitied storefront pasted with concert posters.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a3998.jpg": {
+   "kind": "image",
+   "w": 1541,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "One model in a hot pink vinyl coat and holographic trousers holds a small white handbag beside another in an oversized silver and white puffer.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a3986.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "The hot pink vinyl trench, collar raised, beside the silver-panelled white puffer, both models turned to camera in hard sun against a peeling wall.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a4084.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "The white puffer's oversized collar and silver quilting fill the frame; the second model, in the pink vinyl trench, stands blurred by a shuttered cafe.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a4172.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "A white shaggy fur coat with its wide collar pulled up over the model's head, framing her face against hanging red patterned carpets.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a4185.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Close portrait, the model's chin tucked into the white shaggy fur collar, one hand drawn up beside her face.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a4292.jpg": {
+   "kind": "image",
+   "w": 2400,
+   "h": 1600,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Black and white: a model in a long white shaggy fur coat stands arms folded outside a shuttered shopfront with spectacles painted on the glass.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a4365.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Black and white with the film edge showing: a model in the white shaggy fur coat smokes, seated against a wall beside a bright window.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a4688.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "A belted black vinyl trench, red top and white lace-up boots, the model standing mid-street between graffitied shutters under a vertical Lastik sign.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a4690.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "Closer: the black patent trench belted over a red polka-dot top, oversized collar upturned, hands in the pockets, narrow oval sunglasses, on a sunlit street.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a4676.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "A black denim jacket with tiered silver tinsel fringe and white trousers, the model turning by a pink doorway under a yellow Happy Hour sign.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/editorial/gabi-x-julia/6c6a4415.jpg": {
+   "kind": "image",
+   "w": 1600,
+   "h": 2400,
+   "title": "",
+   "date": "2020",
+   "caption": "",
+   "alt": "A sheer black mesh top and ripped blue jeans, the model curled on a tan leather sofa, a Kodak Portra 400 rebate down the edge.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/film-before-it-disappears.jpg": {
+   "kind": "image",
+   "w": 1280,
+   "h": 720,
+   "title": "Before It Disappears",
+   "date": "",
+   "caption": "",
+   "alt": "Before It Disappears — a film. Joun, Lebanon.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/before-it-disappears/film-before-it-disappears-pt2.jpg": {
+   "kind": "image",
+   "w": 1280,
+   "h": 720,
+   "title": "Before It Disappears, Part Two",
+   "date": "",
+   "caption": "",
+   "alt": "Before It Disappears, Part Two — a film. Joun, Lebanon.",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  },
+  "/photos/cover/manuscript-cover.jpg": {
+   "kind": "image",
+   "w": 2800,
+   "h": 1866,
+   "title": "To Pray Is to Wander About the Meaning of Life",
+   "date": "",
+   "caption": "",
+   "alt": "The manuscript's cover",
+   "focal": {
+    "x": 50,
+    "y": 50
+   },
+   "size": null,
+   "verso": {
+    "place": "",
+    "line": "",
+    "edition": "",
+    "made": ""
+   }
+  }
+ },
+ "pages": [
+  {
+   "id": "prelude",
+   "kind": "writing",
+   "title": "Prelude",
+   "titleEm": "",
+   "inNav": true,
+   "form": "Prelude",
+   "place": "",
+   "year": "",
+   "paras": [
+    "There are moments when the world seems to withdraw from its own noise, and something quietly begins to appear. Nothing extraordinary has happened. The streets remain the same, light still falls across familiar walls, children continue to play, seasons return as they always have. And yet, the ordinary begins to resist its own familiarity.",
+    "What follows is an ongoing body of work unfolding through photography, writing, and film. These are not separate practices or independent projects, but different ways of approaching the same experience. Each movement, each photographic story, and each fragment belongs to a longer wandering through the ordinary mysteries of being alive.",
+    "This work does not move toward conclusions. It lingers with places, people, gestures, and passing moments, allowing them to reveal themselves without asking them to become symbols or explanations. Some parts speak through images, others through words. Neither is complete on its own. Together, they move toward what neither can fully hold.",
+    "The pages that follow are not meant to be hurried through. They are invitations to look a little longer, to remain with what is already here before familiarity quietly covers it again."
+   ],
+   "margin": "First edition · a living manuscript",
+   "image": null,
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "colored-air",
+   "kind": "story",
+   "title": "Colored",
+   "titleEm": "Air",
+   "inNav": true,
+   "kicker": "I · 2023 — Ongoing",
+   "note": "Colored Air was the first name I gave to a change I did not yet understand.",
+   "arrangement": "book",
+   "pieces": [
+    {
+     "type": "pause",
+     "label": "Ojibwe proverb",
+     "text": "Sometimes I go about in pity for myself, and all the while, a great wind carries me across the sky."
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "Colored Air was the first name I gave to a change I did not yet understand.\n\nThe world itself had not become different, but my relationship to it had. Familiar places began to feel strangely vivid. The ordinary resisted its own familiarity. Children playing in the street, an old man sitting outside his home, flowers returning with the seasons, evening light moving across a familiar wall, nothing extraordinary had happened, yet everything seemed quietly charged with a presence I had spent years overlooking.\n\nThe title came before I understood what it meant. It described a feeling more than an idea, as though even the air itself had become saturated with something I had not noticed before.\n\nThese photographs were made among the people and places closest to me, my family, my village, the cities I move through, and the ordinary rhythms that shape them. They are not attempts to preserve these moments against time, nor to transform them into symbols. They are traces of encounters, brief moments in which the world quietly revealed itself before returning once again to the ordinary."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-01.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-02.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-03.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-04.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-05.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-06.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-07.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-08.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "I photograph because the photograph is the most immediate expression of something I have seen and felt. It begins before thought has organized the encounter. The camera does not teach me to look, it follows a way of seeing that is already there.\n\nColor is more than appearance. It carries the inner atmosphere of the moment, not only what the camera recorded, but what being there felt like.\n\nNo matter how vivid the colors of poetry, or how carefully one chooses their words, description always falls short of the true essence of reality. However rich the imagination, it can never come close to the raw, sometimes absurd intensity of what actually exists."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-09.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-10.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "The Season of the Mulberry, 2025",
+     "text": "In the village of Joun, the first mulberries of the season are ready.\n\nMy father’s uncle Khalil, a quiet man of the land, gardener to others and farmer for himself, asked me to come along. He wanted me to taste the first berries from two trees he had been tending. I often follow him on these small, unhurried walks. There is something about the way he moves through gardens, as though time itself slows down.\n\nI brought my camera with me."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-01.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-02.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-03.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-04.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-05.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-06.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-07.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-08.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-09.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-10.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "When Roses Bloom, 2025",
+     "text": "Photographs from the days I spent with my father’s uncle Anis.\n\nEach evening, he moved quietly among the rose bushes he had tended for years, gathering the flowers one by one as the last light settled over the garden.\n\nI followed with my camera, drawn to the calm in his gestures and to the silence that arrives with the fading light."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_2061.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_0448.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_0452.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/DSCF8615.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/DSCF8668.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/DSCF0286.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_0481.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/DSCF8651.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_0446.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_0475.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_0441.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_0487.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_0439.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/DSCF0240.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_2063.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/DSCF0243.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_0454.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "A gesture repeated so many times it has become invisible. A door that still opens. The way the light falls in a particular room at a particular hour as if it has been practicing for years.\n\nThese are not symbols. They are not evidence of anything. They are just what is here, what keeps being here."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-11.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-12.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-13.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-14.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-15.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "There are days the light is more than I can take, and I wait them out in a dark room.\n\nSorrow does this. It moves through a place the way weather moves through a place, changing what it touches without destroying it. What remains after is not what was there before, but it is not nothing either. It is something else, something that has been through the full weight of what happened and did not empty out."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-16.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2026-01.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2026-02.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2026-03.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-17.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-18.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-19.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "Ordinary and ordinary and ordinary until it breaks your heart."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-20.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "Nothing is simply okay or not okay. People move through life trying to understand what any of it means without ever fully arriving at an answer.\n\nFor some of us, experience arrives layered and intense, carrying more weight than it seems to for others. Connection is not always easy. Belonging can feel distant, and that distance often leaves a quiet void.\n\nStill, there is value in understanding oneself, and in allowing the inner world the space and rest it needs to breathe. Loneliness and boredom are not necessarily things to fear. Belonging is not always a condition for meaning.\n\nConstant activity can be an illusion of productivity, and movement is often mistaken for purpose. At times, thinking is needed more than acting.\n\nThe self is restless and hungry for attention, from itself and from others, always circling its own echo. Yet standing still can be a way of seeing more clearly.\n\nSometimes what is required is not participation but observation, because lingering over a problem too forcefully often amplifies it instead of resolving it."
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "This chapter emerged after a period of personal loss that permanently altered my way of seeing. Yet over time the work moved beyond the event that initiated it. What remained was something simpler, and perhaps more difficult to describe: an increasing attentiveness to the quiet persistence of life itself.\n\nLooking gradually ceased to feel like searching. It became a way of remaining available."
+    }
+   ],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "what-light-knows-about-us",
+   "kind": "story",
+   "title": "What Light Knows",
+   "titleEm": "About Us",
+   "inNav": true,
+   "kicker": "II · 2024 — Ongoing",
+   "note": "I return to one photograph constantly.",
+   "arrangement": "book",
+   "pieces": [
+    {
+     "type": "pause",
+     "label": "",
+     "text": "I return to one photograph constantly.\n\nIt shows a birthday table with a white cake my mother prepared, topped with a few candles leaning toward one side. Around it, members of my family gather, some smiling, others frozen in incomplete movements. If I shake the photograph gently, the moment itself seems to move. I turn the page and return. The colours have faded, and the album grows heavier in my hands. That was my first lesson that things pass."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-04.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-01.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-05.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-06.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-10.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "I wasn’t always drawn to the photographs themselves, but to the way they existed within our home. Some belonged to weddings or birthdays. Others were gathered only because they were taken in the same year. Then there were the photographs that never found their place at all, loose images left inside envelopes, preserving ordinary afternoons, passing gestures, unfinished moments, things too quiet to belong anywhere except memory."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-11.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-13.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-03.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-32.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-22.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-21.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-31.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-33.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "Our house in the village of Joun changed over the years. Rooms were added, walls rebuilt, windows opened, yet many spaces never lost the names of those who had once lived within them. My grandmother’s room is still called Hajje Fatima’s room, although she has long been gone. The room became something else. The name never did."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-19.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-07.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-14.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-27.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-25.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-15.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-12.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-09.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-29.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "The elderly still move through the village using names that no longer belong to what stands before them. Perhaps they are not forgetting. Perhaps they continue to inhabit another layer of the same place. Sometimes I think photography does something similar. It allows different moments to remain together without asking them to become one."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-24.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-23.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-28.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-30.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-16.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-26.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "After returning to Joun, I found myself photographing passing light, moving bodies, familiar rooms, gardens, and the slow changes that rarely announce themselves. I wasn’t searching for the past. I was trying to remain close to what was quietly becoming memory while it was still here."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-18.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-17.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-08.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-20.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "One begins to think of truth only in the midst of searching. When the search subsides, even the word loses weight, leaving a space where questions no longer press.\n\nWords lean toward it but never quite arrive. A sentence begins to point, yet by its ending, something has already slipped away.\n\nPages gather into books, yet when they close, the matter feels unfinished.\n\nThoughts reach outward, but their grasp leaves only an outline, never the shape itself.\n\nTruth moves just beyond expression, near enough to sense, too wide to contain, hovering where language falters, where thought grows quiet, where searching itself comes to rest.\n\nPerhaps it is not found in definition, but in what escapes it; not in the structure of belief, but in the loosening of belief.\n\nPerhaps, in the end, what remains of truth is a feeling."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-02.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "Perhaps this is what light has always known about us. It falls on everything equally, without choosing between what is arriving and what is leaving. It witnesses change without trying to preserve it. The photographs that follow are not an attempt to stop time, but to remain present as it passes."
+    }
+   ],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "before-it-disappears",
+   "kind": "story",
+   "title": "Before It",
+   "titleEm": "Disappears",
+   "inNav": true,
+   "kicker": "III · 2023 — 2025",
+   "note": "There comes a moment when a place no longer belongs only to the present. It begins to exist in two times at once, as something still lived, and something already becoming memory.",
+   "arrangement": "book",
+   "pieces": [
+    {
+     "type": "pause",
+     "label": "",
+     "text": "There comes a moment when a place no longer belongs only to the present. It begins to exist in two times at once, as something still lived, and something already becoming memory.\n\nBefore It Disappears follows this quiet transformation through my village of Joun, where I returned after years of living in Beirut. It is less concerned with disappearance itself than with the strange experience of witnessing it while life continues. Children still play in the streets, flowers return with the seasons, families gather, old men sit outside their homes. Nothing has stopped. And yet something has already begun to slip away.\n\nOver the years, wars, migration, economic collapse, and the slow movement of time have altered the village and the lives around it. Houses empty, generations leave, familiar rhythms become quieter. What changes is not only the place itself, but the way it is inhabited, remembered, and carried by those who remain.\n\nThese photographs do not attempt to preserve the village against time or to mourn it before it is gone. They remain close to what is still here, attentive to the fragile coexistence of presence and disappearance. They ask what it means to love a place while knowing it cannot remain as it is."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-01.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-02.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-03.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-04.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-05.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-06.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-07.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-08.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-09.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-10.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-11.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "Places survive within us after they have changed. People remain after they have gone.\n\nThere are moments when time slips and what was once returns to you so vividly, with such detail, that it unsettles you. Was it ever real, or only a dream? The question is not the point. The point is the returning, the fact that something in you still receives it, still trembles at it, still opens when every logic says to close."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-12.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-13.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-14.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-15.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "Beauty and difficulty do not resolve one another. Innocence and violence, tenderness and destruction, play and seriousness can appear within the same frame."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-16.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-17.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-18.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-19.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-20.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-21.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-22.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-23.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-24.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-25.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-26.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-27.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "There is a method for growing rhubarb called forcing. The plant is raised in total darkness, tended only in brief intervals of candlelight. It thrives by reaching toward an absent sun, stretching so fast its growth can be heard. Forcing can weaken the crop, but when done carefully, it yields something sweeter.\n\nI am not making an allegory. I am just saying that some things grow toward what they cannot see, and the growing is not separate from the sweetness."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-28.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-29.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "Perhaps love slips through our hands not because it is absent, but because we are not there. To love another person, a place, or life itself may mean remaining before it without retreat, allowing it to exist beyond our need to name it."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-30.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "Nothing disappears all at once. Things remain with us long enough to become something else before we realize they have changed."
+    }
+   ],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "after-the-weather",
+   "kind": "story",
+   "title": "After the",
+   "titleEm": "Weather",
+   "inNav": true,
+   "kicker": "IV · 2026",
+   "note": "Thus, understanding brings peace, but that peace is marked by the awareness that, in the end, there is no problem, and there never was.",
+   "arrangement": "book",
+   "pieces": [
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5226.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5228.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5227.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5229.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "To understand the nature of existence is to realize that there is no problem to solve, only a continuous unfolding of what is.\n\nAs creatures shaped by the age and context in which we are born, we are often blind to the deeper truths of our reality.\n\nMost live without ever questioning, caught in the flow of their time, while a few are driven to reflect on the fabric of life itself."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5230.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5231.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5232.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5233.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "This reflection does not offer solutions, nor does it change the world around us, but it allows us to experience life in a more profound way, seeing beyond the surface.\n\nThe moment we realize that there is no inherent problem, no ultimate challenge that needs fixing, an understanding arises, and with it, a certain peace."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5234.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5235.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5240.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "But this peace, paradoxically, is both liberating and empty.\n\nOnce we see that nothing holds ultimate meaning beyond its existence, we come face-to-face with the realization that everything just is, without reason or resolution.\n\nThis understanding neither gives us answers nor removes us from the cycle, it merely transforms our experience of it."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5248.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5236.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5250.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5255.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5258.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "The search for meaning becomes an illusion in itself, but by raising ourselves beyond the noise, we witness the chaos with clarity, not seeking to escape it, but accepting it for what it is."
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5238.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5257.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5251.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/after-the-weather/DSC_5256.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "",
+     "text": "Thus, understanding brings peace, but that peace is marked by the awareness that, in the end, there is no problem, and there never was."
+    }
+   ],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "more-sweet-than-bitter",
+   "kind": "writing",
+   "title": "More Sweet Than Bitter",
+   "titleEm": "",
+   "inNav": true,
+   "form": "From the notebook",
+   "place": "",
+   "year": "2025",
+   "paras": [
+    "You know this the way you know weather. Not because someone explained it to you but because you stood inside it long enough. There are things that do not survive being named. You can circle them with language, you can build sentences that lean toward them the way trees lean toward light, but the thing itself stays where it is, untouched, whole, indifferent to your effort. This is not a failure of language. It is the shape of what is real.",
+    "We are prior to our words. Whatever we are, we were that before we learned to speak it, and whatever remains most true about us still lives there, in that silence before the first syllable. Every photograph, every poem, every careful arrangement of color and sound is an attempt to point back toward that place. Not to capture it. To confirm that it exists.",
+    "There is a method for growing rhubarb called forcing. The plant is raised in total darkness, tended only in brief intervals of candlelight. It thrives by reaching toward an absent sun, stretching so fast its growth can be heard. Forcing can weaken the crop, but when done carefully, it yields something sweeter. I am not making an allegory. I am just saying that some things grow toward what they cannot see, and the growing is not separate from the sweetness.",
+    "Sorrow does this. It moves through a place the way weather moves through a place, changing what it touches without destroying it. What remains after is not what was there before, but it is not nothing either. It is something else, something that has been through the full weight of what happened and did not empty out. You cannot explain this to someone who has not stood inside it. You can only show them, and hope they are willing to stay long enough to feel it.",
+    "The simplest things carry it. A gesture repeated so many times it has become invisible. A door that still opens. The way the light falls in a particular room at a particular hour as if it has been practicing for years. These are not symbols. They are not evidence of anything. They are just what is here, what keeps being here, ordinary and ordinary and ordinary until it breaks your heart.",
+    "There are moments when time slips and what was once returns to you so vividly, with such detail, that it unsettles you. Was it ever real, or only a dream? The question is not the point. The point is the returning, the fact that something in you still receives it, still trembles at it, still opens when every logic says to close. The fortunate ones are those who never lose this. Not innocence, not naivety, but the willingness to be astonished by what you have seen a thousand times, to feel that quiet tremor as if the world were revealing itself to you for the first time, again and again.",
+    "It's more sweet than bitter. You don't notice it at first. Then it doesn't leave."
+   ],
+   "margin": "October 2025",
+   "image": null,
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "the-unfinished-god",
+   "kind": "writing",
+   "title": "The Unfinished God",
+   "titleEm": "",
+   "inNav": true,
+   "form": "From the notebook",
+   "place": "",
+   "year": "2025",
+   "paras": [
+    "He made it in six days. Not the slow, patient unfolding you might expect from something eternal, something with no appointments, no hunger, no fear of the dark, but six days, as if there were somewhere else to be on the seventh. This detail has always bothered me, though for years I couldn't say exactly why. The religious traditions I grew up around treated it as a given, a fact to be accepted or a metaphor to be explained away, but no one seemed troubled by the tempo of it. The urgency. The almost unseemly haste. You don't rush unless something is pressing on you. You don't count the days unless somewhere, underneath the making, there is impatience.",
+    "And then the harder question, the one that doesn't get asked at the dinner table or in the mosque or the church: for whom?",
+    "Before the first word of creation there was nothing. No witness. No ear pressed against the dark waiting for the light to be called into existence. No eye to watch the waters divide from the waters, the land rise from the sea, the animals arrive blinking into a world still wet with its own newness. The most absolute performance ever staged, and not a single seat filled. God, if the story is true, made the universe for an audience that did not yet exist, which means he made it for no one, which means the making itself was the point, which means something else entirely, something that theology has mostly preferred not to look at directly.",
+    "Because here is what that implies. It implies that at the origin of everything there is an unresolved longing. A need to be seen that preceded the existence of anything capable of seeing. You can dress it in the language of overflow, of divine goodness that cannot contain itself and must spill outward, and that is a beautiful thought, but it doesn't dissolve the strangeness. It just relocates it. A God who overflows is a God who was too full. Full of what? And why did that fullness need somewhere to go? These are not blasphemies. They are the questions the story generates if you take it seriously enough to follow it past the comfortable stopping points.",
+    "What I keep coming back to is this: he was showing off. The scale of it, the light, the firmament, the living creatures after their kind, the whole staggering inventory of existence, it has the quality of a gesture made toward someone. It has the texture of wanting to impress. But the only one present to be impressed was himself, and you cannot impress yourself without a kind of split, a division inside the self between the one performing and the one watching, and that division, that original fracture, may be the thing we have been living inside of ever since.",
+    "Look at the world right now. I mean look at it honestly, the way you look at something when you stop trying to make it mean something bearable. The wars that nobody wins but nobody stops. The ideologies that devour their own children. The absolute certainty on every side that their version of the light is the real one. The platforms built to be witnessed on, the endless performance of the self for an audience that is scrolling past, half-present, as absent in its own way as the void before creation. We live in a world of people showing off for no one, and we are exhausted by it, and we cannot stop, and I think this is not an accident. I think we inherited the condition.",
+    "If the maker was in a hurry, we have been running ever since. If the maker needed to be seen and had no one to see him, we have been performing ever since. If the world was built in six days by something that couldn't quite wait, then the cracks were always going to show. The chaos we are living in doesn't feel like a deviation from the original plan. It feels like the plan catching up with itself. It feels like what happens when you build fast and grand and don't stop to ask whether the foundation holds.",
+    "There is something almost tender in it, if you can hold it that way. The idea that even the first cause, the unmoved mover, the light before light, whatever you want to call the thing that started all of this, even that was not at peace. Even that was reaching toward something it couldn't name. And we are its image, as the story says, and the image is restless, and the image is performing, and the image is making and unmaking and making again, and resting on the seventh day only long enough to feel the ache of what it has done.",
+    "Six days. He was definitely in a hurry. And we have been paying for that hurry ever since, not as punishment, but as inheritance. The world is chaotic and unfinished and reaching toward a witness it cannot find because the very first act of making was exactly that: chaotic, rushed, magnificent, and aimed at an empty room."
+   ],
+   "margin": "September 2025",
+   "image": null,
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "prints",
+   "kind": "story",
+   "title": "Prints",
+   "titleEm": "",
+   "inNav": true,
+   "kicker": "Archival prints",
+   "note": "Selected photographs from the manuscript, available as archival prints. Each print is produced and shipped worldwide through Saatchi Art in several sizes and materials.",
+   "arrangement": "held",
+   "pieces": [
+    {
+     "type": "pause",
+     "label": "",
+     "text": "Selected photographs from the manuscript, available as archival prints. Each print is produced and shipped worldwide through Saatchi Art in several sizes and materials. Acquiring a print opens its listing on Saatchi Art, which handles printing, framing, and delivery."
+    },
+    {
+     "type": "pause",
+     "label": "Series",
+     "text": "Colored Air, 2023 — Ongoing"
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2026-01.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-19.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-16.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-15.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-10.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-09.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-02.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-01.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/colored-air/HS-ColoredAir-2025-03.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "Series",
+     "text": "What Light Knows About Us, 2024 — Ongoing"
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-olive-grove.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/what-light-knows-about-us/what-light-knows-about-us-13.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "Series",
+     "text": "Before It Disappears, 2023 — 2025"
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-14.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-29.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-23.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-20.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-22.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-19.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-16.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-08.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-05.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/before-it-disappears/before-it-disappears-01.jpg",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "Series",
+     "text": "The Season of the Mulberry, 2025"
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-10.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-05.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/season-of-the-mulberry/HS-TheSeasonOfTheMulberry-2025-04.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "pause",
+     "label": "Series",
+     "text": "When Roses Bloom, 2025"
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_0487.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    },
+    {
+     "type": "work",
+     "asset": "/photos/when-roses-bloom/IMG_0439.JPG",
+     "arrange": "alone",
+     "note": "",
+     "full": false
+    }
+   ],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "matilda-london",
+   "kind": "project",
+   "title": "Matilda",
+   "titleEm": "London",
+   "inNav": true,
+   "discipline": "Editorial",
+   "client": "Matilda London",
+   "year": "2025",
+   "summary": "Commissioned editorial, fashion, and portrait photography. Available for assignments and collaborations.",
+   "outcome": [
+    "/photos/editorial/matilda-london/dscf3661.jpg",
+    "/photos/editorial/matilda-london/dscf3827.jpg",
+    "/photos/editorial/matilda-london/dscf3869.jpg",
+    "/photos/editorial/matilda-london/dscf3873.jpg",
+    "/photos/editorial/matilda-london/dscf4096.jpg",
+    "/photos/editorial/matilda-london/dscf4135.jpg",
+    "/photos/editorial/matilda-london/dscf4205.jpg",
+    "/photos/editorial/matilda-london/dscf4213.jpg",
+    "/photos/editorial/matilda-london/dscf4246-2.jpg",
+    "/photos/editorial/matilda-london/dscf4271.jpg",
+    "/photos/editorial/matilda-london/dscf4272.jpg",
+    "/photos/editorial/matilda-london/dscf4286.jpg",
+    "/photos/editorial/matilda-london/dscf4327.jpg",
+    "/photos/editorial/matilda-london/dscf4361.jpg",
+    "/photos/editorial/matilda-london/dscf4376.jpg",
+    "/photos/editorial/matilda-london/dscf4398.jpg",
+    "/photos/editorial/matilda-london/dscf4419.jpg",
+    "/photos/editorial/matilda-london/dscf4425.jpg",
+    "/photos/editorial/matilda-london/img_5238.jpg",
+    "/photos/editorial/matilda-london/img_5345.jpg",
+    "/photos/editorial/matilda-london/img_5352.jpg",
+    "/photos/editorial/matilda-london/img_5379.jpg",
+    "/photos/editorial/matilda-london/img_5395-2.jpg"
+   ],
+   "process": [],
+   "compare": false,
+   "facts": [],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "maison-makarem",
+   "kind": "project",
+   "title": "Maison",
+   "titleEm": "Makarem",
+   "inNav": true,
+   "discipline": "Fashion",
+   "client": "Maison Makarem",
+   "year": "2025",
+   "summary": "Commissioned editorial, fashion, and portrait photography. Available for assignments and collaborations.",
+   "outcome": [
+    "/photos/editorial/maison-makarem/dscf2169.jpg",
+    "/photos/editorial/maison-makarem/dscf2164.jpg",
+    "/photos/editorial/maison-makarem/dscf2440.jpg",
+    "/photos/editorial/maison-makarem/dscf2467.jpg",
+    "/photos/editorial/maison-makarem/dscf2574.jpg",
+    "/photos/editorial/maison-makarem/dscf2582.jpg",
+    "/photos/editorial/maison-makarem/dscf2658.jpg",
+    "/photos/editorial/maison-makarem/img_4358.jpg",
+    "/photos/editorial/maison-makarem/img_4552.jpg",
+    "/photos/editorial/maison-makarem/img_4558.jpg",
+    "/photos/editorial/maison-makarem/img_4635.jpg",
+    "/photos/editorial/maison-makarem/img_4639.jpg",
+    "/photos/editorial/maison-makarem/img_4730.jpg",
+    "/photos/editorial/maison-makarem/img_4765.jpg",
+    "/photos/editorial/maison-makarem/img_4833.jpg"
+   ],
+   "process": [],
+   "compare": false,
+   "facts": [],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "portrait-of-gio",
+   "kind": "project",
+   "title": "Portrait of",
+   "titleEm": "Gio",
+   "inNav": true,
+   "discipline": "Portrait",
+   "client": "",
+   "year": "2025",
+   "summary": "Commissioned editorial, fashion, and portrait photography. Available for assignments and collaborations.",
+   "outcome": [
+    "/photos/editorial/portrait-of-gio/6c6a2403.jpg",
+    "/photos/editorial/portrait-of-gio/6c6a2339.jpg",
+    "/photos/editorial/portrait-of-gio/6c6a2387.jpg",
+    "/photos/editorial/portrait-of-gio/6c6a2378.jpg",
+    "/photos/editorial/portrait-of-gio/6c6a2411.jpg"
+   ],
+   "process": [],
+   "compare": false,
+   "facts": [],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "portraits-of-jana",
+   "kind": "project",
+   "title": "Portraits of",
+   "titleEm": "Jana",
+   "inNav": true,
+   "discipline": "Portrait",
+   "client": "",
+   "year": "2024",
+   "summary": "Commissioned editorial, fashion, and portrait photography. Available for assignments and collaborations.",
+   "outcome": [
+    "/photos/editorial/portraits-of-jana/dscf4796.jpg",
+    "/photos/editorial/portraits-of-jana/dscf4735.jpg",
+    "/photos/editorial/portraits-of-jana/dscf4832.jpg",
+    "/photos/editorial/portraits-of-jana/dscf4837.jpg",
+    "/photos/editorial/portraits-of-jana/dscf4847.jpg",
+    "/photos/editorial/portraits-of-jana/dscf4857.jpg",
+    "/photos/editorial/portraits-of-jana/dscf4872.jpg",
+    "/photos/editorial/portraits-of-jana/dscf4874.jpg"
+   ],
+   "process": [],
+   "compare": false,
+   "facts": [],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "antoine-saliba-jewelry",
+   "kind": "project",
+   "title": "Antoine Saliba",
+   "titleEm": "Jewelry",
+   "inNav": true,
+   "discipline": "Commercial",
+   "client": "Antoine Saliba Jewelry",
+   "year": "",
+   "summary": "Commissioned editorial, fashion, and portrait photography. Available for assignments and collaborations.",
+   "outcome": [
+    "/photos/editorial/antoine-saliba-jewelry/1g1a7273.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a7144.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a71490.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a7297.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a7372.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a7393.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a7460.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a7511.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a7719.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a7315.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a8206.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a8203.jpg",
+    "/photos/editorial/antoine-saliba-jewelry/1g1a8393.jpg"
+   ],
+   "process": [],
+   "compare": false,
+   "facts": [],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "haya-magazine",
+   "kind": "project",
+   "title": "Haya",
+   "titleEm": "Magazine",
+   "inNav": true,
+   "discipline": "Editorial",
+   "client": "Haya Magazine",
+   "year": "2020",
+   "summary": "Dubai.",
+   "outcome": [
+    "/photos/editorial/haya-magazine/6c6a8600.jpg",
+    "/photos/editorial/haya-magazine/6c6a8183-edit.jpg",
+    "/photos/editorial/haya-magazine/6c6a8233grainy.jpg",
+    "/photos/editorial/haya-magazine/6c6a8396.jpg",
+    "/photos/editorial/haya-magazine/6c6a8530.jpg",
+    "/photos/editorial/haya-magazine/6c6a8447.jpg",
+    "/photos/editorial/haya-magazine/6c6a8465.jpg",
+    "/photos/editorial/haya-magazine/6c6a8569.jpg",
+    "/photos/editorial/haya-magazine/6c6a8577.jpg",
+    "/photos/editorial/haya-magazine/6c6a8593.jpg",
+    "/photos/editorial/haya-magazine/6c6a8884.jpg",
+    "/photos/editorial/haya-magazine/6c6a8816.jpg",
+    "/photos/editorial/haya-magazine/6c6a9039.jpg",
+    "/photos/editorial/haya-magazine/6c6a9060.jpg",
+    "/photos/editorial/haya-magazine/6c6a9094.jpg",
+    "/photos/editorial/haya-magazine/6c6a9235.jpg",
+    "/photos/editorial/haya-magazine/6c6a9412-edit-edit.jpg",
+    "/photos/editorial/haya-magazine/6c6a9464grainy.jpg"
+   ],
+   "process": [],
+   "compare": false,
+   "facts": [],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "portrait-of-elif",
+   "kind": "project",
+   "title": "Portrait of",
+   "titleEm": "Elif",
+   "inNav": true,
+   "discipline": "Portrait",
+   "client": "",
+   "year": "2020",
+   "summary": "Istanbul.",
+   "outcome": [
+    "/photos/editorial/portrait-of-elif/6c6a4775.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4719-2.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4759.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4746.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4780.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4775-2.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4783.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4785-2.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4819.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4820-2.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4822.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4817.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4816.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4815.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4828.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4826.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4824.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4846.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4851.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4843.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4835.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4836.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4853.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4868.jpeg",
+    "/photos/editorial/portrait-of-elif/6c6a4872.jpeg"
+   ],
+   "process": [],
+   "compare": false,
+   "facts": [],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "gabi-x-julia",
+   "kind": "project",
+   "title": "Gabi ×",
+   "titleEm": "Julia",
+   "inNav": true,
+   "discipline": "Tanks Management",
+   "client": "Tanks Management",
+   "year": "2020",
+   "summary": "Istanbul.",
+   "outcome": [
+    "/photos/editorial/gabi-x-julia/6c6a3986.jpg",
+    "/photos/editorial/gabi-x-julia/6c6a3933.jpg",
+    "/photos/editorial/gabi-x-julia/6c6a3998.jpg",
+    "/photos/editorial/gabi-x-julia/6c6a4084.jpg",
+    "/photos/editorial/gabi-x-julia/6c6a4172.jpg",
+    "/photos/editorial/gabi-x-julia/6c6a4185.jpg",
+    "/photos/editorial/gabi-x-julia/6c6a4292.jpg",
+    "/photos/editorial/gabi-x-julia/6c6a4365.jpg",
+    "/photos/editorial/gabi-x-julia/6c6a4688.jpg",
+    "/photos/editorial/gabi-x-julia/6c6a4690.jpg",
+    "/photos/editorial/gabi-x-julia/6c6a4676.jpg",
+    "/photos/editorial/gabi-x-julia/6c6a4415.jpg"
+   ],
+   "process": [],
+   "compare": false,
+   "facts": [],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "film-before-it-disappears",
+   "kind": "film",
+   "title": "Before It",
+   "titleEm": "Disappears",
+   "inNav": true,
+   "form": "Short film",
+   "year": "2025",
+   "runtime": "",
+   "ratio": "16:9",
+   "synopsis": "Before It Disappears — a film. Joun, Lebanon.",
+   "poster": "/photos/before-it-disappears/film-before-it-disappears.jpg",
+   "video": null,
+   "link": "https://www.youtube.com/watch?v=rNw7cMnKSII",
+   "stills": [],
+   "credits": [
+    "A film by Habib Saleh"
+   ],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "film-before-it-disappears-part-two",
+   "kind": "film",
+   "title": "Before It Disappears",
+   "titleEm": "Part Two",
+   "inNav": true,
+   "form": "Short film",
+   "year": "2025",
+   "runtime": "",
+   "ratio": "16:9",
+   "synopsis": "Before It Disappears, Part Two — a film. Joun, Lebanon.",
+   "poster": "/photos/before-it-disappears/film-before-it-disappears-pt2.jpg",
+   "video": null,
+   "link": "https://www.youtube.com/watch?v=8D81vH4cxrA",
+   "stills": [],
+   "credits": [
+    "A film by Habib Saleh"
+   ],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "about",
+   "kind": "about",
+   "title": "About",
+   "titleEm": "",
+   "inNav": true,
+   "paras": [
+    "Habib Saleh is a Lebanese visual artist working across photography, film, and writing. Rather than approaching these as separate disciplines, he sees them as different ways of following the same inquiry, each capable of expressing what the others cannot.",
+    "Working primarily in Lebanon, Saleh photographs the people and places closest to him — family, villages, cities, and the quiet rhythms of everyday life. Guided by natural light, long-term observation, and a sensitivity to the ordinary, his work explores presence, memory, time, and the fragile coexistence of beauty and devastation. Rather than centering extraordinary events, his photographs remain attentive to what continues around them: the gestures, relationships, and atmospheres through which life quietly persists.",
+    "Writing moves alongside the images as an equal part of his practice, not as explanation but as another way of approaching what cannot be fully held by a photograph. Together, photography, film, and text form an ongoing body of work that reflects on perception, the limits of language, and the experience of being alive.",
+    "To Pray Is to Wander About the Meaning of Life is the continuous body of work gathered here — a living manuscript that keeps unfolding. The printed book will one day emerge from it.",
+    "Habib Saleh also photographs on commission."
+   ],
+   "principles": [],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  },
+  {
+   "id": "contact",
+   "kind": "contact",
+   "title": "Contact",
+   "titleEm": "",
+   "inNav": true,
+   "paras": [
+    "Prints, commissions and enquiries: contact@habibsaleh.com.",
+    "Instagram: @habibsfoto."
+   ],
+   "appears": {
+    "title": "",
+    "description": "",
+    "share": null
+   },
+   "word": ""
+  }
+ ],
+ "trash": []
+}
