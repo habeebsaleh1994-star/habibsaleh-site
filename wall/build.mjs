@@ -46,7 +46,7 @@ for (const m of movements) {
       else if (p.film) films.push({ movement: m.title, ...p });
       continue;
     }
-    const cap = p.cap || ""; const a = work(p.photo, { title: cap, date: yearIn(cap) || (m.years || "").slice(0, 4), alt: cap || `${m.title}, a photograph` }); if (a) pieces.push(piece(a));
+    const cap = p.cap || ""; const a = work(p.photo, { title: cap, date: yearIn(cap) ? "" : (m.years || "").slice(0, 4), alt: cap || `${m.title}, a photograph` }); if (a) pieces.push(piece(a));
   }
   if (m.closing?.length) pieces.push(pause(m.closing.join("\n\n")));
   pages.push({ id: slug(m.title), kind: "story", title: t, titleEm: em, inNav: true, kicker: `${m.roman} · ${m.years}`, note: (m.opening?.[0] || m.closing?.[0] || "").slice(0, 5000), arrangement: "book", pieces, appears: { title: "", description: "", share: null }, word: "" });
@@ -76,8 +76,8 @@ pages.push({ id: "contact", kind: "contact", title: "Contact", titleEm: "", inNa
 
 const cover = work("cover/manuscript-cover.jpg", { title: book.title, alt: "The manuscript's cover" });
 const site = {
-  version: 15, house: "monograph", name: "Habib Saleh", contact: `${book.colophon.email} · ${book.colophon.instagram.handle}`, email: book.colophon.email,
-  front: { form: "covers", kicker: book.subtitle, title: "To pray is to wander", titleEm: "about the meaning of life", note: `Photographs, writing and film, made in Lebanon. ${book.end.line}` },
+  version: 15, house: "manuscript", name: "Habib Saleh", contact: `${book.colophon.email} · ${book.colophon.instagram.handle}`, email: book.colophon.email,
+  front: { form: "threshold", kicker: book.edition, title: "To Pray Is to Wander", titleEm: "About the Meaning of Life", note: book.subtitle },
   appears: { description: `${book.title}. ${book.subtitle} Photographs and writing by Habib Saleh, made in Lebanon.`.slice(0, 200), share: cover },
   door: { word: "", soon: false, note: "" }, mark: { logo: null, icon: cover },
   theme: { look: "quiet", options: {}, palette: "silk", mode: "system", accent: null, type: "silk", mount: "bare", space: "standard", motion: "slow", read: "standard" },

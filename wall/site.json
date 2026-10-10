@@ -1,15 +1,15 @@
 {
  "version": 15,
- "house": "monograph",
+ "house": "manuscript",
  "name": "Habib Saleh",
  "contact": "contact@habibsaleh.com · @habibsfoto",
  "email": "contact@habibsaleh.com",
  "front": {
-  "form": "covers",
-  "kicker": "A record of light. A record of the strangeness of being alive.",
-  "title": "To pray is to wander",
-  "titleEm": "about the meaning of life",
-  "note": "Photographs, writing and film, made in Lebanon. Perhaps to pray is nothing more than this: to wander within the mystery of being alive without demanding that it resolve itself."
+  "form": "threshold",
+  "kicker": "First edition · a living manuscript",
+  "title": "To Pray Is to Wander",
+  "titleEm": "About the Meaning of Life",
+  "note": "A record of light. A record of the strangeness of being alive."
  },
  "appears": {
   "description": "To Pray Is to Wander About the Meaning of Life. A record of light. A record of the strangeness of being alive. Photographs and writing by Habib Saleh, made in Lebanon.",
@@ -42,7 +42,7 @@
    "w": 2400,
    "h": 1800,
    "title": "Young girls playing in a neighbourhood in the town of Joun, Lebanon, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "Young girls playing in a neighbourhood in the town of Joun, Lebanon, 2024.",
    "focal": {
@@ -62,7 +62,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A scene from Sidon during Eid El Fitr celebrations, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "A scene from Sidon during Eid El Fitr celebrations, 2024.",
    "focal": {
@@ -82,7 +82,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A kid peeking from behind the wall of his house entrance in the town of Joun, Lebanon, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "A kid peeking from behind the wall of his house entrance in the town of Joun, Lebanon, 2024.",
    "focal": {
@@ -102,7 +102,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A Landscape of pine trees at sunset in the town of Joun, Lebanon, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "",
    "alt": "A Landscape of pine trees at sunset in the town of Joun, Lebanon, 2024.",
    "focal": {
@@ -122,7 +122,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A candid shot of my little cousin on the balcony of our home in the town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "A candid shot of my little cousin on the balcony of our home in the town of Joun, Lebanon, 2025.",
    "focal": {
@@ -142,7 +142,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A candid photo of a young boy happily running in one of Sidon’s old streets, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "",
    "alt": "A candid photo of a young boy happily running in one of Sidon’s old streets, 2024.",
    "focal": {
@@ -162,7 +162,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A portrait of an elderly woman in front of her home in the town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "A portrait of an elderly woman in front of her home in the town of Joun, Lebanon, 2025.",
    "focal": {
@@ -182,7 +182,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A tree blossoming during spring season in the town of Joun, Lebanon, 2024",
-   "date": "2024",
+   "date": "",
    "caption": "",
    "alt": "A tree blossoming during spring season in the town of Joun, Lebanon, 2024",
    "focal": {
@@ -202,7 +202,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Kids playing in one of Joun's streets, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "Kids playing in one of Joun's streets, 2025.",
    "focal": {
@@ -222,7 +222,7 @@
    "w": 2400,
    "h": 1599,
    "title": "A candid shot of an elderly woman reaching out to hold a child's hand in Sidon city, Lebanon, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "A candid shot of an elderly woman reaching out to hold a child's hand in Sidon city, Lebanon, 2024.",
    "focal": {
@@ -242,7 +242,7 @@
    "w": 2400,
    "h": 1600,
    "title": "My father’s uncle, walking down the stairs, leading me to the first mulberry tree, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "My father’s uncle, walking down the stairs, leading me to the first mulberry tree, 2025.",
    "focal": {
@@ -262,7 +262,7 @@
    "w": 2400,
    "h": 1600,
    "title": "My father’s uncle behind the big mulberry tree, picking its fruit, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "My father’s uncle behind the big mulberry tree, picking its fruit, 2025.",
    "focal": {
@@ -282,7 +282,7 @@
    "w": 2400,
    "h": 1600,
    "title": "My father’s uncle reaching for the mulberry fruit, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "My father’s uncle reaching for the mulberry fruit, 2025.",
    "focal": {
@@ -302,7 +302,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Mulberries resting in the palms of his hands, my father’s uncle showing me the fruit, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "Mulberries resting in the palms of his hands, my father’s uncle showing me the fruit, 2025.",
    "focal": {
@@ -322,7 +322,7 @@
    "w": 2400,
    "h": 1600,
    "title": "My father’s uncle Khalil holding a mulberry leaf with the fruit nestled in it, as gently as if he were holding newborns, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "My father’s uncle Khalil holding a mulberry leaf with the fruit nestled in it, as gently as if he were holding newborns, 2025.",
    "focal": {
@@ -342,7 +342,7 @@
    "w": 2400,
    "h": 1600,
    "title": "My father’s uncle Khalil heading toward the second tree, ready to pick more fruit, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "My father’s uncle Khalil heading toward the second tree, ready to pick more fruit, 2025.",
    "focal": {
@@ -362,7 +362,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Khalil reaching up to gather the ripe mulberries, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "Khalil reaching up to gather the ripe mulberries, 2025.",
    "focal": {
@@ -382,7 +382,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Khalil bends toward the ground, where he laid a big blue cloth under the tree to catch the ripe mulberries. Then he carefully picks them up from the cloth, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "Khalil bends toward the ground, where he laid a big blue cloth under the tree to catch the ripe mulberries. Then he carefully picks them up from the cloth, 2025.",
    "focal": {
@@ -402,7 +402,7 @@
    "w": 2400,
    "h": 1600,
    "title": "The blue cloth laid out under the mulberry tree, filled with the season’s ripe fruit, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "The blue cloth laid out under the mulberry tree, filled with the season’s ripe fruit, 2025.",
    "focal": {
@@ -422,7 +422,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Khalil holding a mulberry leaf with both white and black mulberries on it, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "Khalil holding a mulberry leaf with both white and black mulberries on it, 2025.",
    "focal": {
@@ -782,7 +782,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A candid shot of my father's uncle and my cousin kissing him on the cheek. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "A candid shot of my father's uncle and my cousin kissing him on the cheek. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -802,7 +802,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A photo from a family visit during Eid El Fitr to my father's aunt house in the town of Joun, Lebanon, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "",
    "alt": "A photo from a family visit during Eid El Fitr to my father's aunt house in the town of Joun, Lebanon, 2024.",
    "focal": {
@@ -822,7 +822,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A man receives a haircut from a local barber in the courtyard garden of a modest home at dusk. Rows of potted plants line the perimeter. In the background, two children, distant relatives of the barbe",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "A man receives a haircut from a local barber in the courtyard garden of a modest home at dusk. Rows of potted plants line the perimeter. In the background, two children, distant relatives of the barbe",
    "focal": {
@@ -842,7 +842,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A candid photo of two friends holding a flower in the town of Joun, Lebanon, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "",
    "alt": "A candid photo of two friends holding a flower in the town of Joun, Lebanon, 2024.",
    "focal": {
@@ -862,7 +862,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A candid photo of friends at sunset in one of Joun's neighbourhoods, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "A candid photo of friends at sunset in one of Joun's neighbourhoods, 2024.",
    "focal": {
@@ -882,7 +882,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Olive trees standing in a sea of wildflowers and grass. The town of Joun, Lebanon 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "Olive trees standing in a sea of wildflowers and grass. The town of Joun, Lebanon 2025.",
    "focal": {
@@ -902,7 +902,7 @@
    "w": 2400,
    "h": 1599,
    "title": "An olive tree standing among poppies in the town of Joun, Lebanon, 2026.",
-   "date": "2026",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "An olive tree standing among poppies in the town of Joun, Lebanon, 2026.",
    "focal": {
@@ -922,7 +922,7 @@
    "w": 2400,
    "h": 1600,
    "title": "An olive tree at dusk, the far hills fading behind it. The town of Joun, Lebanon, 2026.",
-   "date": "2026",
+   "date": "",
    "caption": "",
    "alt": "An olive tree at dusk, the far hills fading behind it. The town of Joun, Lebanon, 2026.",
    "focal": {
@@ -942,7 +942,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Poppies and wildflowers in the last light beneath the olive trees. The town of Joun, Lebanon, 2026.",
-   "date": "2026",
+   "date": "",
    "caption": "",
    "alt": "Poppies and wildflowers in the last light beneath the olive trees. The town of Joun, Lebanon, 2026.",
    "focal": {
@@ -962,7 +962,7 @@
    "w": 2400,
    "h": 1600,
    "title": "My uncle's wife holding a bunch of orange blossom in her palms during orange blossom season in the town of Joun, Lebanon, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "",
    "alt": "My uncle's wife holding a bunch of orange blossom in her palms during orange blossom season in the town of Joun, Lebanon, 2024.",
    "focal": {
@@ -982,7 +982,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Twins in Sidon city, Lebanon, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "",
    "alt": "Twins in Sidon city, Lebanon, 2024.",
    "focal": {
@@ -1002,7 +1002,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A candid shot of a group of kids playing football in Ancient Sidon, Lebanon, 2023.",
-   "date": "2023",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "A candid shot of a group of kids playing football in Ancient Sidon, Lebanon, 2023.",
    "focal": {
@@ -1022,7 +1022,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A photo taken from the rooftop of my home in Joun, Lebanon on a foggy sunset, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "",
    "alt": "A photo taken from the rooftop of my home in Joun, Lebanon on a foggy sunset, 2024.",
    "focal": {
@@ -1702,7 +1702,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -1722,7 +1722,7 @@
    "w": 2400,
    "h": 1800,
    "title": "A grandfather and his grandson rest their hands on a steel railing at dusk, talking to each other in one of Joun’s neighborhoods, with the village’s mountains stretching out in front of them. The town",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "A grandfather and his grandson rest their hands on a steel railing at dusk, talking to each other in one of Joun’s neighborhoods, with the village’s mountains stretching out in front of them. The town",
    "focal": {
@@ -1742,7 +1742,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A grandfather holds his grandson near their home in one of the oldest village alleys, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "",
    "alt": "A grandfather holds his grandson near their home in one of the oldest village alleys, 2024.",
    "focal": {
@@ -1762,7 +1762,7 @@
    "w": 2400,
    "h": 1600,
    "title": "An old man is watching two kids run through a narrow street in the village of Joun, as a white cat passes by. The town of Joun, Lebanon, 2023.",
-   "date": "2023",
+   "date": "",
    "caption": "",
    "alt": "An old man is watching two kids run through a narrow street in the village of Joun, as a white cat passes by. The town of Joun, Lebanon, 2023.",
    "focal": {
@@ -1782,7 +1782,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Salam, one of the oldest residents of the village, walks past the entrance of his house with cracked concrete and peeling walls, holding a grapefruit. The town of Joun, Lebanon, 2023.",
-   "date": "2023",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "Salam, one of the oldest residents of the village, walks past the entrance of his house with cracked concrete and peeling walls, holding a grapefruit. The town of Joun, Lebanon, 2023.",
    "focal": {
@@ -1802,7 +1802,7 @@
    "w": 2400,
    "h": 1600,
    "title": "An old man, Youssef — 91, one of the oldest people in Joun — stands in his rusty kitchen, waiting for the Arabic coffee pot to boil. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "An old man, Youssef — 91, one of the oldest people in Joun — stands in his rusty kitchen, waiting for the Arabic coffee pot to boil. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -1822,7 +1822,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A portrait of Youssef — 91, among the oldest residents of Joun. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "A portrait of Youssef — 91, among the oldest residents of Joun. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -1842,7 +1842,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A man harvesting mulberries, almost entirely concealed by the thick branches. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "A man harvesting mulberries, almost entirely concealed by the thick branches. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -1862,7 +1862,7 @@
    "w": 2400,
    "h": 1600,
    "title": "An old man, Salam — 82 and one of the oldest people in Joun — contemplates the green landscape. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "An old man, Salam — 82 and one of the oldest people in Joun — contemplates the green landscape. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -1882,7 +1882,7 @@
    "w": 2400,
    "h": 1600,
    "title": "An elderly man walks along a stone wall as the photographer’s shadow falls beside him in Joun. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "An elderly man walks along a stone wall as the photographer’s shadow falls beside him in Joun. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -1902,7 +1902,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Salam, one of the oldest residents of the village, pauses during a walk as the neighbor’s dog sits nearby. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "Salam, one of the oldest residents of the village, pauses during a walk as the neighbor’s dog sits nearby. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -1922,7 +1922,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A stray cat sits inside an abandoned house in Joun, near a staircase that leads to an orange tree with fallen fruit scattered on the ground. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "A stray cat sits inside an abandoned house in Joun, near a staircase that leads to an orange tree with fallen fruit scattered on the ground. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -1942,7 +1942,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A locked wooden door in one of Joun’s old neighborhoods, its surface worn and covered with scribbles, and its rusted chains marking years of abandonment. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "A locked wooden door in one of Joun’s old neighborhoods, its surface worn and covered with scribbles, and its rusted chains marking years of abandonment. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -1962,7 +1962,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A boy points a toy gun while standing on a cracked street in Joun. The town of Joun, Lebanon, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "A boy points a toy gun while standing on a cracked street in Joun. The town of Joun, Lebanon, 2024.",
    "focal": {
@@ -1982,7 +1982,7 @@
    "w": 2400,
    "h": 1800,
    "title": "A cat sits on the edge of a wall at the entrance of an abandoned house in Joun. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "A cat sits on the edge of a wall at the entrance of an abandoned house in Joun. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2002,7 +2002,7 @@
    "w": 1600,
    "h": 2400,
    "title": "Salam — 82, one of the oldest people in Joun — walks down a village road at sunset, passing a tall pine tree and an old abandoned stone house. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "Salam — 82, one of the oldest people in Joun — walks down a village road at sunset, passing a tall pine tree and an old abandoned stone house. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2022,7 +2022,7 @@
    "w": 2400,
    "h": 1600,
    "title": "An old abandoned house in Joun, with a large pine tree growing in front of its entrance. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "An old abandoned house in Joun, with a large pine tree growing in front of its entrance. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2042,7 +2042,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Two elderly men, one handing grapefruits to the other, 2023.",
-   "date": "2023",
+   "date": "",
    "caption": "",
    "alt": "Two elderly men, one handing grapefruits to the other, 2023.",
    "focal": {
@@ -2062,7 +2062,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Reda carries a basin of orange blossom flowers after harvesting while his uncle Khalil waits on the hood of his car beside a blooming tree. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "Reda carries a basin of orange blossom flowers after harvesting while his uncle Khalil waits on the hood of his car beside a blooming tree. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2082,7 +2082,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2023.",
-   "date": "2023",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2023.",
    "focal": {
@@ -2102,7 +2102,7 @@
    "w": 2400,
    "h": 1800,
    "title": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "Kids running and playing in one of Joun’s old neighborhoods. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2122,7 +2122,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A boy tends to his sheep among olive trees in the hills surrounding Joun. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "A boy tends to his sheep among olive trees in the hills surrounding Joun. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2142,7 +2142,7 @@
    "w": 2400,
    "h": 1800,
    "title": "A boy plays alone with a soccer ball in an open space as clouds gather over the hills at dusk. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "A boy plays alone with a soccer ball in an open space as clouds gather over the hills at dusk. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2162,7 +2162,7 @@
    "w": 2400,
    "h": 1600,
    "title": "Youssef — 91, one of the oldest men in Joun — looks toward an abandoned house that once belonged to a close friend who left the village during the civil war. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "Youssef — 91, one of the oldest men in Joun — looks toward an abandoned house that once belonged to a close friend who left the village during the civil war. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2182,7 +2182,7 @@
    "w": 2400,
    "h": 1600,
    "title": "An overgrown jasmine plant climbing an old, rustic wall in Joun, its tangled branches leaning to the right as soft, shimmering light falls across the surface. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "An overgrown jasmine plant climbing an old, rustic wall in Joun, its tangled branches leaning to the right as soft, shimmering light falls across the surface. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2202,7 +2202,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A portrait of Maher, a local man, in the streets of Joun. The town of Joun, Lebanon, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "",
    "alt": "A portrait of Maher, a local man, in the streets of Joun. The town of Joun, Lebanon, 2024.",
    "focal": {
@@ -2222,7 +2222,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A bougainvillea tree grows in full bloom at the entrance of an abandoned house in Joun. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "A bougainvillea tree grows in full bloom at the entrance of an abandoned house in Joun. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2242,7 +2242,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A covered, rusted car sits in a weathered garage in Joun, surrounded by old walls and overgrown plants. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "",
    "alt": "A covered, rusted car sits in a weathered garage in Joun, surrounded by old walls and overgrown plants. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2262,7 +2262,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A long road winds past olive trees and white wildflowers at the edge of Joun’s pine forest. Once crowded with people and traffic, the road now lies quiet. The town of Joun, Lebanon, 2025.",
-   "date": "2025",
+   "date": "",
    "caption": "Archival print, through Saatchi Art",
    "alt": "A long road winds past olive trees and white wildflowers at the edge of Joun’s pine forest. Once crowded with people and traffic, the road now lies quiet. The town of Joun, Lebanon, 2025.",
    "focal": {
@@ -2282,7 +2282,7 @@
    "w": 2400,
    "h": 1600,
    "title": "A view of Joun on a foggy evening, seen from one of the village rooftops. The town of Joun, Lebanon, 2024.",
-   "date": "2024",
+   "date": "",
    "caption": "",
    "alt": "A view of Joun on a foggy evening, seen from one of the village rooftops. The town of Joun, Lebanon, 2024.",
    "focal": {
